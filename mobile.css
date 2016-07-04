@@ -1,6 +1,9 @@
 /* eslint-disable */
 /* This is only gonna be applied on tablet and mobiles */
 @media screen and (max-width: 1024px) {
+  /* Reset styles */
+  * { left: 0; top: 0; width: auto; margin: 0; padding: 0; list-style: none; }
+  
   .s5_wrap {
     width: auto;
   }
@@ -12,7 +15,13 @@
     text-align: center;
   }
 
-  #s5_logo, .pypHeader_wow_text  {
+  /** These items are:
+  #s5_logo: Big wowchakra logo
+  .phpHeader_wow_text: Logo subtitle
+  #pypHeader_wow: Table with network links
+  #s5_search_wrap: Search box
+  */
+  #s5_logo, .pypHeader_wow_text, #pypHeader_wow, #s5_search_wrap {
     position: relative;
     display: block;
     float: none;
@@ -20,5 +29,12 @@
     top: 0;
     left: 0;
     margin: 0 auto;
+    padding: 0;
+
+    text-align: center;
+  }
+
+  .phpHeader_wow_text {
+    margin-bottom: 10px;
   }
 }
