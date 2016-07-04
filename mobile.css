@@ -297,7 +297,7 @@
       #k2Container.itemListView .itemContainer {
         height: auto;
         padding-top: 13px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
 
         text-align: center;
 
@@ -361,6 +361,11 @@
         height: auto;
         margin: 0;
         padding: 0;
+      }
+
+      /* Item links */
+      #k2Container .catItemReadMore {
+        display: block !important;
       }
     }
   }
