@@ -1,8 +1,24 @@
 /* eslint-disable */
 /* This is only gonna be applied on tablet and mobiles */
 @media screen and (max-width: 1024px) {
+  .s5_wrap {
+    width: auto;
+  }
+
   #s5_header_wrap {
     position: relative;
     display: block;
+
+    text-align: center;
+  }
+
+  #s5_logo, .pypHeader_wow_text  {
+    position: relative;
+    display: block;
+    float: none;
+
+    top: 0;
+    left: 0;
+    margin: 0 auto;
   }
 }
