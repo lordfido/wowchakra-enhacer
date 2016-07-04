@@ -274,8 +274,9 @@
       top: 150px;
       left: initial;
       right: -200px;
-      width: 200px;
+      width: 200px !important;
       height: calc(100% - 170px);
+      margin: 0 !important;
       padding: 15px;
 
       background: rgba(0, 0, 0, 0.9);
@@ -287,7 +288,7 @@
     #s5_bottom_area_wrap1 #s5_right_column_wrap:hover {
       top: 50px;
       right: 0;
-      width: 80%;
+      width: 80% !important;
       max-width: 400px;
       height: calc(100% - 70px);
     }
@@ -478,7 +479,11 @@
 
         text-align: center;
       }
-      .k2Pagination ul > li {
+      .k2Pagination ul > li,
+      .k2Pagination .pagination-first,
+      .k2Pagination .pagination-prev,
+      .k2Pagination .pagination-next,
+      .k2Pagination .pagination-last {
         position: relative;
         display: inline-block !important;
         float: none;
