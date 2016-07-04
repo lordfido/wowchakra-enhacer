@@ -1,6 +1,6 @@
 /* eslint-disable */
 /* This is only gonna be applied on tablet and mobiles */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   /* Reset styles */
   * { left: 0; top: 0; width: auto; margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
 
@@ -73,15 +73,54 @@
   /**************************/
   /** NAVIGATION ************/
   /**************************/
-  /* Sections nav */
   #s5_menu_wrap, #s5_menu_wrap_inner2 {
+    position: relative;
     display: block;
 
     height: auto;
     margin: 0 auto;
     padding: 0;
 
+    background: rgba(0, 0, 0, 0.4);
     z-index: 500;
+  }
+  #s5_menu_wrap::before, #s5_menu_wrap::after {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: 5px;
+
+    background-color: grey;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    content: ' ';
+  }
+  #s5_menu_wrap::before {
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 1);
+  }
+  #s5_menu_wrap::after {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+  }
+
+  /* Sections nav */
+  #s5_nav.menu {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+  }
+  #s5_nav.menu li {
+    position: relative;
+    display: inline-block;
+    float: none;
+
+    background-position: center center;
   }
 
   /* User login button */
