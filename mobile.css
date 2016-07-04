@@ -266,6 +266,9 @@
     }
 
     /* Right column  */
+    #s5_right_column_wrap {
+      display: none !important;
+    }
 
 
     /**************************/
@@ -366,6 +369,31 @@
       /* Item links */
       #k2Container .catItemReadMore {
         display: block !important;
+      }
+
+      /* Pagination */
+      .k2Pagination {
+        position: relative;
+        display: block;
+      }
+
+      .k2Pagination ul {
+        position: relative;
+        display: block;
+
+        width: 100%;
+        height: auto;
+        margin: 0 auto !important;
+        margin-bottom: 10px;
+
+        text-align: center;
+      }
+      .k2Pagination ul > li {
+        position: relative;
+        display: inline-block !important;
+        float: none;
+
+        padding: 15px;
       }
     }
   }
