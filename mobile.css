@@ -2,8 +2,11 @@
 /* This is only gonna be applied on tablet and mobiles */
 @media screen and (max-width: 1024px) {
   /* Reset styles */
-  * { left: 0; top: 0; width: auto; margin: 0; padding: 0; list-style: none; }
-  
+  * { left: 0; top: 0; width: auto; margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
+
+  /**************************/
+  /** HEADER ****************/
+  /**************************/
   .s5_wrap {
     width: auto;
   }
@@ -13,6 +16,7 @@
     display: block;
 
     text-align: center;
+    z-index: 400;
   }
 
   /** These items are:
@@ -29,12 +33,88 @@
     top: 0;
     left: 0;
     margin: 0 auto;
+    margin-bottom: 10px;
     padding: 0;
 
     text-align: center;
   }
 
-  .phpHeader_wow_text {
-    margin-bottom: 10px;
+  #s5_logo {
+    margin-bottom: 0;
+  }
+
+  /* Social links table (this aligns center the table) */
+  #pypHeader_wow .menupyp {
+    margin: auto;
+  }
+
+  /* Search field */
+  #s5_search_wrap #mod-search-searchword[name='searchword'].inputbox{
+    width: calc(100% - 80px);
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  /* Legion countdown */
+  #s5_search_wrap {
+    height: auto;
+  }
+  #s5_search_wrap .moduletable_bannerMop {
+    text-align: center;
+  }
+  #s5_search_wrap .moduletable_bannerMop .cdub_main_bannerMop {
+    position: relative;
+    float: none;
+
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  /**************************/
+  /** NAVIGATION ************/
+  /**************************/
+  /* Sections nav */
+  #s5_menu_wrap, #s5_menu_wrap_inner2 {
+    display: block;
+
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+
+    z-index: 500;
+  }
+
+  /* User login button */
+  #s5_loginreg {
+    position: fixed;
+    display: block;
+    float: right;
+
+    top: 0;
+    left: initial;
+    right: 0;
+    width: auto;
+    max-width: 50%;
+    padding: 5px;
+    height: auto;
+    margin: 0 auto;
+
+    text-align: right;
+
+    background: rgba(112, 91, 17, 0.7);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 0 10px;
+  }
+
+  #s5_loginreg #s5_register.s5box_register, #s5_loginreg #s5_login.s5box_login {
+    float: none;
+
+    height: auto;
+  }
+
+  /* This allow us to display the 'account icon' next to 'Register' */
+  #s5_loginreg #s5_register .s5boxmenu, #s5_loginreg #s5_login .s5boxmenu {
+    margin: 5px auto;
+    margin-left: 20px;
   }
 }
