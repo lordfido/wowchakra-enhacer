@@ -1,0 +1,8 @@
+/* eslint-disable */
+/* This is only gonna be applied on tablet and mobiles */
+@media screen and (max-width: 1024px) {
+  #s5_header_wrap {
+    position: relative;
+    display: block;
+  }
+}
