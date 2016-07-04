@@ -297,8 +297,13 @@
       #k2Container.itemListView .itemContainer {
         height: auto;
         padding-top: 13px;
+        margin-bottom: 20px;
 
         text-align: center;
+
+        background: url('http://www.wowchakra.com/templates/hexicon_gamer/images/1px_alpha_50_black.png') repeat;
+        border-radius: 15px;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
       }
 
       /* Item image */
@@ -334,6 +339,23 @@
       #k2Container .catItemHeader .catItemTitle {
         margin: 0;
         margin-bottom: 10px;
+      }
+
+      /* Item preview */
+      #k2Container .catItemBody {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 auto;
+        padding: 15px;
+
+        background: none;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      #k2Container .catItemBody .catItemIntroText {
+        height: auto;
+        margin: 0;
+        padding: 0;
       }
     }
   }
