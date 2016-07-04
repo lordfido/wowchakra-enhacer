@@ -278,7 +278,7 @@
       height: calc(100% - 170px);
       padding: 15px;
 
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.9);
       border-radius: 10px 0 0 10px;
       transition: top 0.3s, right 0.3s;
       z-index: 500;
@@ -304,7 +304,11 @@
       height: 50px;
       margin-left: -50px;
 
-      background: blue;
+      background-color: rgba(0, 0, 0, 0.9);
+      background-image: url('http://www.material-css.com/material-icons/mc-menu-dark.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 30px 40px;
       border-radius: 10px 0 0 10px;
       content: ' ';
       opacity: 1;
@@ -346,6 +350,16 @@
       margin: 0;
     }
 
+    /* Sliders */
+    #s5_right_column_wrap #s5_right_wrap .slides_control, #s5_right_column_wrap #s5_right_wrap .slides_control .slide {
+      width: 100% !important;
+    }
+    #s5_right_column_wrap #s5_right_wrap .slides_control {
+      margin-left: 301px;
+    }
+    #s5_right_column_wrap #s5_right_wrap .slides_control .slide {
+      left: 0 !important;
+    }
 
     /**************************/
     /** FOOTER ****************/
