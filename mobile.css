@@ -84,6 +84,9 @@
     background: rgba(0, 0, 0, 0.4);
     z-index: 500;
   }
+  #s5_menu_wrap {
+    margin-top: -10px;
+  }
   #s5_menu_wrap::before, #s5_menu_wrap::after {
     position: relative;
     display: block;
@@ -155,5 +158,52 @@
   #s5_loginreg #s5_register .s5boxmenu, #s5_loginreg #s5_login .s5boxmenu {
     margin: 5px auto;
     margin-left: 20px;
+  }
+
+
+  /**************************/
+  /** SOCIAL LINKS **********/
+  /**************************/
+  #s5_top_row1_area1, #s5_top_row1_area2 {
+    margin: 0 auto;
+    padding: 0;
+    background: none;
+  }
+
+  #bloque_redes_sociales {
+    position: relative;
+    display: block;
+    float: none;
+
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 10px;
+
+    text-align: center;
+  }
+
+  #bloque_redes_sociales #s5_facebook,
+  #bloque_redes_sociales #s5_twitter,
+  #bloque_redes_sociales #s5_google,
+  #bloque_redes_sociales #s5_youtube,
+  #bloque_redes_sociales #s5_rss,
+  #bloque_redes_sociales #s5_gravatar {
+    position: relative;
+    display: inline-block;
+
+    margin: 0;
+  }
+
+  /**************************/
+  /** TOP ROW (HERO BANNER) */
+  /**************************/
+  #s5_pos_top_row1_1, #s5_pos_top_row1_2 {
+    position: relative;
+    display: block;
+    float: none;
+
+    width: 100% !important;
   }
 }
