@@ -265,6 +265,32 @@
       padding: 0;
     }
 
+    /* Like button */
+    #k2Container .catItemView {
+      position: relative;
+    }
+    #k2Container .likebtn_container {
+      position: absolute;
+      display: block;
+
+      top: 30px;
+      right: 35px;
+      width: auto;
+      height: auto;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    #k2Container .likebtn-wrapper {
+      position: relative !important;
+      display: block !important;
+      float: none !important;
+
+      top: 0 !important;
+      right: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
     /* Right column  */
     #s5_bottom_area_wrap1 #s5_right_column_wrap {
       position: fixed;
@@ -344,7 +370,8 @@
 
       border-bottom: 2px solid rgba(112, 91, 17, 1);
     }
-    #s5_right_column_wrap #s5_right_wrap .bannergroupbanner300_250_UP {
+    #s5_right_column_wrap #s5_right_wrap .bannergroupbanner300_250_UP,
+    #s5_right_column_wrap #s5_right_wrap .custombanner300_250_UP {
       width: auto;
       height: auto;
       padding: 0;
@@ -360,6 +387,17 @@
     }
     #s5_right_column_wrap #s5_right_wrap .slides_control .slide {
       left: 0 !important;
+    }
+
+    /* Comments fixes */
+    #s5_right_column_wrap #s5_right_wrap .jcomments-latest img,
+    #s5_right_column_wrap #s5_right_wrap .jcomments-latest .author {
+      position: relative !important;
+    }
+    #s5_right_column_wrap #s5_right_wrap .jcomments-latest .author {
+      float: left;
+
+      margin: 0 auto;
     }
 
     /**************************/
@@ -442,8 +480,11 @@
 
       /* Item preview */
       #k2Container .catItemBody {
+        display: block !important;
+
         width: 100% !important;
         height: auto !important;
+        max-height: none !important;
         margin: 0 auto;
         padding: 15px;
 
@@ -460,6 +501,15 @@
       /* Item links */
       #k2Container .catItemReadMore {
         display: block !important;
+      }
+
+      /* Like button */
+      /* TODO: When image is too big, or title has more than
+         1 line, this position is wrong placed
+      */
+      #k2Container .likebtn_container {
+        top: 270px;
+        right: 35px;
       }
 
       /* Pagination */
