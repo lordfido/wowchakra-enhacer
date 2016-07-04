@@ -215,4 +215,10 @@
   #s5_pos_top_row1_1 #myGallery .slideElement {
     background-size: 100% auto;
   }
+  #s5_pos_top_row1_1 #myGallery .left {
+
+  }
+  #s5_pos_top_row1_1 #myGallery .right {
+    left: initial;
+  }
 }
