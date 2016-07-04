@@ -334,11 +334,16 @@
       #k2Container .catItemHeader {
         display: block !important;
 
-        text-align: center;
+        text-align: left;
       }
       #k2Container .catItemHeader .catItemTitle {
         margin: 0;
         margin-bottom: 10px;
+
+        text-align: center;
+      }
+      #k2Container .catItemHeader .catItemAuthor {
+        padding-left: 15px;
       }
 
       /* Item preview */
