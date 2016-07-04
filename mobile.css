@@ -1,324 +1,339 @@
-/* eslint-disable */
-/* This is only gonna be applied on tablet and mobiles */
-@media screen and (max-width: 1280px) {
-  /* Reset styles */
-  * { left: 0; top: 0; width: auto; margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
-
-  /**************************/
-  /** HEADER ****************/
-  /**************************/
-  .s5_wrap {
-    width: auto;
-  }
-
-  #s5_header_wrap {
-    position: relative;
-    display: block;
-
-    text-align: center;
-    z-index: 400;
-  }
-
-  /** These items are:
-  #s5_logo: Big wowchakra logo
-  .phpHeader_wow_text: Logo subtitle
-  #pypHeader_wow: Table with network links
-  #s5_search_wrap: Search box
-  */
-  #s5_logo, .pypHeader_wow_text, #pypHeader_wow, #s5_search_wrap {
-    position: relative;
-    display: block;
-    float: none;
-
-    top: 0;
-    left: 0;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    padding: 0;
-
-    text-align: center;
-  }
-
-  #s5_logo {
-    margin-bottom: 0;
-  }
-
-  /* Social links table (this aligns center the table) */
-  #pypHeader_wow .menupyp {
-    margin: auto;
-  }
-
-  /* Search field */
-  #s5_search_wrap #mod-search-searchword[name='searchword'].inputbox{
-    width: calc(100% - 80px);
-    margin: 0;
-    margin-bottom: 15px;
-  }
-
-  /* Legion countdown */
-  #s5_search_wrap {
-    height: auto;
-  }
-  #s5_search_wrap .moduletable_bannerMop {
-    text-align: center;
-  }
-  #s5_search_wrap .moduletable_bannerMop .cdub_main_bannerMop {
-    position: relative;
-    float: none;
-
-    width: 200px;
-    margin: 0 auto;
-  }
-
-  /**************************/
-  /** NAVIGATION ************/
-  /**************************/
-  #s5_menu_wrap, #s5_menu_wrap_inner2 {
-    position: relative;
-    display: block;
-
-    height: auto;
-    margin: 0 auto;
-    padding: 0;
-
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 500;
-  }
-  #s5_menu_wrap {
-    margin-top: -10px;
-  }
-  #s5_menu_wrap::before, #s5_menu_wrap::after {
-    position: relative;
-    display: block;
-
-    width: 100%;
-    height: 5px;
-
-    background-color: grey;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    content: ' ';
-  }
-  #s5_menu_wrap::before {
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 1);
-  }
-  #s5_menu_wrap::after {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
-  }
-
-  /* Sections nav */
-  #s5_nav.menu {
-    position: relative;
-    display: block;
-
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-
-    text-align: center;
-  }
-  #s5_nav.menu li {
-    position: relative;
-    display: inline-block;
-    float: none;
-
-    background-position: center center;
-  }
-
-  /* User login button */
-  #s5_loginreg {
-    position: fixed;
-    display: block;
-    float: right;
-
-    top: 0;
-    left: initial;
-    right: 0;
-    width: auto;
-    max-width: 50%;
-    padding: 5px;
-    height: auto;
-    margin: 0 auto;
-
-    text-align: right;
-
-    background: rgba(112, 91, 17, 0.7);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 0 0 0 10px;
-  }
-
-  #s5_loginreg #s5_register.s5box_register, #s5_loginreg #s5_login.s5box_login {
-    float: none;
-
-    height: auto;
-  }
-
-  /* This allow us to display the 'account icon' next to 'Register' */
-  #s5_loginreg #s5_register .s5boxmenu, #s5_loginreg #s5_login .s5boxmenu {
-    margin: 5px auto;
-    margin-left: 20px;
-  }
-
-
-  /**************************/
-  /** SOCIAL LINKS **********/
-  /**************************/
-  #s5_top_row1_area1, #s5_top_row1_area2 {
-    margin: 0 auto;
-    padding: 0;
-    background: none;
-  }
-
-  #bloque_redes_sociales {
-    position: relative;
-    display: block;
-    float: none;
-
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0 auto;
-    margin-top: 10px;
-
-    text-align: center;
-  }
-
-  #bloque_redes_sociales #s5_facebook,
-  #bloque_redes_sociales #s5_twitter,
-  #bloque_redes_sociales #s5_google,
-  #bloque_redes_sociales #s5_youtube,
-  #bloque_redes_sociales #s5_rss,
-  #bloque_redes_sociales #s5_gravatar {
-    position: relative;
-    display: inline-block;
-
-    margin: 0;
-  }
-
-  /**************************/
-  /** TOP ROW (HERO BANNER) */
-  /**************************/
-  /* Slider/gallery */
-  #s5_pos_top_row1_1, #s5_pos_top_row1_2 {
-    position: relative;
-    display: block;
-    float: none;
-
-    width: 100% !important;
-
-    text-align: center;
-  }
-  .module_round_box_outer, .module_round_boxslider {
-    margin: 0;
-  }
-  #s5_pos_top_row1_1 #myGallery{
-    width: 100% !important;
-  }
-  #s5_pos_top_row1_1 #myGallery .slideElement {
-    background-size: 100% auto;
-  }
-  #s5_pos_top_row1_1 #myGallery .left {
-
-  }
-  #s5_pos_top_row1_1 #myGallery .right {
-    left: initial;
-  }
-
-  /* Ads next to the Gallery */
-  .custombanner300top {
-    margin: 0 auto;
-  }
-
-  /**************************/
-  /** CONTENT PREVIEW *******/
-  /**************************/
-  #s5_bottom_area_wrap1 {
-    margin: 0;
-  }
-  #s5_bottom_area_wrap1 #s5_center_area_inner {
-
-  }
-  /* TODO: Adds before content */
-  #s5_bottom_area_wrap1 #s5_center_area_inner #s5_above_columns_wrap1 {
-
-  }
-
-  /* Common styles (left/right columns) */
-  #s5_bottom_area_wrap1 #s5_center_column_wrap,
-  #s5_bottom_area_wrap1 #s5_columns_wrap_inner,
-  #s5_bottom_area_wrap1 #s5_center_column_wrap_inner,
-  #s5_bottom_area_wrap1 #s5_right_column_wrap {
-    float: none;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Left column */
-  #s5_center_column_wrap #s5_component_wrap {
-    margin: 0 auto;
-  }
-  #s5_center_column_wrap .itemListView, #s5_center_column_wrap .itemListView .itemContainer {
-    padding: 0;
-  }
-
-  /* Right column  */
-
-
-  /**************************/
-  /** FOOTER ****************/
-  /**************************/
-  /* Adds before footer */
-  #s5_bottom_row1_area1 {
-
-  }
-
-  /* Footer links*/
-  #s5_bottom_row2_area1 {
-
-  }
-
-  /* Footer text */
-  #s5_footer_area1 {
-
-  }
-
-  /* Only mobiles */
-  @media screen and (max-width: 720px) {
+  /* eslint-disable */
+  /* This is only gonna be applied on tablet and mobiles */
+  @media screen and (max-width: 1280px) {
+    /* Reset styles */
+    * { left: 0; top: 0; width: auto; margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
 
     /**************************/
-    /** CONTENT PREVIEW *******/
+    /** HEADER ****************/
     /**************************/
-    /* Left column */
-    /* Item preview */
-    #k2Container .itemListView .itemContainer {
-      height: auto;
-
-      text-align: center;
+    .s5_wrap {
+      width: auto;
     }
 
-    /* Item image */
-    #k2Container .catItemImageBlock,
-    #k2Container .catItemImageBlock .catItemImage,
-    #k2Container .catItemImageBlock img {
+    #s5_header_wrap {
+      position: relative;
+      display: block;
+
+      text-align: center;
+      z-index: 400;
+    }
+
+    /** These items are:
+    #s5_logo: Big wowchakra logo
+    .phpHeader_wow_text: Logo subtitle
+    #pypHeader_wow: Table with network links
+    #s5_search_wrap: Search box
+    */
+    #s5_logo, .pypHeader_wow_text, #pypHeader_wow, #s5_search_wrap {
       position: relative;
       display: block;
       float: none;
 
-      width: auto;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      padding: 0;
+
+      text-align: center;
+    }
+
+    #s5_logo {
+      margin-bottom: 0;
+    }
+
+    /* Social links table (this aligns center the table) */
+    #pypHeader_wow .menupyp {
+      margin: auto;
+    }
+
+    /* Search field */
+    #s5_search_wrap #mod-search-searchword[name='searchword'].inputbox{
+      width: calc(100% - 80px);
+      margin: 0;
+      margin-bottom: 15px;
+    }
+
+    /* Legion countdown */
+    #s5_search_wrap {
+      height: auto;
+    }
+    #s5_search_wrap .moduletable_bannerMop {
+      text-align: center;
+    }
+    #s5_search_wrap .moduletable_bannerMop .cdub_main_bannerMop {
+      position: relative;
+      float: none;
+
+      width: 200px;
+      margin: 0 auto;
+    }
+
+    /**************************/
+    /** NAVIGATION ************/
+    /**************************/
+    #s5_menu_wrap, #s5_menu_wrap_inner2 {
+      position: relative;
+      display: block;
+
       height: auto;
       margin: 0 auto;
       padding: 0;
 
-      box-shadow: none;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 500;
     }
-    #k2Container .catItemImageBlock img {
-      max-width: 100%;
+    #s5_menu_wrap {
+      margin-top: -10px;
+    }
+    #s5_menu_wrap::before, #s5_menu_wrap::after {
+      position: relative;
+      display: block;
 
-      box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 5px;
+
+      background-color: grey;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      content: ' ';
+    }
+    #s5_menu_wrap::before {
+      box-shadow: 0 -5px 10px rgba(0, 0, 0, 1);
+    }
+    #s5_menu_wrap::after {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    }
+
+    /* Sections nav */
+    #s5_nav.menu {
+      position: relative;
+      display: block;
+
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+
+      text-align: center;
+    }
+    #s5_nav.menu li {
+      position: relative;
+      display: inline-block;
+      float: none;
+
+      background-position: center center;
+    }
+
+    /* User login button */
+    #s5_loginreg {
+      position: fixed;
+      display: block;
+      float: right;
+
+      top: 0;
+      left: initial;
+      right: 0;
+      width: auto;
+      max-width: 50%;
+      padding: 5px;
+      height: auto;
+      margin: 0 auto;
+
+      text-align: right;
+
+      background: rgba(112, 91, 17, 0.7);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      border-radius: 0 0 0 10px;
+    }
+
+    #s5_loginreg #s5_register.s5box_register, #s5_loginreg #s5_login.s5box_login {
+      float: none;
+
+      height: auto;
+    }
+
+    /* This allow us to display the 'account icon' next to 'Register' */
+    #s5_loginreg #s5_register .s5boxmenu, #s5_loginreg #s5_login .s5boxmenu {
+      margin: 5px auto;
+      margin-left: 20px;
+    }
+
+
+    /**************************/
+    /** SOCIAL LINKS **********/
+    /**************************/
+    #s5_top_row1_area1, #s5_top_row1_area2 {
+      margin: 0 auto;
+      padding: 0;
+      background: none;
+    }
+
+    #bloque_redes_sociales {
+      position: relative;
+      display: block;
+      float: none;
+
+      width: 100%;
+      height: auto;
+      padding: 0;
+      margin: 0 auto;
+      margin-top: 10px;
+
+      text-align: center;
+    }
+
+    #bloque_redes_sociales #s5_facebook,
+    #bloque_redes_sociales #s5_twitter,
+    #bloque_redes_sociales #s5_google,
+    #bloque_redes_sociales #s5_youtube,
+    #bloque_redes_sociales #s5_rss,
+    #bloque_redes_sociales #s5_gravatar {
+      position: relative;
+      display: inline-block;
+
+      margin: 0;
+    }
+
+    /**************************/
+    /** TOP ROW (HERO BANNER) */
+    /**************************/
+    /* Slider/gallery */
+    #s5_pos_top_row1_1, #s5_pos_top_row1_2 {
+      position: relative;
+      display: block;
+      float: none;
+
+      width: 100% !important;
+
+      text-align: center;
+    }
+    .module_round_box_outer, .module_round_boxslider {
+      margin: 0;
+    }
+    #s5_pos_top_row1_1 #myGallery{
+      width: 100% !important;
+    }
+    #s5_pos_top_row1_1 #myGallery .slideElement {
+      background-size: 100% auto;
+    }
+    #s5_pos_top_row1_1 #myGallery .left {
+
+    }
+    #s5_pos_top_row1_1 #myGallery .right {
+      left: initial;
+    }
+
+    /* Ads next to the Gallery */
+    .custombanner300top {
+      margin: 0 auto;
+    }
+
+    /**************************/
+    /** CONTENT PREVIEW *******/
+    /**************************/
+    #s5_bottom_area_wrap1 {
+      margin: 0;
+    }
+    #s5_bottom_area_wrap1 #s5_center_area_inner {
+
+    }
+    /* TODO: Adds before content */
+    #s5_bottom_area_wrap1 #s5_center_area_inner #s5_above_columns_wrap1 {
+
+    }
+
+    /* Common styles (left/right columns) */
+    #s5_bottom_area_wrap1 #s5_center_column_wrap,
+    #s5_bottom_area_wrap1 #s5_columns_wrap_inner,
+    #s5_bottom_area_wrap1 #s5_center_column_wrap_inner,
+    #s5_bottom_area_wrap1 #s5_right_column_wrap {
+      float: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Left column */
+    #s5_center_column_wrap #s5_component_wrap {
+      margin: 0 auto;
+    }
+    #s5_center_column_wrap .itemListView, #s5_center_column_wrap .itemListView .itemContainer {
+      padding: 0;
+    }
+
+    /* Right column  */
+
+
+    /**************************/
+    /** FOOTER ****************/
+    /**************************/
+    /* Adds before footer */
+    #s5_bottom_row1_area1 {
+
+    }
+
+    /* Footer links*/
+    #s5_bottom_row2_area1 {
+
+    }
+
+    /* Footer text */
+    #s5_footer_area1 {
+
+    }
+
+    /* Only mobiles */
+    @media screen and (max-width: 720px) {
+
+      /**************************/
+      /** CONTENT PREVIEW *******/
+      /**************************/
+      /* Left column */
+      /* Item preview */
+      #k2Container.itemListView .itemContainer {
+        height: auto;
+        padding-top: 13px;
+
+        text-align: center;
+      }
+
+      /* Item image */
+      #k2Container .catItemImageBlock,
+      #k2Container .catItemImageBlock .catItemImage,
+      #k2Container .catItemImageBlock img {
+        position: relative;
+        display: block;
+        float: none;
+
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+
+        box-shadow: none;
+      }
+      #k2Container .catItemImageBlock {
+        margin-bottom: 10px;
+      }
+      #k2Container .catItemImageBlock img {
+        max-width: 100%;
+
+        box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Item title */
+      #k2Container .catItemHeader {
+        display: block !important;
+
+        text-align: center;
+      }
+      #k2Container .catItemHeader .catItemTitle {
+        margin: 0;
+        margin-bottom: 10px;
+      }
     }
   }
-}
