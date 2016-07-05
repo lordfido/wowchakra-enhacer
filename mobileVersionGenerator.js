@@ -78,7 +78,7 @@
     // Add mobileCSS stylesheet
     this.loadMobileCSS = function() {
       var mobileCSS = document.createElement('script');
-      mobileCSS.src = 'http://lordfido.github.io/wowchakra-mobile/movileVersion.css';
+      mobileCSS.src = 'http://lordfido.github.io/wowchakra-mobile/mobileVersion.css';
 
       document.head.appendChild(mobileCSS);
       log('mobileCSS has been loaded.');
