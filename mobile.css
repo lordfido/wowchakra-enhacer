@@ -169,6 +169,9 @@
     padding: 0;
     background: none;
   }
+  #s5_top_row1_area1 {
+    margin-bottom: 10px;
+  }
 
   #bloque_redes_sociales {
     position: relative;
@@ -227,7 +230,9 @@
 
   /* Ads next to the Gallery */
   .custombanner300top {
+    height: auto;
     margin: 0 auto;
+    padding: 0;
   }
 
   /**************************/
@@ -239,9 +244,22 @@
   #s5_bottom_area_wrap1 #s5_center_area_inner {
 
   }
-  /* TODO: Adds before content */
+  /* Ads before content */
   #s5_bottom_area_wrap1 #s5_center_area_inner #s5_above_columns_wrap1 {
+    position: relative;
+  }
+  #s5_bottom_area_wrap1 #s5_above_columns_1 {
+    float: none;
+  }
+  #s5_bottom_area_wrap1 .customabovecolumns {
+    position: relative;
+    display: block;
 
+    width: auto;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
   }
 
   /* Common styles (left/right columns) */
@@ -448,7 +466,9 @@
     height: auto;
     margin: 0 auto;
     padding: 0;
-    padding-top: 10px;
+  }
+  #s5_below_columns_1 .k2ItemsBlock.contenido {
+    padding: 15px;
   }
 
   /* Recent item list */
