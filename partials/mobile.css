@@ -1,99 +1,102 @@
-/**************************/
-/** CONTENT PREVIEW *******/
-/**************************/
-/* Left column */
-/* Item preview */
-#k2Container.itemListView .itemContainer {
-  height: auto;
-  padding-top: 13px;
-  margin-bottom: 25px;
+/* This is only gonna be applied on mobiles */
+@media screen and (max-width: 720px) {
+  /**************************/
+  /** CONTENT PREVIEW *******/
+  /**************************/
+  /* Left column */
+  /* Item preview */
+  #k2Container.itemListView .itemContainer {
+    height: auto;
+    padding-top: 13px;
+    margin-bottom: 25px;
 
-  text-align: center;
+    text-align: center;
 
-  background: url('http://www.wowchakra.com/templates/hexicon_gamer/images/1px_alpha_50_black.png') repeat;
-  border-radius: 15px;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
-}
+    background: url('http://www.wowchakra.com/templates/hexicon_gamer/images/1px_alpha_50_black.png') repeat;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+  }
 
-/* Item image */
-#k2Container .catItemImageBlock,
-#k2Container .catItemImageBlock .catItemImage,
-#k2Container .catItemImageBlock img {
-  position: relative;
-  display: block;
-  float: none;
+  /* Item image */
+  #k2Container .catItemImageBlock,
+  #k2Container .catItemImageBlock .catItemImage,
+  #k2Container .catItemImageBlock img {
+    position: relative;
+    display: block;
+    float: none;
 
-  width: auto;
-  height: auto;
-  margin: 0 auto;
-  padding: 0;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
 
-  box-shadow: none;
-}
-#k2Container .catItemImageBlock {
-  margin-bottom: 10px;
-}
-#k2Container .catItemImageBlock img {
-  max-width: 100%;
+    box-shadow: none;
+  }
+  #k2Container .catItemImageBlock {
+    margin-bottom: 10px;
+  }
+  #k2Container .catItemImageBlock img {
+    max-width: 100%;
 
-  box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.5);
-}
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.5);
+  }
 
-/* Item title */
-#k2Container .catItemHeader {
-  display: block !important;
+  /* Item title */
+  #k2Container .catItemHeader {
+    display: block !important;
 
-  text-align: left;
-}
-#k2Container .catItemHeader .catItemTitle {
-  margin: 0;
-  margin-bottom: 10px;
+    text-align: left;
+  }
+  #k2Container .catItemHeader .catItemTitle {
+    margin: 0;
+    margin-bottom: 10px;
 
-  text-align: center;
-}
-#k2Container .catItemHeader .catItemAuthor {
-  padding-left: 15px;
-}
+    text-align: center;
+  }
+  #k2Container .catItemHeader .catItemAuthor {
+    padding-left: 15px;
+  }
 
-/* Item preview */
-#k2Container .catItemBody {
-  display: block !important;
+  /* Item preview */
+  #k2Container .catItemBody {
+    display: block !important;
 
-  width: 100% !important;
-  height: auto !important;
-  max-height: none !important;
-  margin: 0 auto;
-  padding: 15px;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    margin: 0 auto;
+    padding: 15px;
 
-  background: none;
-  border-radius: 0;
-  box-shadow: none;
-}
-#k2Container .catItemBody .catItemIntroText {
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  #k2Container .catItemBody .catItemIntroText {
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
 
-/* Item links */
-#k2Container .catItemReadMore {
-  display: block !important;
-}
+  /* Item links */
+  #k2Container .catItemReadMore {
+    display: block !important;
+  }
 
-/* Like button */
-/* TODO: When image is too big, or title has more than
-   1 line, this position is wrong placed
-*/
-#k2Container .likebtn_container {
-  top: 270px;
-  right: 35px;
-}
+  /* Like button */
+  /* TODO: When image is too big, or title has more than
+     1 line, this position is wrong placed
+  */
+  #k2Container .likebtn_container {
+    top: 270px;
+    right: 35px;
+  }
 
-/**************************/
-/** POPUPS ****************/
-/**************************/
-/* Account popup */
-#colorbox {
-  width: 90% !important;
-  height: 90% !important;
+  /**************************/
+  /** POPUPS ****************/
+  /**************************/
+  /* Account popup */
+  #colorbox {
+    width: 90% !important;
+    height: 90% !important;
+  }
 }
