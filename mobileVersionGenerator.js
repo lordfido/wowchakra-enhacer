@@ -79,7 +79,8 @@
     this.loadMobileCSS = function() {
       var mobileCSS = document.createElement('link');
       mobileCSS.href = 'https://lordfido.github.io/wowchakra-mobile/mobileVersion.css';
-      mobileCSS.ref = 'stylesheet';
+      // mobileCSS.href = 'mobileVersion.css';
+      mobileCSS.rel = 'stylesheet';
       mobileCSS.type = 'text/css';
 
       document.head.appendChild(mobileCSS);
