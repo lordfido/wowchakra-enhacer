@@ -4,7 +4,7 @@
 /** Website: http://www.imperdiblesoft.com ************/
 /******************************************************/
 /*
-<script stc="http://lordfido.github.io/wowchakra-mobile/mobile-tutorial.js"></script>
+<script src="http://lordfido.github.io/wowchakra-mobile/mobile-tutorial.js"></script>
 */
 
 /* This file dynamically creates a very simple tutorial for mobile layout */
@@ -95,10 +95,12 @@
     var hasReadTheTutorial = false;
 
     for (var x in cookies) {
-      var _cookie = cookies[x].split('=');
-      if (_cookie[0] === 'hasReadTheTutorial' && (_cookie[1] === 'true' || _cookie[1] === true)) {
-        hasReadTheTutorial = true;
-        break;
+      if (cookies[x] && cookies[x].split) {
+        var _cookie = cookies[x].split('=');
+        if (_cookie[0] === 'hasReadTheTutorial' && (_cookie[1] === 'true' || _cookie[1] === true)) {
+          hasReadTheTutorial = true;
+          break;
+        }
       }
     }
 
@@ -110,3 +112,6 @@
     mountTutorial();
   }
 })();
+
+// Copy&Paste this to add this file to any Website
+// var TutorialJS=document.createElement('script');TutorialJS.src='http://lordfido.github.io/wowchakra-mobile/mobile-tutorial.js';document.body.appendChild(TutorialJS);
