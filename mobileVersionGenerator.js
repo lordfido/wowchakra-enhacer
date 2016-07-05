@@ -16,11 +16,6 @@
     }
   }
 
-  var URLs = {
-    mobileVersion: debug ?
-      'https://lordfido.github.io/wowchakra-mobile/mobileGenerator/mobileVersion.css' :
-      'mobileGenerator/mobileVersion.css'
-  };
   var cookieName = 'hasReadTheTutorial';
 
   // Return true|false depending on Tutorial's cookie
@@ -46,12 +41,14 @@
   };
 
   // Tutorial constructor
-  var MobileVersion = function() {
-    var _this = this;
-
+  var MobileVersionGenerator = function() {
     // Point where everything is gonna be mount
     var mountPoint = document.body;
-    var s = 'script';
+    var URLs = {
+      mobileVersion: debug ?
+        'https://lordfido.github.io/wowchakra-mobile/mobileGenerator/mobileVersion.css' :
+        'mobileGenerator/mobileVersion.css'
+    };
 
     // Do this when okBtn has been clicked
     var handleOkBtnClick = function(e) {
@@ -78,6 +75,7 @@
       viewPort.content = 'width=device-width, initial-scale=1.0, user-scalable=no';
 
       document.head.appendChild(viewPort);
+      log('ViewPort has been set.');
     }
 
     // Add mobileCSS stylesheet
@@ -147,17 +145,16 @@
   }
 
   // Create new tutorial
-  var movileVersion = new MobileVersion();
+  var generator = new MobileVersionGenerator();
 
   // Load jQuery, and mobileCSS
-  movileVersion.setViewPort();
-  movileVersion.loadMobileCSS();
+  generator.setViewPort();
+  generator.loadMobileCSS();
 
   // If the user has NOT read the tutorial, mount it
   if (!hasReadTheTutorial()) {
     log('User hasn\'t read the tutorial yet.');
-    movileVersion.loadMobileTutorial();
-    log('Mobile tutorial has been initiated.');
+    generator.loadMobileTutorial();
   }
 })();
 
