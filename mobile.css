@@ -588,7 +588,16 @@
 
   /* Footer text */
   #s5_footer_area1 {
+    position: relative;
+    display: block;
+    float: none;
 
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+  #s5_footer_area1 #s5_footer_area_inner2 {
+    padding: 0;
   }
 
   /* Only mobiles */
