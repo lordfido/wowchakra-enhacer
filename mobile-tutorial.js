@@ -18,6 +18,7 @@
 
   // Point where everything is gonna be mount
   var mountPoint = document.body;
+  var cookieName = 'hasReadTheTutorial';
 
   // Add jQuery to the body, so we can use it
   var mountjQuery = function() {
@@ -86,7 +87,7 @@
     var expires = "expires="+ d.toUTCString();
 
     // Add a cookie to save this action
-    document.cookie = 'hasReadTheTutorial=true; ' + expires;
+    document.cookie = cookieName + '=true; ' + expires;
 
     // Remove tutorial from screen
     var tutorialLayout = document.querySelector('.Tutorial');
@@ -103,7 +104,10 @@
     for (var x in cookies) {
       if (cookies[x] && cookies[x].split) {
         var _cookie = cookies[x].split('=');
-        if (_cookie[0] === 'hasReadTheTutorial' && (_cookie[1] === 'true' || _cookie[1] === true)) {
+        if (
+          _cookie[0].trim().toLowerCase() === cookieName.trim.toLowerCase() &&
+          (_cookie[1].trim() === 'true' || _cookie[1].trim() === true)
+        ) {
           hasReadTheTutorial = true;
           break;
         }
