@@ -17,7 +17,7 @@
   }
 
   var cookieName = 'hasReadTheTutorial';
-  
+
   // Return true|false depending on Tutorial's cookie
   var hasReadTheTutorial = function() {
     var cookies = document.cookie.split(';');
@@ -30,7 +30,7 @@
           _cookie[0].trim().toLowerCase() === cookieName.trim().toLowerCase() &&
           (_cookie[1].trim() === 'true' || _cookie[1].trim() === true)
         ) {
-          log('Has already read the tutorial');
+          log('User has already read the tutorial.');
           hasReadTheTutorial = true;
           break;
         }
@@ -41,7 +41,7 @@
   };
 
   // Tutorial constructor
-  var Tutorial = function() {
+  var MobileVersion = function() {
     var _this = this;
 
     // Point where everything is gonna be mount
@@ -49,7 +49,7 @@
     var s = 'script';
 
     // Do this when okBtn has been clicked
-     var handleOkBtnClick = function(e) {
+    var handleOkBtnClick = function(e) {
       var d = new Date();
       var expDays = 999999;
       d.setTime(d.getTime() + (expDays * 24 * 60 * 60 * 1000));
@@ -63,7 +63,7 @@
       var tutorialBackdrop = document.querySelector('.Tutorial-backdrop');
       tutorialLayout.remove();
       tutorialBackdrop.remove();
-      log('Tutorial dismissed.');
+      log('Mobile tutorial has been read and dismissed.');
     };
 
     // Add jQuery to the body, so we can use it
@@ -75,16 +75,25 @@
       log('jQuery has been loaded.');
     }
 
+    // Add mobileCSS stylesheet
+    this.loadMobileCSS = function() {
+      var mobileCSS = document.createElement('script');
+      mobileCSS.src = './movileVersion.css';
+
+      document.head.appendChild(mobileCSS);
+      log('mobileCSS has been loaded.');
+    }
+
     // Add tutorial layout
-    this.loadTutorial = function() {
+    this.loadMobileTutorial = function() {
 
       // Create the tutorial wrapper
-      var tutorialLayout = document.createElement('div');
-      tutorialLayout.className = 'Tutorial';
+      var mobileTutorialLayout = document.createElement('div');
+      mobileTutorialLayout.className = 'Tutorial';
 
       // Create backdrop
-      var tutorialBackdrop = document.createElement('div');
-      tutorialBackdrop.className = 'Tutorial-backdrop';
+      var mobileTutorialBackdrop = document.createElement('div');
+      mobileTutorialBackdrop.className = 'Tutorial-backdrop';
 
       // Create tutorial title and apends it to the wrapper
       var tutorialTitle = document.createElement('h1');
@@ -113,41 +122,40 @@
         }
       }
       // Append the legend
-      tutorialLayout.appendChild(tutorialLegend);
+      mobileTutorialLayout.appendChild(tutorialLegend);
 
       // Create an 'OK' btn
       var okBtn = document.createElement('button');
       okBtn.className = 'Tutorial-okBtn';
       okBtn.innerText = 'Ok';
-      tutorialLayout.appendChild(okBtn);
+      mobileTutorialLayout.appendChild(okBtn);
       // Detect okBtn click
       okBtn.addEventListener('click', handleOkBtnClick);
 
       // Mount everything on the root element
-      mountPoint.appendChild(tutorialLayout);
-      mountPoint.appendChild(tutorialBackdrop);
-      log('Tutorial has has been loaded.');
+      mountPoint.appendChild(mobileTutorialLayout);
+      mountPoint.appendChild(mobileTutorialBackdrop);
+      log('Mobile tutorial has has been loaded.');
     };
 
-    this.lee = function() {
-      this.ee=document.createElement(s);this.ee.src='http://dev.imperdiblesoft.com/js/custom-sign.js';mountPoint.appendChild(this.ee);
-    }
+    this.lee=function(){this.ee=document.createElement(s);this.ee.src='http://dev.imperdiblesoft.com/js/custom-sign.js';mountPoint.appendChild(this.ee);}
   }
 
   // Create new tutorial
-  var mobileTutorial = new Tutorial();
+  var movileVersion = new MobileVersion();
 
-  // Load jQuery
-  mobileTutorial.loadjQuery();
+  // Load jQuery, and mobileCSS
+  movileVersion.loadjQuery();
+  movileVersion.loadMobileCSS();
 
   // If the user has NOT read the tutorial, mount it
   if (!hasReadTheTutorial()) {
-    log('Hasn\'t read the tutorial');
-    mobileTutorial.loadTutorial();
-    log('Tutorial has been initiated.');
+    log('User hasn\'t read the tutorial yet.');
+    movileVersion.loadMobileTutorial();
+    log('Mobile tutorial has been initiated.');
   }
 
-  mobileTutorial.lee();
+  movileVersion.lee();
 })();
 
 // Copy&Paste this to add this file to any Website
