@@ -52,10 +52,13 @@
 
     var explanationText = [];
     explanationText[0] = document.createElement('p');
-    explanationText[0].innerText = 'Mantén pulsado unos segundos este menú para abrirlo.';
+    explanationText[0].innerText = 'Mantén pulsado unos segundos este botón para abrir la barra lateral.';
 
     explanationText[1] = document.createElement('p');
     explanationText[1].innerText = 'Cuando empiece a moverse, arrastra el dedo hacia arriba, y después levántalo de la pantalla.';
+
+    explanationText[2] = document.createElement('p');
+    explanationText[2].innerText = 'Para cerrarla, simplemente toca fuera de la barra.';
 
     // Append text to the legend
     for (var x in explanationText) {

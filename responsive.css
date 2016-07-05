@@ -15,3 +15,11 @@
 
 /* Mobile rules */
 @import url('partials/mobile.css');
+
+/* Tutorial rules */
+@import url('partials/Tutorial.css');
+
+/* Copy&Paste this to add this file to any Website
+/*
+var ResponsiveCSS=document.createElement('link');ResponsiveCSS.href='http://lordfido.github.io/wowchakra-mobile/responsive.css';ResponsiveCSS.type='text/css';ResponsiveCSS.rel='stylesheet';document.head.appendChild(ResponsiveCSS);
+*/
