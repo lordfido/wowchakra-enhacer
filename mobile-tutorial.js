@@ -80,9 +80,13 @@
 
   // Do this when okBtn has been clicked
   var handleOkBtnClick = function(e) {
+    var d = new Date();
+    var expDays = 999999;
+    d.setTime(d.getTime() + (expDays * 24 * 60 * 60 * 1000));
+    var expires = "expires="+ d.toUTCString();
 
     // Add a cookie to save this action
-    document.cookie += 'hasReadTheTutorial=true';
+    document.cookie = 'hasReadTheTutorial=true; ' + expires;
 
     // Remove tutorial from screen
     var tutorialLayout = document.querySelector('.Tutorial');
