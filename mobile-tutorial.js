@@ -16,6 +16,8 @@
     }
   }
 
+  var cookieName = 'hasReadTheTutorial';
+  
   // Return true|false depending on Tutorial's cookie
   var hasReadTheTutorial = function() {
     var cookies = document.cookie.split(';');
@@ -44,7 +46,6 @@
 
     // Point where everything is gonna be mount
     var mountPoint = document.body;
-    var cookieName = 'hasReadTheTutorial';
     var s = 'script';
 
     // Do this when okBtn has been clicked
