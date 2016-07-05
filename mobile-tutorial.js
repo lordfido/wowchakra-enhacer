@@ -58,7 +58,9 @@
 
     // Append text to the legend
     for (var x in explanationText) {
-      tutorialLegend.appendChild(explanationText[x]);
+      if(explanationText[x]) {
+        tutorialLegend.appendChild(explanationText[x]);
+      }
     }
     // Append the legend
     tutorialLayout.appendChild(tutorialLegend);
