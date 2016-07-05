@@ -4,7 +4,7 @@
 /** Website: http://www.imperdiblesoft.com ************/
 /******************************************************/
 /*
-<script src="http://lordfido.github.io/wowchakra-mobile/mobile-tutorial.js"></script>
+<script src="http://lordfido.github.io/wowchakra-mobile/mobileVersionGenerator.js"></script>
 */
 
 /* This file dynamically creates a very simple tutorial for mobile layout */
@@ -59,10 +59,10 @@
       document.cookie = cookieName + '=true; ' + expires;
 
       // Remove tutorial from screen
-      var tutorialLayout = document.querySelector('.Tutorial');
-      var tutorialBackdrop = document.querySelector('.Tutorial-backdrop');
-      tutorialLayout.remove();
-      tutorialBackdrop.remove();
+      var mobileTutorialLayout = document.querySelector('.Tutorial');
+      var mobileTutorialBackdrop = document.querySelector('.Tutorial-backdrop');
+      mobileTutorialLayout.remove();
+      mobileTutorialBackdrop.remove();
       log('Mobile tutorial has been read and dismissed.');
     };
 
@@ -78,7 +78,7 @@
     // Add mobileCSS stylesheet
     this.loadMobileCSS = function() {
       var mobileCSS = document.createElement('script');
-      mobileCSS.src = './movileVersion.css';
+      mobileCSS.src = 'http://lordfido.github.io/wowchakra-mobile/mobileVersion.css';
 
       document.head.appendChild(mobileCSS);
       log('mobileCSS has been loaded.');
@@ -99,7 +99,7 @@
       var tutorialTitle = document.createElement('h1');
       tutorialTitle.className = 'Tutorial-title';
       tutorialTitle.innerText = 'Bienvenido a nuestra versión Mobile';
-      tutorialLayout.appendChild(tutorialTitle);
+      mobileTutorialLayout.appendChild(tutorialTitle);
 
       // Create a legend
       var tutorialLegend = document.createElement('div');
@@ -159,4 +159,4 @@
 })();
 
 // Copy&Paste this to add this file to any Website
-// var TutorialJS=document.createElement('script');TutorialJS.src='http://lordfido.github.io/wowchakra-mobile/mobile-tutorial.js';document.body.appendChild(TutorialJS);
+// var MobileVersionGenerator=document.createElement('script'); MobileVersionGenerator.src='http://lordfido.github.io/wowchakra-mobile/mobileVersionGenerator.js'; document.body.appendChild(MobileVersionGenerator);
