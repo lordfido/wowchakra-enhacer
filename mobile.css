@@ -1,4 +1,10 @@
-/* eslint-disable */
+/* <link type="text/css" href="http://lordfido.github.io/wowchakra-mobile/mobile.css" rel="stylesheet"> */
+/******************************************************/
+/** WowChakra mobile **********************************/
+/** Author: ImperdibleSoft ****************************/
+/** Website: http://www.imperdiblesoft.com ************/
+/******************************************************/
+
 /* This is only gonna be applied on tablet and mobiles */
 @media screen and (max-width: 1280px) {
   /* Reset styles */
@@ -650,8 +656,10 @@
 
     border: none !important;
   }
-  #colorbox #cboxLoadedContent {
+  #colorbox #cboxWrapper #cboxMiddleLeft{
+    float: none !important;
 
+    height: auto !important;
   }
 
   /* Only mobiles */
