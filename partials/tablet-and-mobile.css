@@ -337,6 +337,47 @@
     padding: 15px;
   }
 
+  /**************************/
+  /** ARTICLE DETAIL ********/
+  /**************************/
+  /* Item Container */
+  #k2Container.itemView {
+    position: relative;
+    display: block;
+    float: none;
+
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+
+    text-align: justify;
+
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  /* Item Header */
+  #k2Container.itemView .itemHeader {
+    margin-bottom: 10px;
+  }
+  /* Comments Link */
+  #k2Container.itemView .itemCommentsLink{
+    position: relative;
+    display: block;
+    float: right;
+
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+
+    clear: both;
+  }
+  #k2Container.itemView .itemCommentsLink .commentsbadge{
+    position: relative;
+
+    margin: 0;
+  }
+
   /* Right column  */
   #s5_bottom_area_wrap1 #s5_right_column_wrap {
     position: fixed;
