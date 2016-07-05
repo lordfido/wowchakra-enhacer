@@ -59,10 +59,10 @@
       document.cookie = cookieName + '=true; ' + expires;
 
       // Remove tutorial from screen
-      var tutorialLayout = document.querySelector('.Tutorial');
-      var tutorialBackdrop = document.querySelector('.Tutorial-backdrop');
-      tutorialLayout.remove();
-      tutorialBackdrop.remove();
+      var mobileTutorialLayout = document.querySelector('.Tutorial');
+      var mobileTutorialBackdrop = document.querySelector('.Tutorial-backdrop');
+      mobileTutorialLayout.remove();
+      mobileTutorialBackdrop.remove();
       log('Mobile tutorial has been read and dismissed.');
     };
 
@@ -99,7 +99,7 @@
       var tutorialTitle = document.createElement('h1');
       tutorialTitle.className = 'Tutorial-title';
       tutorialTitle.innerText = 'Bienvenido a nuestra versión Mobile';
-      tutorialLayout.appendChild(tutorialTitle);
+      mobileTutorialLayout.appendChild(tutorialTitle);
 
       // Create a legend
       var tutorialLegend = document.createElement('div');
