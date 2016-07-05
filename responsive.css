@@ -1,0 +1,23 @@
+/* <link type="text/css" href="http://lordfido.github.io/wowchakra-mobile/mobile.css" rel="stylesheet"> */
+/******************************************************/
+/** WowChakra mobile **********************************/
+/** Author: ImperdibleSoft ****************************/
+/** Website: http://www.imperdiblesoft.com ************/
+/******************************************************/
+
+/* This is only gonna be applied on tablet and mobiles */
+@media screen and (max-width: 1280px) {
+
+  /* Reseting some basic stuff when tablet/mobile */
+  @import url('partials/reset.css');
+
+  /* Tablet and mobile rules */
+  @import url('partials/tablet-and-mobile.css');
+
+  /* This is only gonna be applied on mobiles */
+  @media screen and (max-width: 720px) {
+
+    /* Mobile rules */
+    @import url('partials/mobile.css');
+  }
+}
