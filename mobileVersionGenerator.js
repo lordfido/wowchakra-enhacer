@@ -17,7 +17,9 @@
   }
 
   var URLs = {
-    mobileVersion: 'mobileVersion.css'
+    mobileVersion: debug ?
+      'https://lordfido.github.io/wowchakra-mobile/mobileGenerator/mobileVersion.css' :
+      'mobileGenerator/mobileVersion.css'
   };
   var cookieName = 'hasReadTheTutorial';
 
