@@ -78,7 +78,7 @@
     // Add mobileCSS stylesheet
     this.loadMobileCSS = function() {
       var mobileCSS = document.createElement('link');
-      mobileCSS.href = 'http://lordfido.github.io/wowchakra-mobile/mobileVersion.css';
+      mobileCSS.href = 'https://lordfido.github.io/wowchakra-mobile/mobileVersion.css';
       mobileCSS.ref = 'stylesheet';
       mobileCSS.type = 'text/css';
 
