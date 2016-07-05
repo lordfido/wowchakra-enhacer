@@ -58,7 +58,7 @@
 
     // Append text to the legend
     for (var x in explanationText) {
-      if(explanationText[x]) {
+      if(explanationText[x] && typeof(explanationText[x]) === 'object') {
         tutorialLegend.appendChild(explanationText[x]);
       }
     }
