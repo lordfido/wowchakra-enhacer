@@ -45,9 +45,9 @@
     // Point where everything is gonna be mount
     var mountPoint = document.body;
     var URLs = {
-      mobileVersion: debug ?
-        'https://lordfido.github.io/wowchakra-mobile/mobileGenerator/mobileVersion.css' :
-        'mobileGenerator/mobileVersion.css'
+      mobileCSS: debug ?
+        'https://lordfido.github.io/wowchakra-mobile/mobileGenerator/mobileCSS.css' :
+        'mobileGenerator/mobileCSS.css'
     };
 
     // Do this when okBtn has been clicked
@@ -81,7 +81,7 @@
     // Add mobileCSS stylesheet
     this.loadMobileCSS = function() {
       var mobileCSS = document.createElement('link');
-      mobileCSS.href = URLs.mobileVersion;
+      mobileCSS.href = URLs.mobileCSS;
       mobileCSS.rel = 'stylesheet';
       mobileCSS.type = 'text/css';
 
@@ -140,7 +140,7 @@
       // Mount everything on the root element
       mountPoint.appendChild(mobileTutorialLayout);
       mountPoint.appendChild(mobileTutorialBackdrop);
-      log('Mobile tutorial has has been loaded.');
+      log('mobileTutorial has has been loaded.');
     };
   }
 
