@@ -105,7 +105,7 @@
       if (cookies[x] && cookies[x].split) {
         var _cookie = cookies[x].split('=');
         if (
-          _cookie[0].trim().toLowerCase() === cookieName.trim.toLowerCase() &&
+          _cookie[0].trim().toLowerCase() === cookieName.trim().toLowerCase() &&
           (_cookie[1].trim() === 'true' || _cookie[1].trim() === true)
         ) {
           hasReadTheTutorial = true;
