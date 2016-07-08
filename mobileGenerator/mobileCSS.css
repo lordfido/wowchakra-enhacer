@@ -15,3 +15,11 @@
 
 /* Tutorial rules */
 @import url('./partials/Tutorial.css');
+
+/* This fix the text color on comment-form buttons */
+#comments-inline-edit #comments-form .btn a,
+#comments-inline-edit #comments-report-form .btn a,
+#comments-inline-edit #comments-form .btn a:hover,
+#comments-inline-edit #comments-report-form .btn a:hover {
+  color: rgba(0, 0, 0, 1) !important;
+}
