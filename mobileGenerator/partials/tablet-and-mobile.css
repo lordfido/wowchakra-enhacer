@@ -519,7 +519,7 @@
 
     /* Some lists styles */
     /* Simple list into the article */
-    #k2Container.itemView .itemFullText ul {
+    #k2Container.itemView .itemFullText ul:not(.tabber_tabs) {
       position: relative;
       display: inline-block;
       float: left;
@@ -528,7 +528,7 @@
 
       clear: both;
     }
-    #k2Container.itemView .itemFullText ul li {
+    #k2Container.itemView .itemFullText ul:not(.tabber_tabs) li:not(.tabber_tab) {
       position: relative;
       display: inline-block;
 
