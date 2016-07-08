@@ -394,12 +394,15 @@
       margin: 0;
       padding: 0;
       padding-top: 10px;
+
+      text-align: center;
     }
     #k2Container.itemView .itemFullText {
       width: 100%;
 
       overflow: hidden;
     }
+    /* Images */
     #k2Container.itemView .itemFullText .cabecera,
     #k2Container.itemView .itemFullText .cabecera img,
     #k2Container.itemView .itemFullText img {
@@ -412,8 +415,18 @@
       height: 20px;
       margin: 0;
     }
+    #k2Container.itemView .itemFullText a.qc4 img,
+    #k2Container.itemView .itemFullText img.vertical {
+      width: 20px;
+      height: 20px;
+      margin: 0;
+    }
 
     #k2Container.itemView .itemFullText p {
+      position: relative;
+      display: inline-block;
+
+      width: 100%;
       margin: 0 !important;
     }
     #k2Container.itemView .itemFullText iframe {
@@ -421,6 +434,29 @@
     }
 
     /* Article section separator */
+    #k2Container.itemView .itemFullText .panelchakratitularlegion {
+      position: relative;
+      display: inline-block;
+      float: none;
+
+      width: 100%;
+      max-width: 540px;
+      height: auto;
+      min-height: 88px;
+      margin: 0 auto !important;
+      margin-bottom: 10px !important;
+      padding-top: 32px !important;
+
+      font-size: 20px;
+      line-height: 1.1;
+      vertical-align: middle;
+
+      background-position: center center;
+      background-size: 100%;
+      clear: both;
+    }
+
+    #k2Container.itemView .itemFullText .panelchakratitular,
     #k2Container.itemView .itemFullText h4.fondowodlock,
     #k2Container.itemView .itemFullText h4.fondowodshaman,
     #k2Container.itemView .itemFullText h4.fondowod2,
@@ -434,6 +470,9 @@
     #k2Container.itemView .itemFullText h4.fondowodrogue,
     #k2Container.itemView .itemFullText h4.fondowodwarrior,
     #k2Container.itemView .itemFullText h4.fondowoddh {
+      position: relative;
+      display: inline-block;
+
       max-width: 100%;
       min-height: 50px;
       height: auto;
@@ -444,6 +483,7 @@
 
       background-size: auto 100%;
     }
+
     #k2Container.itemView .itemFullText h4.fondowodlock img,
     #k2Container.itemView .itemFullText h4.fondowodshaman img,
     #k2Container.itemView .itemFullText h4.fondowod2 img,
@@ -460,10 +500,39 @@
       float: left;
     }
 
+    #k2Container.itemView .itemFullText .panelchakratitular {
+      font-size: 24px;
+
+      background-size: 100% 100%;
+    }
+
+    #k2Container.itemView .itemFullText .panelchakra {
+      position: relative;
+      display: block;
+      float: left;
+
+      width: 100%;
+      margin: 0;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+
     /* Some lists styles */
     /* Simple list into the article */
     #k2Container.itemView .itemFullText ul {
+      position: relative;
+      display: inline-block;
+      float: left;
+
       padding: 0;
+
+      clear: both;
+    }
+    #k2Container.itemView .itemFullText ul li {
+      position: relative;
+      display: inline-block;
+
+      width: 100%;
     }
 
     /* Tab styled list */

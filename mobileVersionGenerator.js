@@ -40,6 +40,7 @@
     return hasReadTheTutorial;
   };
 
+  // Return true|false depending on user's device
   var isMobileDevice = function() {
     if (
       /android/.test(navigator.userAgent.toLowerCase()) ||
@@ -47,16 +48,17 @@
       /ipad/.test(navigator.userAgent.toLowerCase()) ||
       /windows phone/.test(navigator.userAgent.toLowerCase())
     ) {
+      log('Mobile device detected');
       return true;
     }
 
+    log('No mobile device detected');
     return false;
   }
 
   // Tutorial constructor
   var MobileVersionGenerator = function() {
     // Point where everything is gonna be mount
-    var mountPoint = document.body;
     var URLs = {
       mobileCSS: debug ?
         'https://lordfido.github.io/wowchakra-mobile/mobileGenerator/mobileCSS.css' :
@@ -151,8 +153,8 @@
       okBtn.addEventListener('click', handleOkBtnClick);
 
       // Mount everything on the root element
-      mountPoint.appendChild(mobileTutorialLayout);
-      mountPoint.appendChild(mobileTutorialBackdrop);
+      document.body.appendChild(mobileTutorialLayout);
+      document.body.appendChild(mobileTutorialBackdrop);
       log('mobileTutorial has has been loaded.');
     };
   }
@@ -160,16 +162,30 @@
   // Create new tutorial
   var generator = new MobileVersionGenerator();
 
-  // Load jQuery, and mobileCSS
+  // Instantly set the viewport, and CSS files on <head></head>
   generator.setViewPort();
   generator.loadMobileCSS();
 
-  // If the user has NOT read the tutorial, mount it
-  if (isMobileDevice() && !hasReadTheTutorial()) {
-    log('User hasn\'t read the tutorial yet.');
-    generator.loadMobileTutorial();
-  }
-})();
+  // Recursive function, wait until <body></body> is available
+  var verifyBodyIsMounted = function() {
 
-// Copy&Paste this to add this file to any Website
-// var MobileVersionGenerator=document.createElement('script'); MobileVersionGenerator.src='http://lordfido.github.io/wowchakra-mobile/mobileVersionGenerator.js'; document.body.appendChild(MobileVersionGenerator);
+    // If body is available, so we can mount things on it
+    if (document.body !== null && typeof document.body !== undefined) {
+
+      // If the user has NOT read the tutorial, mount it
+      if (isMobileDevice() && !hasReadTheTutorial()) {
+        log('User hasn\'t read the tutorial yet.');
+        generator.loadMobileTutorial();
+      }
+
+    // If body is not available
+    } else {
+
+      // Ask again in 500ms
+      setTimeout(function() {
+        verifyBodyIsMounted();
+      }, 500);
+    }
+  };
+  verifyBodyIsMounted();
+})();
