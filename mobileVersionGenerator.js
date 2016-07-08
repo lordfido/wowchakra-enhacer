@@ -40,6 +40,19 @@
     return hasReadTheTutorial;
   };
 
+  var isMobileDevice = function() {
+    if (
+      /android/.test(navigator.userAgent.toLowerCase()) ||
+      /iphone/.test(navigator.userAgent.toLowerCase()) ||
+      /ipad/.test(navigator.userAgent.toLowerCase()) ||
+      /windows phone/.test(navigator.userAgent.toLowerCase())
+    ) {
+      return true;
+    }
+
+    return false;
+  }
+
   // Tutorial constructor
   var MobileVersionGenerator = function() {
     // Point where everything is gonna be mount
@@ -152,7 +165,7 @@
   generator.loadMobileCSS();
 
   // If the user has NOT read the tutorial, mount it
-  if (!hasReadTheTutorial()) {
+  if (isMobileDevice() && !hasReadTheTutorial()) {
     log('User hasn\'t read the tutorial yet.');
     generator.loadMobileTutorial();
   }

@@ -395,6 +395,90 @@
     padding: 0;
     padding-top: 10px;
   }
+  #k2Container.itemView .itemFullText {
+    width: 100%;
+
+    overflow: hidden;
+  }
+  #k2Container.itemView .itemFullText .cabecera,
+  #k2Container.itemView .itemFullText .cabecera img,
+  #k2Container.itemView .itemFullText img {
+    max-width: 100% !important;
+    height: auto !important;
+    margin-bottom: 10px;
+  }
+  #k2Container.itemView .itemFullText ul li:not(.tabber_tab) img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+
+  #k2Container.itemView .itemFullText p {
+    margin: 0 !important;
+  }
+  #k2Container.itemView .itemFullText iframe {
+    width: 100%;
+  }
+
+  /* Article section separator */
+  #k2Container.itemView .itemFullText h4.fondowodlock,
+  #k2Container.itemView .itemFullText h4.fondowodshaman,
+  #k2Container.itemView .itemFullText h4.fondowod2,
+  #k2Container.itemView .itemFullText h4.fondowoddk,
+  #k2Container.itemView .itemFullText h4.fondowoddruid,
+  #k2Container.itemView .itemFullText h4.fondowodhunter,
+  #k2Container.itemView .itemFullText h4.fondowodmage,
+  #k2Container.itemView .itemFullText h4.fondowodmonk,
+  #k2Container.itemView .itemFullText h4.fondowodpaladin,
+  #k2Container.itemView .itemFullText h4.fondowodpriest,
+  #k2Container.itemView .itemFullText h4.fondowodrogue,
+  #k2Container.itemView .itemFullText h4.fondowodwarrior,
+  #k2Container.itemView .itemFullText h4.fondowoddh {
+    max-width: 100%;
+    height: 50px;
+    margin: 20px auto;
+  }
+
+  /* Some lists styles */
+  /* Simple list into the article */
+  #k2Container.itemView .itemFullText ul {
+    padding: 0;
+  }
+
+  /* Tab styled list */
+  #k2Container.itemView .itemFullText ul.tabber_tabs li.tabber_tab {
+    margin: 0 !important;
+    margin-right: 2px !important;
+    padding: 0 !important;
+
+    border: 1px solid black;
+    border-radius: 5px 5px 0 0;
+  }
+  #k2Container.itemView .itemFullText ul.tabber_tabs a {
+    height: auto;
+    padding: 10px 20px;
+
+    box-sizing: border-box;
+  }
+
+  /* Some table styles */
+  #k2Container.itemView .itemFullText table {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  /* Item like button */
+  #k2Container.itemView .likebtn_container{
+    position: absolute;
+    display: block;
+    float: none;
+
+    top: -33px;
+    left: initial;
+    right: 25px;
+  }
+
   /* Item body spacer */
   #k2Container.itemView .linea1,
   #k2Container.itemView .linea2,
