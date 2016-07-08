@@ -80,6 +80,7 @@
       var mobileTutorialBackdrop = document.querySelector('.Tutorial-backdrop');
       mobileTutorialLayout.remove();
       mobileTutorialBackdrop.remove();
+      document.body.style.overflow = 'auto';
       log('Mobile tutorial has been read and dismissed.');
     };
 
@@ -155,6 +156,7 @@
       // Mount everything on the root element
       document.body.appendChild(mobileTutorialLayout);
       document.body.appendChild(mobileTutorialBackdrop);
+      document.body.style.overflow = 'hidden';
       log('mobileTutorial has has been loaded.');
     };
   }

@@ -9,12 +9,13 @@
     position: fixed;
     display: block;
 
-    top: 50%;
-    right: -5010px;
+    top: 0;
+    right: 0;
     left: initial;
     width: 70px;
     height: 70px;
-    margin-top: -5360px;
+    margin-top: -4860px;
+    margin-right: -5010px;
 
     border: 5000px solid rgba(0, 0, 0, 0.7);
     border-radius: 50%;
