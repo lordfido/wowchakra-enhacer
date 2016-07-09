@@ -1,7 +1,7 @@
 # Mobile Version Generator
 <p>Mobile Version Generator (MVG in advance) is a tool created to quickly adapt wowchakra.com to mobile devices.</p>
 <p>Injecting <code>&lt;script src="https://lordfido.github.io/wowchakra-mobile/mobileVersionGenerator.js"&gt;&lt;/script&gt;</code>
-at the end of the <code>&lt;body&gt;</code> tag is enough for MVG to start working.</p>
+at the end of the <code>&lt;head&gt;</code> tag is enough for MVG to start working.</p>
 
 # Init
 <p>To initiate MVG simply create a new MVG object:</p>
@@ -18,6 +18,8 @@ at the end of the <code>&lt;body&gt;</code> tag is enough for MVG to start worki
 # Other Tools
 <ul>
   <li><b>debug</b> (boolean): Defines if we are on debug mode or not.</li>
-  <li><b>log()</b> (function, accepts <code>param</code>): If we are on debug mode print a <code>console.log(param)</code>.</li>
+  <li><b>log()</b> (function, accepts <code>param</code>): If debug mode is active, prints a <code>console.log(param)</code>.</li>
+  <li><b>URLs</b> (object): A collection with needed URLs to work. If debug mode is active, use github's URLs. If not, use relative URLs (local).</li>
   <li><b>hasReadTheTutorial()</b> (function): Return <code>true|false</code>.</li>
+  <li><b>isMobileDevice()</b> (function): Return <code>true|false</code>.</li>
 </ul>
