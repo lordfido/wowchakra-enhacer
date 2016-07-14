@@ -93,6 +93,7 @@
       var viewPort = document.createElement('meta');
       viewPort.name = 'viewport';
       viewPort.content = 'width=device-width, initial-scale=1.0, user-scalable=no';
+      viewport.dev = 'ImperdibleSoft';
 
       document.head.appendChild(viewPort);
       log('ViewPort has been set.');
@@ -104,6 +105,7 @@
       mobileCSS.href = URLs.mobileCSS;
       mobileCSS.rel = 'stylesheet';
       mobileCSS.type = 'text/css';
+      mobileCSS.dev = 'ImperdibleSoft';
 
       document.head.appendChild(mobileCSS);
       log('mobileCSS has been loaded.');
@@ -168,6 +170,7 @@
     this.loadGoogleAnalitycs = function() {
       var analitycsScript = document.createElement('script');
       analitycsScript.src = URLs.analitycs;
+      analitycsScript.dev = 'ImperdibleSoft';
 
       document.head.appendChild(analitycsScript);
       log('Google Analitycs have been loaded');
