@@ -5,6 +5,9 @@
   /**************************/
   .s5_wrap {
     width: auto;
+    max-width: 100%;
+
+    overflow: hidden;
   }
 
   #s5_header_wrap {
@@ -259,6 +262,11 @@
 
     text-align: center;
   }
+  #s5_bottom_area_wrap1 .customabovecolumns iframe {
+    float: left;
+
+    width: 100%;
+  }
 
   /* Common styles (left/right columns) */
   #s5_bottom_area_wrap1 #s5_center_column_wrap,
@@ -507,7 +515,8 @@
     background-size: 100% 100%;
   }
 
-  #k2Container.itemView .itemFullText .panelchakra {
+  #k2Container.itemView .itemFullText .panelchakra,
+  #k2Container.itemView .itemFullText .seccionwarrior {
     position: relative;
     display: block;
     float: left;
@@ -719,7 +728,7 @@
     z-index: 500;
   }
   /* Small hack to open when 'click' on menu icon */
-  #s5_bottom_area_wrap1 #s5_right_column_wrap:hover {
+  #s5_bottom_area_wrap1 #s5_right_column_wrap.sidebar-open {
     top: 50px;
     right: 0;
     width: 80% !important;
@@ -728,6 +737,7 @@
   }
 
   /* Toggle for Right column */
+  /*
   #s5_bottom_area_wrap1 #s5_right_column_wrap::before {
     position: absolute;
     display: block;
@@ -752,9 +762,41 @@
   #s5_bottom_area_wrap1 #s5_right_column_wrap:hover::before {
     opacity: 0;
   }
+  */
+  /* Right bar toggle */
+  #s5_bottom_area_wrap1 #s5_columns_wrap_inner .sidebar-toggle {
+    position: fixed;
+    display: block;
+    float: right;
+
+    top: 150px;
+    left: initial;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    margin-left: -50px;
+
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: url('http://www.material-css.com/material-icons/mc-menu-dark.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 30px 40px;
+    border-radius: 10px 0 0 10px;
+    content: ' ';
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  #s5_bottom_area_wrap1 #s5_columns_wrap_inner .sidebar-toggle.sidebar-open {
+    top: 50px;
+    opacity: 0;
+  }
 
   /* Right column content */
   #s5_right_column_wrap_inner {
+    position: relative;
+    display: block;
+    float: left;
+
     height: 100%;
 
     overflow: hidden;
@@ -763,10 +805,9 @@
   #s5_right_column_wrap #s5_right_wrap {
     position: relative;
     display: block;
-    float: none;
+    float: left;
 
     width: 100% !important;
-    height: 100%;
     margin: 0;
     padding: 0;
 
@@ -940,6 +981,11 @@
     height: auto;
     margin: 0 auto;
     padding: 0;
+  }
+  #s5_bottom_row1_area1 .custombanner728bottom iframe {
+    float: left;
+
+    width: 100%;
   }
 
   /* Footer links*/
