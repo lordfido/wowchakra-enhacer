@@ -103,7 +103,7 @@
       } else {
         sidebar.className += ' sidebar-open';
         sidebarToggle.className += ' sidebar-open';
-        sidebarToggle.style.right = sidebar.offsetWidth + 'px';
+        sidebarToggle.style.right = (sidebar.offsetWidth - 5) + 'px';
       }
     }
 
