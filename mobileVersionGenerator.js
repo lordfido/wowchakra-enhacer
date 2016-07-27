@@ -97,11 +97,13 @@
       if (/sidebar\-open/.test(sidebar.className)) {
         sidebar.className = sidebar.className.replace('sidebar-open', '');
         sidebarToggle.className = sidebarToggle.className.replace('sidebar-open', '');
+        sidebarToggle.style.right = '400px';
 
       // If .sidebar-open classname is not present, open sidebar
       } else {
         sidebar.classList.push('sidebar-open');
         sidebarToggle.classList.push('sidebar-open');
+        sidebarToggle.style.right = '0px';
       }
     }
 
@@ -134,7 +136,7 @@
       // Create sidebarToggle button
       var sidebarToggle = document.createElement('span');
       sidebarToggle.id = 'mvg-sidebar-toggle';
-      sidebar.className = 'sidebar-toggle';
+      sidebarToggle.className = 'sidebar-toggle';
 
       // Add sidebarToggle to sidebar wrapper
       var sidebar = document.querySelector('#s5_center_area_inner #s5_columns_wrap_inner');
@@ -168,13 +170,10 @@
 
       var explanationText = [];
       explanationText[0] = document.createElement('p');
-      explanationText[0].innerText = 'Mantén pulsado unos segundos este botón para abrir la barra lateral.';
-
-      explanationText[1] = document.createElement('p');
-      explanationText[1].innerText = 'Cuando empiece a moverse, arrastra el dedo hacia arriba, y después levántalo de la pantalla.';
+      explanationText[0].innerText = 'Pulsa este botón para abrir la barra lateral.';
 
       explanationText[2] = document.createElement('p');
-      explanationText[2].innerText = 'Para cerrarla, simplemente toca fuera de la barra.';
+      explanationText[2].innerText = 'Para cerrarla, vuelve a pulsarlo.';
 
       // Append text to the legend
       for (var x in explanationText) {
