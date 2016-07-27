@@ -97,13 +97,13 @@
       if (/sidebar\-open/.test(sidebar.className)) {
         sidebar.className = sidebar.className.replace('sidebar-open', '');
         sidebarToggle.className = sidebarToggle.className.replace('sidebar-open', '');
-        sidebarToggle.style.right = '400px';
+        sidebarToggle.style.right = '0px';
 
       // If .sidebar-open classname is not present, open sidebar
       } else {
-        sidebar.classList.push('sidebar-open');
-        sidebarToggle.classList.push('sidebar-open');
-        sidebarToggle.style.right = '0px';
+        sidebar.className += ' sidebar-open';
+        sidebarToggle.className += ' sidebar-open';
+        sidebarToggle.style.right = sidebar.offsetWidth;
       }
     }
 
