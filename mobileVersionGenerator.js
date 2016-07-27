@@ -91,7 +91,7 @@
     // Do this when press sidebar-toggle
     var handleToggleSidebar = function(e) {
       var sidebar = document.querySelector('#s5_right_column_wrap');
-      var sidebarToggle = document.querySelector('.sidebar-toggle');
+      var sidebarToggle = document.querySelector('#mvg-sidebar-toggle');
 
       // If .sidebar-open classname is present, close sidebar
       if (/sidebar\-open/.test(sidebar.className)) {
@@ -103,7 +103,7 @@
       } else {
         sidebar.className += ' sidebar-open';
         sidebarToggle.className += ' sidebar-open';
-        sidebarToggle.style.right = sidebar.offsetWidth;
+        sidebarToggle.style.right = sidebar.offsetWidth + 'px';
       }
     }
 

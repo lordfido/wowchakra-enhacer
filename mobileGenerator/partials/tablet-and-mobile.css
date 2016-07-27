@@ -782,13 +782,11 @@
     background-repeat: no-repeat;
     background-size: 30px 40px;
     border-radius: 10px 0 0 10px;
-    opacity: 1;
     transition: top 0.3s, right 0.3s;
     z-index: 500;
   }
   #s5_bottom_area_wrap1 #s5_columns_wrap_inner .sidebar-toggle.sidebar-open {
     top: 50px;
-    opacity: 0;
   }
 
   /* Right column content */
