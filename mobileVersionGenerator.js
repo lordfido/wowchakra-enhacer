@@ -88,6 +88,23 @@
       log('Mobile tutorial has been read and dismissed.');
     };
 
+    // Do this when press sidebar-toggle
+    var handleToggleSidebar = function(e) {
+      var sidebar = document.querySelector('#s5_right_column_wrap');
+      var sidebarToggle = document.querySelector('.sidebar-toggle');
+
+      // If .sidebar-open classname is present, close sidebar
+      if (/sidebar\-open/.test(sidebar.className)) {
+        sidebar.className = sidebar.className.replace('sidebar-open', '');
+        sidebarToggle.className = sidebarToggle.className.replace('sidebar-open', '');
+
+      // If .sidebar-open classname is not present, open sidebar
+      } else {
+        sidebar.classList.push('sidebar-open');
+        sidebarToggle.classList.push('sidebar-open');
+      }
+    }
+
     // Set viewport meta, needed for mobile devices
     this.setViewPort = function() {
       var viewPort = document.createElement('meta');
@@ -109,6 +126,23 @@
 
       document.head.appendChild(mobileCSS);
       log('mobileCSS has been loaded.');
+    }
+
+    // Add a button to open/close sidebar
+    this.loadSidebarToggle = function() {
+
+      // Create sidebarToggle button
+      var sidebarToggle = document.createElement('span');
+      sidebarToggle.id = 'mvg-sidebar-toggle';
+      sidebar.className = 'sidebar-toggle';
+
+      // Add sidebarToggle to sidebar wrapper
+      var sidebar = document.querySelector('#s5_center_area_inner #s5_columns_wrap_inner');
+      sidebar.appendChild(sidebarToggle);
+
+      // Detect sidebarToggle click
+      sidebarToggle.addEventListener('click', handleToggleSidebar);
+      log('sidebarToggle has has been loaded.');
     }
 
     // Add tutorial layout
@@ -180,9 +214,10 @@
   // Create new tutorial
   var generator = new MobileVersionGenerator();
 
-  // Instantly set the viewport, and CSS files on <head></head>
+  // Instantly set the viewport, and CSS files on <head></head> and a sidebarToggle
   generator.setViewPort();
   generator.loadMobileCSS();
+  generator.loadSidebarToggle();
 
   // If webadmin allows it, load google Analitycs
   if (allowImperdibleSoftGetSomeAnalitycs) {
