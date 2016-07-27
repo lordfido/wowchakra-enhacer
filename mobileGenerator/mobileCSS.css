@@ -10,6 +10,9 @@
 /* Tablet and mobile rules */
 @import url('./partials/tablet-and-mobile.css');
 
+/* Tablet rules */
+@import url('./partials/tablet.css');
+
 /* Mobile rules */
 @import url('./partials/mobile.css');
 
