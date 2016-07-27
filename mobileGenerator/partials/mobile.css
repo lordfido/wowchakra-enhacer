@@ -99,4 +99,25 @@
     width: 90% !important;
     height: 90% !important;
   }
+
+  /**************************/
+  /** GALLERY ***************/
+  /**************************/
+  /* Gallery Thumbnails */
+  #k2Container.itemView .itemFullText .sigplus-gallery ul li {
+    width: 46% !important;
+  }
+
+  /* Inline controls */
+  #boxplus .boxplus-viewer .boxplus-resizer {
+    display: none;
+  }
+
+  /* This is only gonna be applied on landscape mode */
+  @media screen and (orientation: landscape) {
+    /* Gallery Thumbnails */
+    #k2Container.itemView .itemFullText .sigplus-gallery ul li {
+      width: 29.33% !important;
+    }
+  }
 }
