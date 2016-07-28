@@ -92,6 +92,7 @@
     var touchStart = 0;
     var startTime = 0;
     var touchEnd = 0;
+    var allowedTime = 5000;
 
     // Open sidebar
     var openSidebar = function(sidebarToggle, sidebar) {
@@ -140,9 +141,9 @@
       var elapsedTime = new Date().getTime() - startTime;
 
       // Calc if the application sould open/Close
-      if (direction >= 100 && elapsedTime <= allowedTime) {
+      if (distance >= 100 && elapsedTime <= allowedTime) {
         var swipeRight = true;
-      } else if (direction <= -100 && elapsedTime <= allowedTime) {
+      } else if (distance <= -100 && elapsedTime <= allowedTime) {
         var swipeRight = false;
       }
 
