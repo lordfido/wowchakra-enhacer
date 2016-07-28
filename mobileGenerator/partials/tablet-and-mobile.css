@@ -576,13 +576,6 @@
 
     box-sizing: border-box;
   }
-  #k2Container.itemView .itemFullText ul.tabber_tabs img {
-    position: relative;
-    display: block;
-
-    max-height: 56px;
-    margin: 0
-  }
 
   /* About us modifications */
   #k2Container.itemView .itemFullText ul.tabber_tabs li.tabber_tab.aboutus {
@@ -592,6 +585,13 @@
     padding: 5px;
 
     border-radius: 5px 5px 0px 0px;
+  }
+  #k2Container.itemView .itemFullText ul.tabber_tabs li.tabber_tab.aboutus img {
+    position: relative;
+    display: block;
+
+    max-height: 56px;
+    margin: 0
   }
 
   /* Some table styles */
