@@ -115,11 +115,11 @@
       var sidebarToggle = document.querySelector('#mvg-sidebar-toggle');
 
       // If .sidebar-open classname is present, close sidebar
-      if (/sidebar\-open/.test(sidebar.className) || e === false) {
+      if (/sidebar\-open/.test(sidebar.className) || e === true) {
         closeSidebar(sidebarToggle, sidebar);
 
       // If .sidebar-open classname is not present, open sidebar
-      } else if (e === true) {
+      } else if (e === false) {
         openSidebar(sidebarToggle, sidebar);
       }
     }
@@ -217,10 +217,10 @@
 
       var explanationText = [];
       explanationText[0] = document.createElement('p');
-      explanationText[0].innerText = 'Pulsa este botón para abrir la barra lateral.';
+      explanationText[0].innerText = 'Pulsa este botón (o desliza el dedo hacia el borde izquierdo de la pantalla) para abrir la barra lateral.';
 
       explanationText[2] = document.createElement('p');
-      explanationText[2].innerText = 'Para cerrarla, vuelve a pulsarlo.';
+      explanationText[2].innerText = 'Para cerrarla, vuelve a pulsarlo (o desliza el dedo hacia el borde derecho de la pantalla).';
 
       // Append text to the legend
       for (var x in explanationText) {
