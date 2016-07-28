@@ -423,8 +423,6 @@
   }
   #k2Container.itemView .itemFullText {
     width: 100%;
-
-    overflow: hidden;
   }
   /* Images */
   #k2Container.itemView .itemFullText .cabecera,
