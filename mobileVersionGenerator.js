@@ -226,7 +226,12 @@
   var verifyBodyIsMounted = function() {
 
     // If body is available, so we can mount things on it
-    if (document.body !== null && typeof document.body !== undefined) {
+    if (
+      document.body !== null &&
+      typeof document.body !== undefined &&
+      document.querySelector('#s5_center_area_inner #s5_columns_wrap_inner') !== null &&
+      typeof document.querySelector('#s5_center_area_inner #s5_columns_wrap_inner') !== undefined
+    ) {
 
       // Set sidebarToggle
       generator.loadSidebarToggle();
