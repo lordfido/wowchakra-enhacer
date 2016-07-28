@@ -119,7 +119,7 @@
         closeSidebar(sidebarToggle, sidebar);
 
       // If .sidebar-open classname is not present, open sidebar
-      } else if (e === false) {
+      } else if (typeof e != "boolean" || e === false) {
         openSidebar(sidebarToggle, sidebar);
       }
     }
