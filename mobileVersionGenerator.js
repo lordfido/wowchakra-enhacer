@@ -89,21 +89,65 @@
     };
 
     // Do this when press sidebar-toggle
+    var touchStart = 0;
+    var startTime = 0;
+    var touchEnd = 0;
+
+    // Open sidebar
+    var openSidebar = function(sidebarToggle, sidebar) {
+      sidebar.className += ' sidebar-open';
+      sidebarToggle.className += ' sidebar-open';
+      sidebarToggle.style.right = (sidebar.offsetWidth - 5) + 'px';
+    };
+
+    // Close sidebar
+    var closeSidebar = function(sidebarToggle, sidebar) {
+      sidebar.className = sidebar.className.replace('sidebar-open', '');
+      sidebarToggle.className = sidebarToggle.className.replace('sidebar-open', '');
+      sidebarToggle.style.right = '0px';
+    };
+
+    // Open/Close sidebar
     var handleToggleSidebar = function(e) {
+      // Define elements
       var sidebar = document.querySelector('#s5_right_column_wrap');
       var sidebarToggle = document.querySelector('#mvg-sidebar-toggle');
 
       // If .sidebar-open classname is present, close sidebar
-      if (/sidebar\-open/.test(sidebar.className)) {
-        sidebar.className = sidebar.className.replace('sidebar-open', '');
-        sidebarToggle.className = sidebarToggle.className.replace('sidebar-open', '');
-        sidebarToggle.style.right = '0px';
+      if (/sidebar\-open/.test(sidebar.className) || e === false) {
+        closeSidebar(sidebarToggle, sidebar);
 
       // If .sidebar-open classname is not present, open sidebar
-      } else {
-        sidebar.className += ' sidebar-open';
-        sidebarToggle.className += ' sidebar-open';
-        sidebarToggle.style.right = (sidebar.offsetWidth - 5) + 'px';
+      } else if (e === true) {
+        openSidebar(sidebarToggle, sidebar);
+      }
+    }
+
+    // Saves the initial swipe Point and time
+    var handleSwipeStart = function(e) {
+      touchStart = e.changedTouches[0].pageX;
+      startTime = new Date().getTime();
+    }
+
+    // Saves the final swipe point and time
+    var handleSwipeEnd = function(e) {
+      touchEnd = e.changedTouches[0].pageX;
+
+      // Calc swiped distance
+      var distance = touchEnd - touchStart;
+
+      // Calc elapsed time
+      var elapsedTime = new Date().getTime() - startTime;
+
+      // Calc if the application sould open/Close
+      if (direction >= 100 && elapsedTime <= allowedTime) {
+        var swipeRight = true;
+      } else if (direction <= -100 && elapsedTime <= allowedTime) {
+        var swipeRight = false;
+      }
+
+      if (typeof swipeRight == "boolean") {
+        handleToggleSidebar(swipeRight);
       }
     }
 
@@ -144,6 +188,8 @@
 
       // Detect sidebarToggle click
       sidebarToggle.addEventListener('click', handleToggleSidebar);
+      document.addEventListener('touchstart', handleSwipeStart);
+      document.addEventListener('touchend', handleSwipeEnd);
       log('sidebarToggle has has been loaded.');
     }
 
