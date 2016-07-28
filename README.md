@@ -23,6 +23,8 @@ at the end of the <code>&lt;head&gt;</code> tag is enough for MVG to start worki
   <li><b>debug</b> (boolean): Defines if we are on debug mode or not.</li>
   <li><b>cookieName</b> (string): Defines The name for the cookie that's tells MVG if it should show Mobile Tutorial.</li>
   <li><b>allowImperdibleSoftGetSomeAnalitycs</b> (boolean): Defines if Google Analitycs is gonna be loaded, so MVG's developer can track users' behavior.</li>
+</ul>
+<ul>
   <li><b>log()</b> (function, accepts <code>param</code>): If debug mode is active, prints a <code>console.log(param)</code>.</li>
   <li><b>URLs</b> (object): A collection with needed URLs to work. If debug mode is active, use github's URLs. If not, use relative URLs (local).</li>
   <li><b>hasReadTheTutorial()</b> (function): Return <code>true|false</code>.</li>
