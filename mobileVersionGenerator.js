@@ -213,10 +213,9 @@
   // Create new tutorial
   var generator = new MobileVersionGenerator();
 
-  // Instantly set the viewport, and CSS files on <head></head> and a sidebarToggle
+  // Instantly set the viewport, and CSS files on <head></head>
   generator.setViewPort();
   generator.loadMobileCSS();
-  generator.loadSidebarToggle();
 
   // If webadmin allows it, load google Analitycs
   if (allowImperdibleSoftGetSomeAnalitycs) {
@@ -228,6 +227,9 @@
 
     // If body is available, so we can mount things on it
     if (document.body !== null && typeof document.body !== undefined) {
+
+      // Set sidebarToggle
+      generator.loadSidebarToggle();
 
       // If the user has NOT read the tutorial, mount it
       if (isMobileDevice() && !hasReadTheTutorial()) {
