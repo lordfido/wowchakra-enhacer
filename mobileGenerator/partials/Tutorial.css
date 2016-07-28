@@ -20,7 +20,7 @@
     border: 5000px solid rgba(0, 0, 0, 0.7);
     border-radius: 50%;
     box-sizing: initial;
-    z-index: 600;
+    z-index: 9600;
   }
 
   .Tutorial {
@@ -42,7 +42,7 @@
     background: rgba(0, 0, 0, 0.9);
     border: 1px solid rgba(112, 91, 17, 1);
     border-radius: 15px;
-    z-index: 650;
+    z-index: 9650;
   }
 
   .Tutorial-title,

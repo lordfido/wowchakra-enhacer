@@ -59,6 +59,8 @@
 
   // Tutorial constructor
   var MobileVersionGenerator = function() {
+    var that = this;
+
     // Point where everything is gonna be mount
     var URLs = {
       mobileCSS: debug ?
@@ -86,6 +88,8 @@
       mobileTutorialBackdrop.remove();
       document.body.style.overflow = 'auto';
       log('Mobile tutorial has been read and dismissed.');
+
+      that.loadSwipeListeners();
     };
 
     // Do this when press sidebar-toggle
@@ -189,9 +193,14 @@
 
       // Detect sidebarToggle click
       sidebarToggle.addEventListener('click', handleToggleSidebar);
+      log('sidebarToggle has been loaded.');
+    }
+
+    // Add listeners for swipe right/left
+    this.loadSwipeListeners = function() {
       document.addEventListener('touchstart', handleSwipeStart);
       document.addEventListener('touchend', handleSwipeEnd);
-      log('sidebarToggle has has been loaded.');
+      log('swipeListeners have been loaded.');
     }
 
     // Add tutorial layout
@@ -243,7 +252,7 @@
       document.body.appendChild(mobileTutorialLayout);
       document.body.appendChild(mobileTutorialBackdrop);
       document.body.style.overflow = 'hidden';
-      log('mobileTutorial has has been loaded.');
+      log('mobileTutorial has been loaded.');
     };
 
     // Add Google Analitycs
@@ -287,6 +296,10 @@
       if (isMobileDevice() && !hasReadTheTutorial()) {
         log('User hasn\'t read the tutorial yet.');
         generator.loadMobileTutorial();
+
+      // If the user has read the tutorial, mount listeners
+      } else if (isMobileDevice()) {
+        generator.loadSwipeListeners();
       }
 
     // If body is not available
