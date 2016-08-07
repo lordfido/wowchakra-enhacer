@@ -15,14 +15,12 @@ at the end of the <code>&lt;head&gt;</code> tag is enough for MVG to start worki
   <li><b>generator.loadSidebarToggle()</b> (function): Creates a button to open/close sidebar on mobile devices.</li>
   <li><b>generator.loadSwipeListeners()</b> (function): Start listening to 'Swipe' gestures, to open/close sidebar on mobile devices.</li>
   <li><b>generator.loadMobileTutorial()</b> (function): Create some HTML tags to display a short tutorial about how to use mobile version sidebar.</li>
-  <li><b>generator.loadGoogleAnalitycs()</b> (function): Inject a script that allows Google to track users' behavior.</li>
 </ul>
 
 # Other Tools
 <ul>
   <li><b>debug</b> (boolean): Defines if we are on debug mode or not.</li>
   <li><b>cookieName</b> (string): Defines The name for the cookie that's tells MVG if it should show Mobile Tutorial.</li>
-  <li><b>allowImperdibleSoftGetSomeAnalitycs</b> (boolean): Defines if Google Analitycs is gonna be loaded, so MVG's developer can track users' behavior.</li>
 </ul>
 <ul>
   <li><b>log()</b> (function, accepts <code>param</code>): If debug mode is active, prints a <code>console.log(param)</code>.</li>
