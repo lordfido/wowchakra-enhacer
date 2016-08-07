@@ -17,7 +17,6 @@
   }
 
   var cookieName = 'hasReadTheTutorial';
-  var allowImperdibleSoftGetSomeAnalitycs = true;
 
   // Return true|false depending on Tutorial's cookie
   var hasReadTheTutorial = function() {
@@ -254,16 +253,6 @@
       document.body.style.overflow = 'hidden';
       log('mobileTutorial has been loaded.');
     };
-
-    // Add Google Analitycs
-    this.loadGoogleAnalitycs = function() {
-      var analitycsScript = document.createElement('script');
-      analitycsScript.src = URLs.analitycs;
-      analitycsScript.id = 'mvg-analitycs';
-
-      document.head.appendChild(analitycsScript);
-      log('Google Analitycs have been loaded');
-    }
   }
 
   // Create new tutorial
@@ -272,11 +261,6 @@
   // Instantly set the viewport, and CSS files on <head></head>
   generator.setViewPort();
   generator.loadMobileCSS();
-
-  // If webadmin allows it, load google Analitycs
-  if (allowImperdibleSoftGetSomeAnalitycs) {
-    generator.loadGoogleAnalitycs();
-  }
 
   // Recursive function, wait until <body></body> is available
   var verifyBodyIsMounted = function() {
