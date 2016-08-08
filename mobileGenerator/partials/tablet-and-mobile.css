@@ -283,12 +283,10 @@
     display: block;
     float: left;
 
-    /* width: 100%; */
     left: 0;
     width: 728px;
-    margin-left: -140px;
 
-    transform: scale(0.5);
+    transform: scale(0.40) translateX(-70%);
   }
 
   /* Common styles (left/right columns) */
@@ -1069,12 +1067,10 @@
     float: left;
   }
   #s5_bottom_row1_area1 .custombanner728bottom iframe {
-    /* width: 100%; */
     left: 0;
     width: 728px;
-    margin-left: -140px;
 
-    transform: scale(0.5);
+    transform: scale(0.40) translateX(-70%);
   }
   #s5_bottom_row1_area1 .custombanner728bottom img {
      width: 100%;
@@ -1164,7 +1160,7 @@
   /** BG ADDS ***************/
   /**************************/
   #siteSkin {
-    background-position: top: left;
+    background-position: top left;
   }
 
   /**************************/

@@ -1,6 +1,14 @@
 /* This is only gonna be applied on tablets */
 @media screen and (min-width: 721px) and (max-width: 1280px) {
 
+  #s5_bottom_area_wrap1 .customabovecolumns iframe,
+  #s5_bottom_row1_area1 .custombanner728bottom iframe {
+    left: 0;
+    width: 100%;
+
+    transform: scale(1) translateX(0);
+  }
+
   /* This is only gonna be applied on landscape mode */
   @media screen and (orientation: landscape) {
 
