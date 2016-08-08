@@ -59,6 +59,7 @@
 
   /* Item preview */
   #k2Container .catItemBody {
+    position: relative;
     display: block !important;
 
     width: 100% !important;
@@ -87,8 +88,10 @@
      1 line, this position is wrong placed
   */
   #k2Container .likebtn_container {
-    top: 270px;
+    top: 0px;
     right: 35px;
+
+    margin-top: -25px !important;
   }
 
   /**************************/

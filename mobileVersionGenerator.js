@@ -17,6 +17,7 @@
   }
 
   var cookieName = 'hasReadTheTutorial';
+  var galleryAspectRatio = 0.43;
 
   // Return true|false depending on Tutorial's cookie
   var hasReadTheTutorial = function() {
@@ -88,7 +89,7 @@
       document.body.style.overflow = 'auto';
       log('Mobile tutorial has been read and dismissed.');
 
-      that.loadSwipeListeners();
+      that.loadEventListeners();
     };
 
     // Do this when press sidebar-toggle
@@ -196,10 +197,11 @@
     }
 
     // Add listeners for swipe right/left
-    this.loadSwipeListeners = function() {
+    this.loadEventListeners = function() {
       document.addEventListener('touchstart', handleSwipeStart);
       document.addEventListener('touchend', handleSwipeEnd);
-      log('swipeListeners have been loaded.');
+      document.addEventListener('resize', updateGallerySizes);
+      log('eventListeners have been loaded.');
     }
 
     // Add tutorial layout
@@ -253,6 +255,16 @@
       document.body.style.overflow = 'hidden';
       log('mobileTutorial has been loaded.');
     };
+
+    // Update gallery sizes
+    this.updateGallerySizes = function() {
+      var gallery = document.querySelector("#myGallery.jdGallery");
+      var width = parseInt(gallery.offsetWidth);
+      var height = (width * galleryAspectRatio) + "px";
+
+      gallery.style.height = height + "px";
+      log("Gallery height updated to: " + height);
+    }
   }
 
   // Create new tutorial
@@ -283,7 +295,7 @@
 
       // If the user has read the tutorial, mount listeners
       } else if (isMobileDevice()) {
-        generator.loadSwipeListeners();
+        generator.loadEventListeners();
       }
 
     // If body is not available
