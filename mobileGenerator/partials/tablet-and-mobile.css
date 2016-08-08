@@ -232,6 +232,7 @@
   }
   #s5_pos_top_row1_1 #myGallery{
     width: 100% !important;
+    margin-bottom: 20px;
   }
   #s5_pos_top_row1_1 #myGallery .slideElement {
     background-size: 100% auto;
