@@ -517,7 +517,7 @@
   #k2Container.itemView .itemFullText h4.fondowodshaman img,
   #k2Container.itemView .itemFullText h4.fondowod2 img,
   #k2Container.itemView .itemFullText h4.fondowoddk img,
-  #k2Container.itemView .itemFullText h4.fondowoddruidv,
+  #k2Container.itemView .itemFullText h4.fondowoddruid img,
   #k2Container.itemView .itemFullText h4.fondowodhunter img,
   #k2Container.itemView .itemFullText h4.fondowodmage img,
   #k2Container.itemView .itemFullText h4.fondowodmonk img,
@@ -536,7 +536,17 @@
   }
 
   #k2Container.itemView .itemFullText .panelchakra,
-  #k2Container.itemView .itemFullText .seccionwarrior {
+  #k2Container.itemView .itemFullText .seccionlock,
+  #k2Container.itemView .itemFullText .seccionschaman,
+  #k2Container.itemView .itemFullText .secciondk,
+  #k2Container.itemView .itemFullText .secciondruid,
+  #k2Container.itemView .itemFullText .seccionhunter,
+  #k2Container.itemView .itemFullText .seccionmage,
+  #k2Container.itemView .itemFullText .seccionmonk,
+  #k2Container.itemView .itemFullText .seccionpaladin,
+  #k2Container.itemView .itemFullText .seccionpriest,
+  #k2Container.itemView .itemFullText .seccionrogue,
+  #k2Container.itemView .itemFullText .secciondh {
     position: relative;
     display: block;
     float: left;
