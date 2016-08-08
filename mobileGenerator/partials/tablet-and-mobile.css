@@ -279,9 +279,16 @@
     text-align: center;
   }
   #s5_bottom_area_wrap1 .customabovecolumns iframe {
+    position: relative;
+    display: block;
     float: left;
 
-    width: 100%;
+    /* width: 100%; */
+    left: 0;
+    width: 728px;
+    margin-left: -140px;
+
+    transform: scale(0.5);
   }
 
   /* Common styles (left/right columns) */
@@ -1051,13 +1058,26 @@
 
     width: auto;
     height: auto;
+    max-height: none;
     margin: 0 auto;
     padding: 0;
   }
-  #s5_bottom_row1_area1 .custombanner728bottom iframe {
+  #s5_bottom_row1_area1 .custombanner728bottom iframe,
+  #s5_bottom_row1_area1 .custombanner728bottom img {
+    position: relative;
+    display: block;
     float: left;
+  }
+  #s5_bottom_row1_area1 .custombanner728bottom iframe {
+    /* width: 100%; */
+    left: 0;
+    width: 728px;
+    margin-left: -140px;
 
-    width: 100%;
+    transform: scale(0.5);
+  }
+  #s5_bottom_row1_area1 .custombanner728bottom img {
+     width: 100%;
   }
 
   /* Footer links*/
@@ -1138,6 +1158,13 @@
     border-radius: 50%;
     opacity: 0.6;
     z-index: 400;
+  }
+
+  /**************************/
+  /** BG ADDS ***************/
+  /**************************/
+  #siteSkin {
+    background-position: top: left;
   }
 
   /**************************/
