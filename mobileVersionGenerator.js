@@ -156,6 +156,16 @@
       }
     }
 
+    // Update gallery sizes
+    var updateGallerySizes = function() {
+      var gallery = document.querySelector("#myGallery.jdGallery");
+      var width = parseInt(gallery.offsetWidth);
+      var height = (width * galleryAspectRatio) + "px";
+
+      gallery.style.height = height + "px";
+      log("Gallery height updated to: " + height);
+    }
+
     // Set viewport meta, needed for mobile devices
     this.setViewPort = function() {
       var viewPort = document.createElement('meta');
@@ -255,16 +265,6 @@
       document.body.style.overflow = 'hidden';
       log('mobileTutorial has been loaded.');
     };
-
-    // Update gallery sizes
-    this.updateGallerySizes = function() {
-      var gallery = document.querySelector("#myGallery.jdGallery");
-      var width = parseInt(gallery.offsetWidth);
-      var height = (width * galleryAspectRatio) + "px";
-
-      gallery.style.height = height + "px";
-      log("Gallery height updated to: " + height);
-    }
   }
 
   // Create new tutorial
