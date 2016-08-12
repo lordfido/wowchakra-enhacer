@@ -174,8 +174,9 @@
 
         // Get parent element
         var parent = e.target.offsetParent;
+        var linkWrapper = e.target.parentElement.parentElement;
 
-        // Set top position for submenus
+        // Set top position for old submenus
         // var submenuTopPosition = document.querySelector('#s5_header_area1').offsetHeight + document.querySelector('#s5_menu_wrap').offsetHeight;
         // parent.style.top = submenuTopPosition + "px";
 
@@ -185,7 +186,11 @@
           // Mark current menu as hidden
           parent.className += ' is-hidden';
         }
-        e.preventDefault();
+
+        // If this menu opens another menu
+        if (/subParentBtn/.test(linkWrapper.classList)) {
+          e.preventDefault();
+        }
       }
     }
 
