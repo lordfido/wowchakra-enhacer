@@ -302,6 +302,8 @@
       typeof document.body !== undefined &&
       document.querySelector('#s5_center_area_inner #s5_columns_wrap_inner') !== null &&
       typeof document.querySelector('#s5_center_area_inner #s5_columns_wrap_inner') !== undefined
+      document.querySelector('#subMenusContainer') !== null &&
+      typeof document.querySelector('#subMenusContainer') !== undefined
     ) {
 
       // Set sidebarToggle
