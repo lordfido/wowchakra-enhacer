@@ -159,11 +159,13 @@
     // Update gallery sizes
     var handleResize = function() {
       var gallery = document.querySelector("#myGallery.jdGallery");
-      var width = parseInt(gallery.offsetWidth);
-      var height = (width * galleryAspectRatio);
+      if (gallery) {
+        var width = parseInt(gallery.offsetWidth);
+        var height = (width * galleryAspectRatio);
 
-      gallery.style.height = height + "px";
-      log("Gallery height updated to: " + height);
+        gallery.style.height = height + "px";
+        log("Gallery height updated to: " + height);
+      }
     }
 
     // Convert hoverable-navigation into clickable-navigation
@@ -222,6 +224,7 @@
 
       // Detecting clicks event on menus
       document.querySelector('#s5_menu_wrap').addEventListener('click', handleNavigationClick);
+      document.querySelector('#subMenusContainer').addEventListener('click', handleNavigationClick);
 
       // Detecting resizing (for resizing gallery)
       window.addEventListener('resize', handleResize);
