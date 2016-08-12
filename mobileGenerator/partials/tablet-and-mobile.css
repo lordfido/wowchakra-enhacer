@@ -198,9 +198,16 @@
     height: auto !important;
     left: 0 !important;
 
+    transition: transform .3;
     z-index: 1000000 !important;
   }
-  
+
+  #subMenusContainer .s5_sub_wrap_rtl.is-hidden,
+  #subMenusContainer .s5_sub_wrap_lower.is-hidden,
+  #subMenusContainer .s5_sub_wrap_lower_rt1.is-hidden {
+    transform: translateX(-100%);
+  }
+
   /**************************/
   /** SOCIAL LINKS **********/
   /**************************/

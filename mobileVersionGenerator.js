@@ -172,8 +172,12 @@
     var handleNavigationClick = function(e) {
       if (isMobileDevice()) {
 
-        // Prevent default (no click effect)
+        // Get parent element
         var parent = e.target.offsetParent;
+
+        // Set top position for submenus
+        // var submenuTopPosition = document.querySelector('#s5_header_area1').offsetHeight + document.querySelector('#s5_menu_wrap').offsetHeight;
+        // parent.style.top = submenuTopPosition + "px";
 
         // If it's a subMenusContainer
         if (/s5_sub_wrap/.test(parent.classList)) {
