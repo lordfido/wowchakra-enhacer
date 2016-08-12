@@ -189,14 +189,18 @@
     z-index: initial !important;
   }
   #subMenusContainer .s5_sub_wrap_rtl,
-  #subMenusContainer .s5_sub_wrap_rtl ul {
+  #subMenusContainer .s5_sub_wrap_rtl ul,
+  #subMenusContainer .s5_sub_wrap_lower,
+  #subMenusContainer .s5_sub_wrap_lower ul,
+  #subMenusContainer .s5_sub_wrap_lower_rt1,
+  #subMenusContainer .s5_sub_wrap_lower_rt1 ul {
     width: 100% !important;
     height: auto !important;
     left: 0 !important;
 
     z-index: 1000000 !important;
   }
-
+  
   /**************************/
   /** SOCIAL LINKS **********/
   /**************************/
