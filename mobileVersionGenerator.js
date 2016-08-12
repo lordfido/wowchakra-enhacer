@@ -171,7 +171,7 @@
     // Convert hoverable-navigation into clickable-navigation
     var handleNavigationClick = function(e) {
       if (isMobileDevice()) {
-        
+
         // Prevent default (no click effect)
         var parent = e.target.offsetParent;
 
@@ -179,7 +179,7 @@
         if (/s5_sub_wrap/.test(parent.classList)) {
 
           // Mark current menu as hidden
-          parent.classList.push('is-hidden');
+          parent.className += ' is-hidden';
         }
         e.preventDefault();
       }
