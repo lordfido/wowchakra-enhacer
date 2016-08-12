@@ -100,9 +100,11 @@
 
     // Open sidebar
     var openSidebar = function(sidebarToggle, sidebar) {
-      sidebar.className += ' sidebar-open';
-      sidebarToggle.className += ' sidebar-open';
-      sidebarToggle.style.right = (sidebar.offsetWidth - 5) + 'px';
+      if (!that.isMenuOpen) {
+        sidebar.className += ' sidebar-open';
+        sidebarToggle.className += ' sidebar-open';
+        sidebarToggle.style.right = (sidebar.offsetWidth - 5) + 'px';
+      }
     };
 
     // Close sidebar
@@ -158,14 +160,7 @@
 
     // Update gallery sizes
     var handleResize = function() {
-      var gallery = document.querySelector("#myGallery.jdGallery");
-      if (gallery) {
-        var width = parseInt(gallery.offsetWidth);
-        var height = (width * galleryAspectRatio);
-
-        gallery.style.height = height + "px";
-        log("Gallery height updated to: " + height);
-      }
+      that.galleryResize();
     }
 
     // Convert hoverable-navigation into clickable-navigation
@@ -176,10 +171,6 @@
         var parent = e.target.offsetParent;
         var linkWrapper = e.target.parentElement.parentElement;
 
-        // Set top position for old submenus
-        // var submenuTopPosition = document.querySelector('#s5_header_area1').offsetHeight + document.querySelector('#s5_menu_wrap').offsetHeight;
-        // parent.style.top = submenuTopPosition + "px";
-
         // If it's a subMenusContainer
         if (/s5_sub_wrap/.test(parent.classList)) {
 
@@ -189,7 +180,10 @@
 
         // If this menu opens another menu
         if (/mainParentBtn/.test(parent.classList) || /subParentBtn/.test(linkWrapper.classList)) {
+          that.isMenuOpen = true;
           e.preventDefault();
+        } else {
+          that.isMenuOpen = false;
         }
       }
     }
@@ -247,6 +241,7 @@
       // Detecting resizing (for resizing gallery)
       window.addEventListener('resize', handleResize);
       handleResize();
+      that.setNavigationTopPosition();
 
       log('eventListeners have been loaded.');
     }
@@ -302,6 +297,23 @@
       document.body.style.overflow = 'hidden';
       log('mobileTutorial has been loaded.');
     };
+
+    // Resize gallery
+    this.galleryResize = function() {
+      var gallery = document.querySelector("#myGallery.jdGallery");
+      if (gallery) {
+        var width = parseInt(gallery.offsetWidth);
+        var height = (width * galleryAspectRatio);
+
+        gallery.style.height = height + "px";
+        log("Gallery height updated to: " + height);
+      }
+    }
+
+    // Creates a CSS rule for submenus
+    this.setNavigationTopPosition = function() {
+      var submenuTopPosition = document.querySelector('#s5_header_area1').offsetHeight + document.querySelector('#s5_menu_wrap').offsetHeight;
+    }
   }
 
   // Create new tutorial
