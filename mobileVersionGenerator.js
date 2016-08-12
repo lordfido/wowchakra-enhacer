@@ -189,7 +189,7 @@
         }
 
         // If this menu opens another menu
-        if (/subParentBtn/.test(linkWrapper.classList) && /menu/.test(menuWrapper) !== true) {
+        if (/subParentBtn/.test(linkWrapper.classList) && /menu/.test(menuWrapper.classList) === false) {
           e.preventDefault();
         }
       }
