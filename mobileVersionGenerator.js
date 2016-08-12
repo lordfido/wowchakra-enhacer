@@ -160,15 +160,18 @@
     var handleResize = function() {
       var gallery = document.querySelector("#myGallery.jdGallery");
       var width = parseInt(gallery.offsetWidth);
-      var height = (width * galleryAspectRatio) + "px";
+      var height = (width * galleryAspectRatio);
 
       gallery.style.height = height + "px";
       log("Gallery height updated to: " + height);
     }
 
     // Convert hoverable-navigation into clickable-navigation
-    var handleClick = function(e) {
-      console.log(e);
+    var handleNavigationClick = function(e) {
+
+        // Prevent default
+        e.preventDefault();
+      }
     }
 
     // Set viewport meta, needed for mobile devices
@@ -213,10 +216,17 @@
 
     // Add listeners for swipe right/left
     this.loadEventListeners = function() {
+      // Detecting touch events (for swipes)
       document.addEventListener('touchstart', handleSwipeStart);
       document.addEventListener('touchend', handleSwipeEnd);
-      document.addEventListener('click', handleClick);
+
+      // Detecting clicks event on menus
+      document.querySelector('#s5_menu_wrap').addEventListener('click', handleNavigationClick);
+
+      // Detecting resizing (for resizing gallery)
       window.addEventListener('resize', handleResize);
+      handleResize();
+      
       log('eventListeners have been loaded.');
     }
 
