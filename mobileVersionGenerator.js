@@ -313,6 +313,9 @@
     // Creates a CSS rule for submenus
     this.setNavigationTopPosition = function() {
       var submenuTopPosition = document.querySelector('#s5_header_area1').offsetHeight + document.querySelector('#s5_menu_wrap').offsetHeight;
+      document.querySelector('.s5_sub_wrap_rtl').style.top = submenuTopPosition + "px !important";
+      document.querySelector('.s5_sub_wrap_lower').style.top = submenuTopPosition + "px !important";
+      document.querySelector('.s5_sub_wrap_lower_rt1').style.top = submenuTopPosition + "px !important";
     }
   }
 
