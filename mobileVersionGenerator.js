@@ -248,7 +248,7 @@
       var submenuTopPosition = document.querySelector('#s5_header_area1').offsetHeight + document.querySelector('#s5_menu_wrap').offsetHeight;
       var specificStyles = document.createElement("style");
       specificStyles.innerText = ".ss5_sub_wrap_rtl, .s5_sub_wrap_lower, .s5_sub_wrap_lower_rt1 { top: " + submenuTopPosition + "px important; }";
-      mobileCSS.id = 'mvg-styles';
+      specificStyles.id = 'mvg-styles';
 
       document.head.appendChild(specificStyles);
       log('specificStyles have been loaded');
