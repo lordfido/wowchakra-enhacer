@@ -174,6 +174,7 @@
 
         // Get parent element
         var parent = e.target.offsetParent;
+        var menuWrapper = parent.offsetParent;
         var linkWrapper = e.target.parentElement.parentElement;
 
         // Set top position for old submenus
@@ -188,7 +189,7 @@
         }
 
         // If this menu opens another menu
-        if (/subParentBtn/.test(linkWrapper.classList)) {
+        if (/subParentBtn/.test(linkWrapper.classList) && /menu/.test(menuWrapper) !== true) {
           e.preventDefault();
         }
       }
