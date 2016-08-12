@@ -168,8 +168,8 @@
 
     // Convert hoverable-navigation into clickable-navigation
     var handleNavigationClick = function(e) {
-
-        // Prevent default
+      if (isMobileDevice()) {
+        // Prevent default (no click effect)
         e.preventDefault();
       }
     }
@@ -226,7 +226,7 @@
       // Detecting resizing (for resizing gallery)
       window.addEventListener('resize', handleResize);
       handleResize();
-      
+
       log('eventListeners have been loaded.');
     }
 
