@@ -157,13 +157,18 @@
     }
 
     // Update gallery sizes
-    var updateGallerySizes = function() {
+    var handleResize = function() {
       var gallery = document.querySelector("#myGallery.jdGallery");
       var width = parseInt(gallery.offsetWidth);
       var height = (width * galleryAspectRatio) + "px";
 
       gallery.style.height = height + "px";
       log("Gallery height updated to: " + height);
+    }
+
+    // Convert hoverable-navigation into clickable-navigation
+    var handleClick = function(e) {
+      console.log(e);
     }
 
     // Set viewport meta, needed for mobile devices
@@ -210,7 +215,8 @@
     this.loadEventListeners = function() {
       document.addEventListener('touchstart', handleSwipeStart);
       document.addEventListener('touchend', handleSwipeEnd);
-      document.addEventListener('resize', updateGallerySizes);
+      document.addEventListener('click', handleClick);
+      window.addEventListener('resize', handleResize);
       log('eventListeners have been loaded.');
     }
 
