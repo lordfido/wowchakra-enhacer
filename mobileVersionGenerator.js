@@ -188,7 +188,7 @@
         }
 
         // If this menu opens another menu
-        if (/subParentBtn/.test(parent.classList) || /subParentBtn/.test(linkWrapper.classList)) {
+        if (/mainParentBtn/.test(parent.classList) || /subParentBtn/.test(linkWrapper.classList)) {
           e.preventDefault();
         }
       }
