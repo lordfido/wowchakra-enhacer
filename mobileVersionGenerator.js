@@ -209,15 +209,6 @@
 
       document.head.appendChild(mobileCSS);
       log('mobileCSS has been loaded.');
-
-      // Set a propper position for submenus
-      var submenuTopPosition = document.querySelector('#s5_header_area1').offsetHeight + document.querySelector('#s5_menu_wrap').offsetHeight;
-      var specificStyles = document.createElement("style");
-      specificStyles.innerText = ".ss5_sub_wrap_rtl, .s5_sub_wrap_lower, .s5_sub_wrap_lower_rt1 { top: " + submenuTopPosition + "px important; }";
-      mobileCSS.id = 'mvg-styles';
-
-      document.head.appendChild(specificStyles);
-      log('specificStyles have been loaded');
     }
 
     // Add a button to open/close sidebar
@@ -250,9 +241,17 @@
       // Detecting resizing (for resizing gallery)
       window.addEventListener('resize', handleResize);
       handleResize();
-      that.setNavigationTopPosition();
 
       log('eventListeners have been loaded.');
+
+      // Set a propper position for submenus
+      var submenuTopPosition = document.querySelector('#s5_header_area1').offsetHeight + document.querySelector('#s5_menu_wrap').offsetHeight;
+      var specificStyles = document.createElement("style");
+      specificStyles.innerText = ".ss5_sub_wrap_rtl, .s5_sub_wrap_lower, .s5_sub_wrap_lower_rt1 { top: " + submenuTopPosition + "px important; }";
+      mobileCSS.id = 'mvg-styles';
+
+      document.head.appendChild(specificStyles);
+      log('specificStyles have been loaded');
     }
 
     // Add tutorial layout
