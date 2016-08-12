@@ -100,9 +100,11 @@
 
     // Open sidebar
     var openSidebar = function(sidebarToggle, sidebar) {
-      sidebar.className += ' sidebar-open';
-      sidebarToggle.className += ' sidebar-open';
-      sidebarToggle.style.right = (sidebar.offsetWidth - 5) + 'px';
+      if (!that.isMenuOpen) {
+        sidebar.className += ' sidebar-open';
+        sidebarToggle.className += ' sidebar-open';
+        sidebarToggle.style.right = (sidebar.offsetWidth - 5) + 'px';
+      }
     };
 
     // Close sidebar
@@ -158,17 +160,32 @@
 
     // Update gallery sizes
     var handleResize = function() {
-      var gallery = document.querySelector("#myGallery.jdGallery");
-      var width = parseInt(gallery.offsetWidth);
-      var height = (width * galleryAspectRatio) + "px";
-
-      gallery.style.height = height + "px";
-      log("Gallery height updated to: " + height);
+      that.galleryResize();
     }
 
     // Convert hoverable-navigation into clickable-navigation
-    var handleClick = function(e) {
-      console.log(e);
+    var handleNavigationClick = function(e) {
+      if (isMobileDevice()) {
+
+        // Get parent element
+        var parent = e.target.offsetParent;
+        var linkWrapper = e.target.parentElement.parentElement;
+
+        // If it's a subMenusContainer
+        if (/s5_sub_wrap/.test(parent.classList)) {
+
+          // Mark current menu as hidden
+          parent.className += ' is-hidden';
+        }
+
+        // If this menu opens another menu
+        if (/mainParentBtn/.test(parent.classList) || /subParentBtn/.test(linkWrapper.classList)) {
+          that.isMenuOpen = true;
+          e.preventDefault();
+        } else {
+          that.isMenuOpen = false;
+        }
+      }
     }
 
     // Set viewport meta, needed for mobile devices
@@ -213,10 +230,18 @@
 
     // Add listeners for swipe right/left
     this.loadEventListeners = function() {
+      // Detecting touch events (for swipes)
       document.addEventListener('touchstart', handleSwipeStart);
       document.addEventListener('touchend', handleSwipeEnd);
-      document.addEventListener('click', handleClick);
+
+      // Detecting clicks event on menus
+      document.querySelector('#s5_menu_wrap').addEventListener('click', handleNavigationClick);
+      document.querySelector('#subMenusContainer').addEventListener('click', handleNavigationClick);
+
+      // Detecting resizing (for resizing gallery)
       window.addEventListener('resize', handleResize);
+      handleResize();
+
       log('eventListeners have been loaded.');
     }
 
@@ -271,6 +296,18 @@
       document.body.style.overflow = 'hidden';
       log('mobileTutorial has been loaded.');
     };
+
+    // Resize gallery
+    this.galleryResize = function() {
+      var gallery = document.querySelector("#myGallery.jdGallery");
+      if (gallery) {
+        var width = parseInt(gallery.offsetWidth);
+        var height = (width * galleryAspectRatio);
+
+        gallery.style.height = height + "px";
+        log("Gallery height updated to: " + height);
+      }
+    }
   }
 
   // Create new tutorial
@@ -288,7 +325,9 @@
       document.body !== null &&
       typeof document.body !== undefined &&
       document.querySelector('#s5_center_area_inner #s5_columns_wrap_inner') !== null &&
-      typeof document.querySelector('#s5_center_area_inner #s5_columns_wrap_inner') !== undefined
+      typeof document.querySelector('#s5_center_area_inner #s5_columns_wrap_inner') !== undefined &&
+      document.querySelector('#subMenusContainer') !== null &&
+      typeof document.querySelector('#subMenusContainer') !== undefined
     ) {
 
       // Set sidebarToggle
