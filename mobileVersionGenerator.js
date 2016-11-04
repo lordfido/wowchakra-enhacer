@@ -4,7 +4,13 @@
 /** Website: http://www.imperdiblesoft.com ************/
 /******************************************************/
 /*
-<script src="http://lordfido.github.io/wowchakra-mobile/mobileVersionGenerator.js"></script>
+  INLINE SCRIPT
+  <script src="http://lordfido.github.io/wowchakra-mobile/mobileVersionGenerator.js"></script>
+
+  DYNAMIC SCRIPT
+  var mvg = document.createElement("script");
+  mvg.src = "http://lordfido.github.io/wowchakra-mobile/mobileVersionGenerator.js";
+  document.head.appendChild(mvg);
 */
 
 /* This file dynamically creates a very simple tutorial for mobile layout */
