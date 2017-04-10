@@ -1,20 +1,20 @@
-# Mobile Version Generator
-<p>Mobile Version Generator (MVG in advance) is a tool created to quickly adapt wowchakra.com to mobile devices.</p>
-<p>Injecting <code>&lt;script src="https://lordfido.github.io/wowchakra-mobile/mobileVersionGenerator.js"&gt;&lt;/script&gt;</code>
-at the end of the <code>&lt;head&gt;</code> tag is enough for MVG to start working.</p>
+# Wowchakra Enhacer
+<p>Wowchakra Enhacer is a tool created to quickly adapt wowchakra.com to mobile devices.</p>
+<p>Injecting <code>&lt;script src="https://lordfido.github.io/wowchakra-enhacer/wowchakra-enhacer.js"&gt;&lt;/script&gt;</code>
+at the end of the <code>&lt;head&gt;</code> tag is enough for Wowchakra Enhacer to start working.</p>
 
 # Init
-<p>To initiate MVG simply create a new MVG object:</p>
-<code>var generator = new MobileVersionGenerator();</code>
+<p>To initiate Wowchakra Enhacer simply create a new MVG object:</p>
+<code>var wowchakraEnhacer = new Enhacer();</code>
 
 # Available Tasks
-<p><code>mobileVersionGenerator</code> is a constructor that has a few tasks built in.</p>
+<p><code>Enhacer</code> is a constructor that has a few tasks built in.</p>
 <ul>
-  <li><b>generator.setViewPort()</b> (function): Generate a <code>&lt;meta&gt;</code> tag to setup the viewport.</li>
-  <li><b>generator.loadMobileCSS()</b> (function): Inject a <code>&lt;link&gt;</code> with <code>mobileVersion.css</code>.</li>
-  <li><b>generator.loadSidebarToggle()</b> (function): Creates a button to open/close sidebar on mobile devices.</li>
-  <li><b>generator.loadSwipeListeners()</b> (function): Start listening to 'Swipe' gestures, to open/close sidebar on mobile devices.</li>
-  <li><b>generator.loadMobileTutorial()</b> (function): Create some HTML tags to display a short tutorial about how to use mobile version sidebar.</li>
+  <li><b>wowchakraEnhacer.setViewPort()</b> (function): Generate a <code>&lt;meta&gt;</code> tag to setup the viewport.</li>
+  <li><b>wowchakraEnhacer.loadMobileCSS()</b> (function): Inject a <code>&lt;link&gt;</code> with <code>mobileVersion.css</code>.</li>
+  <li><b>wowchakraEnhacer.loadSidebarToggle()</b> (function): Creates a button to open/close sidebar on mobile devices.</li>
+  <li><b>wowchakraEnhacer.loadSwipeListeners()</b> (function): Start listening to 'Swipe' gestures, to open/close sidebar on mobile devices.</li>
+  <li><b>wowchakraEnhacer.loadMobileTutorial()</b> (function): Create some HTML tags to display a short tutorial about how to use mobile version sidebar.</li>
 </ul>
 
 # Other Tools
