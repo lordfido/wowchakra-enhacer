@@ -28,6 +28,7 @@
 
   var cookieName = 'hasReadTheTutorial';
   var galleryAspectRatio = 0.43;
+  var ENHACER_BLOCKED = 'WowchakraEnhacer-blocked';
   var ENHACER_CLASSNAME = 'WowchakraEnhacer';
 
   // Return true|false depending on Tutorial's cookie
@@ -68,12 +69,23 @@
     return false;
   }
 
+  var setCookie = function(cookieName) {
+    var d = new Date();
+    var expDays = 999999;
+    d.setTime(d.getTime() + (expDays * 24 * 60 * 60 * 1000));
+    var expires = "expires="+ d.toUTCString();
+
+    // Add a cookie to save this action
+    document.cookie = cookieName + '=true; ' + expires;
+  }
+
   // Enable/disabled enhaced version
   var toggleEnhacements = function() {
     var classes = document.body.classList;
 
     if (classes.contains(ENHACER_CLASSNAME)) {
       classes.remove(ENHACER_CLASSNAME);
+      setCookie(ENHACER_BLOCKED);
     } else {
       classes.add(ENHACER_CLASSNAME);
     }
@@ -96,13 +108,7 @@
 
     // Do this when okBtn has been clicked
     var handleOkBtnClick = function(e) {
-      var d = new Date();
-      var expDays = 999999;
-      d.setTime(d.getTime() + (expDays * 24 * 60 * 60 * 1000));
-      var expires = "expires="+ d.toUTCString();
-
-      // Add a cookie to save this action
-      document.cookie = cookieName + '=true; ' + expires;
+      setCookie(cookieName);
 
       // Remove tutorial from screen
       var mobileTutorialLayout = document.querySelector('.Tutorial');
@@ -348,48 +354,50 @@
     }
   }
 
-  // Create new tutorial
-  var wowchakraEnhacer = new Enhacer();
+  // Create new enhacer
+  if (!document.cookie.contains(ENHACER_BLOCKED)) {
+    var wowchakraEnhacer = new Enhacer();
 
-  // Instantly set the viewport, and CSS files on <head></head>
-  wowchakraEnhacer.setViewPort();
-  wowchakraEnhacer.loadNewStyles();
+    // Instantly set the viewport, and CSS files on <head></head>
+    wowchakraEnhacer.setViewPort();
+    wowchakraEnhacer.loadNewStyles();
 
-  // Recursive function, wait until <body></body> is available
-  var verifyBodyIsMounted = function() {
+    // Recursive function, wait until <body></body> is available
+    var verifyBodyIsMounted = function() {
 
-    // If body is available, so we can mount things on it
-    if (
-      document.body !== null &&
-      typeof document.body !== undefined &&
-      document.querySelector('#s5_center_area_inner #s5_columns_wrap_inner') !== null &&
-      typeof document.querySelector('#s5_center_area_inner #s5_columns_wrap_inner') !== undefined &&
-      document.querySelector('#subMenusContainer') !== null &&
-      typeof document.querySelector('#subMenusContainer') !== undefined
-    ) {
+      // If body is available, so we can mount things on it
+      if (
+        document.body !== null &&
+        typeof document.body !== undefined &&
+        document.querySelector('#s5_center_area_inner #s5_columns_wrap_inner') !== null &&
+        typeof document.querySelector('#s5_center_area_inner #s5_columns_wrap_inner') !== undefined &&
+        document.querySelector('#subMenusContainer') !== null &&
+        typeof document.querySelector('#subMenusContainer') !== undefined
+      ) {
 
-      // Set sidebarToggle
-      wowchakraEnhacer.loadSidebarToggle();
-      wowchakraEnhacer.setEnhacementLink();
+        // Set sidebarToggle
+        wowchakraEnhacer.loadSidebarToggle();
+        wowchakraEnhacer.setEnhacementLink();
 
-      // If the user has NOT read the tutorial, mount it
-      if (isMobileDevice() && !hasReadTheTutorial()) {
-        log('User hasn\'t read the tutorial yet.');
-        wowchakraEnhacer.loadMobileTutorial();
+        // If the user has NOT read the tutorial, mount it
+        if (isMobileDevice() && !hasReadTheTutorial()) {
+          log('User hasn\'t read the tutorial yet.');
+          wowchakraEnhacer.loadMobileTutorial();
 
-      // If the user has read the tutorial, mount listeners
-      } else if (isMobileDevice()) {
-        wowchakraEnhacer.loadEventListeners();
+        // If the user has read the tutorial, mount listeners
+        } else if (isMobileDevice()) {
+          wowchakraEnhacer.loadEventListeners();
+        }
+
+      // If body is not available
+      } else {
+
+        // Ask again in 500ms
+        setTimeout(function() {
+          verifyBodyIsMounted();
+        }, 500);
       }
-
-    // If body is not available
-    } else {
-
-      // Ask again in 500ms
-      setTimeout(function() {
-        verifyBodyIsMounted();
-      }, 500);
-    }
-  };
-  verifyBodyIsMounted();
+    };
+    verifyBodyIsMounted();
+  }
 })();
