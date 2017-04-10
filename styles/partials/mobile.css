@@ -1,0 +1,126 @@
+/* This is only gonna be applied on mobiles */
+@media screen and (max-width: 720px) {
+  /**************************/
+  /** CONTENT PREVIEW *******/
+  /**************************/
+  /* Left column */
+  /* Item preview */
+  .WowchakraEnhacer #k2Container.itemListView .itemContainer {
+    height: auto;
+    padding-top: 13px;
+    margin-bottom: 25px;
+
+    text-align: center;
+
+    background: url('http://www.wowchakra.com/templates/hexicon_gamer/images/1px_alpha_50_black.png') repeat;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+  }
+
+  /* Item image */
+  .WowchakraEnhacer #k2Container .catItemImageBlock,
+  .WowchakraEnhacer #k2Container .catItemImageBlock .catItemImage,
+  .WowchakraEnhacer #k2Container .catItemImageBlock img {
+    position: relative;
+    display: block;
+    float: none;
+
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+
+    box-shadow: none;
+  }
+  .WowchakraEnhacer #k2Container .catItemImageBlock {
+    margin-bottom: 10px;
+  }
+  .WowchakraEnhacer #k2Container .catItemImageBlock img {
+    max-width: 100%;
+
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Item title */
+  .WowchakraEnhacer #k2Container .catItemHeader {
+    display: block !important;
+
+    text-align: left;
+  }
+  .WowchakraEnhacer #k2Container .catItemHeader .catItemTitle {
+    margin: 0;
+    margin-bottom: 10px;
+
+    text-align: center;
+  }
+  .WowchakraEnhacer #k2Container .catItemHeader .catItemAuthor {
+    padding-left: 15px;
+  }
+
+  /* Item preview */
+  .WowchakraEnhacer #k2Container .catItemBody {
+    position: relative;
+    display: block !important;
+
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    margin: 0 auto;
+    padding: 15px;
+
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .WowchakraEnhacer #k2Container .catItemBody .catItemIntroText {
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Item links */
+  .WowchakraEnhacer #k2Container .catItemReadMore {
+    display: block !important;
+  }
+
+  /* Like button */
+  /* TODO: When image is too big, or title has more than
+     1 line, this position is wrong placed
+  */
+  .WowchakraEnhacer #k2Container .likebtn_container {
+    top: 0px;
+    right: 35px;
+
+    margin-top: -25px !important;
+  }
+
+  /**************************/
+  /** POPUPS ****************/
+  /**************************/
+  /* Account popup */
+  .WowchakraEnhacer #colorbox {
+    width: 90% !important;
+    height: 90% !important;
+  }
+
+  /**************************/
+  /** GALLERY ***************/
+  /**************************/
+  /* Gallery Thumbnails */
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .sigplus-gallery ul li {
+    width: 46% !important;
+  }
+
+  /* Inline controls */
+  .WowchakraEnhacer #boxplus .boxplus-viewer .boxplus-resizer {
+    display: none;
+  }
+
+  /* This is only gonna be applied on landscape mode */
+  @media screen and (orientation: landscape) {
+    /* Gallery Thumbnails */
+    .WowchakraEnhacer #k2Container.itemView .itemFullText .sigplus-gallery ul li {
+      width: 29.33% !important;
+    }
+  }
+}

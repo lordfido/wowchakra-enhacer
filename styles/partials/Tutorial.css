@@ -1,0 +1,88 @@
+.WowchakraEnhacer .Tutorial-backdrop,
+.WowchakraEnhacer .Tutorial {
+  display: none;
+}
+
+/* This is only gonna be applied on tablet and mobiles */
+@media screen and (max-width: 1280px) {
+  .WowchakraEnhacer .Tutorial-backdrop {
+    position: fixed;
+    display: block;
+
+    top: 0;
+    right: 0;
+    left: initial;
+    width: 70px;
+    height: 70px;
+    margin-top: -4860px;
+    margin-right: -5010px;
+
+    border: 5000px solid rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    box-sizing: initial;
+    z-index: 9600;
+  }
+
+  .WowchakraEnhacer .Tutorial {
+    position: fixed;
+    display: block;
+    float: none;
+
+    width: auto;
+    max-width: calc(100% - 70px);
+    height: auto;
+    margin: 0;
+    padding: 20px;
+    top: 50px;
+    left: initial;
+    right: 60px;
+
+    text-align: right;
+
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(112, 91, 17, 1);
+    border-radius: 15px;
+    z-index: 9650;
+  }
+
+  .WowchakraEnhacer .Tutorial-title,
+  .WowchakraEnhacer .Tutorial-legend,
+  .WowchakraEnhacer .Tutorial-okBtn {
+    position: relative;
+    display: inline-block;
+    float: right;
+
+    clear: both;
+  }
+
+  .WowchakraEnhacer .Tutorial-title,
+  .WowchakraEnhacer .Tutorial-legend {
+    margin-right: 10px;
+
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .WowchakraEnhacer .Tutorial-okBtn {
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Oswald',Helvetica,Arial,Sans-Serif;
+    font-size: 1em;
+    text-align: center;
+
+    appearance: none;
+    background: none;
+    background-image: url('http://www.wowchakra.com/templates/hexicon_gamer/images/botonLeerMasNormal.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+  }
+  .WowchakraEnhacer .Tutorial-okBtn:hover {
+    background-image: url('http://www.wowchakra.com/templates/hexicon_gamer/images/botonLeerMasHover.png');
+  }
+}
