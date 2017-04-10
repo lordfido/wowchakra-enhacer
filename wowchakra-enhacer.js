@@ -367,6 +367,7 @@
 
       // Set sidebarToggle
       wowchakraEnhacer.loadSidebarToggle();
+      wowchakraEnhacer.setEnhacementLink();
 
       // If the user has NOT read the tutorial, mount it
       if (isMobileDevice() && !hasReadTheTutorial()) {
