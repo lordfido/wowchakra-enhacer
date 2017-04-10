@@ -5,7 +5,7 @@
   /**************************/
   /* Left column */
   /* Item preview */
-  #k2Container.itemListView .itemContainer {
+  .WowchakraEnhacer #k2Container.itemListView .itemContainer {
     height: auto;
     padding-top: 13px;
     margin-bottom: 25px;
@@ -18,9 +18,9 @@
   }
 
   /* Item image */
-  #k2Container .catItemImageBlock,
-  #k2Container .catItemImageBlock .catItemImage,
-  #k2Container .catItemImageBlock img {
+  .WowchakraEnhacer #k2Container .catItemImageBlock,
+  .WowchakraEnhacer #k2Container .catItemImageBlock .catItemImage,
+  .WowchakraEnhacer #k2Container .catItemImageBlock img {
     position: relative;
     display: block;
     float: none;
@@ -32,33 +32,33 @@
 
     box-shadow: none;
   }
-  #k2Container .catItemImageBlock {
+  .WowchakraEnhacer #k2Container .catItemImageBlock {
     margin-bottom: 10px;
   }
-  #k2Container .catItemImageBlock img {
+  .WowchakraEnhacer #k2Container .catItemImageBlock img {
     max-width: 100%;
 
     box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.5);
   }
 
   /* Item title */
-  #k2Container .catItemHeader {
+  .WowchakraEnhacer #k2Container .catItemHeader {
     display: block !important;
 
     text-align: left;
   }
-  #k2Container .catItemHeader .catItemTitle {
+  .WowchakraEnhacer #k2Container .catItemHeader .catItemTitle {
     margin: 0;
     margin-bottom: 10px;
 
     text-align: center;
   }
-  #k2Container .catItemHeader .catItemAuthor {
+  .WowchakraEnhacer #k2Container .catItemHeader .catItemAuthor {
     padding-left: 15px;
   }
 
   /* Item preview */
-  #k2Container .catItemBody {
+  .WowchakraEnhacer #k2Container .catItemBody {
     position: relative;
     display: block !important;
 
@@ -72,14 +72,14 @@
     border-radius: 0;
     box-shadow: none;
   }
-  #k2Container .catItemBody .catItemIntroText {
+  .WowchakraEnhacer #k2Container .catItemBody .catItemIntroText {
     height: auto;
     margin: 0;
     padding: 0;
   }
 
   /* Item links */
-  #k2Container .catItemReadMore {
+  .WowchakraEnhacer #k2Container .catItemReadMore {
     display: block !important;
   }
 
@@ -87,7 +87,7 @@
   /* TODO: When image is too big, or title has more than
      1 line, this position is wrong placed
   */
-  #k2Container .likebtn_container {
+  .WowchakraEnhacer #k2Container .likebtn_container {
     top: 0px;
     right: 35px;
 
@@ -98,7 +98,7 @@
   /** POPUPS ****************/
   /**************************/
   /* Account popup */
-  #colorbox {
+  .WowchakraEnhacer #colorbox {
     width: 90% !important;
     height: 90% !important;
   }
@@ -107,19 +107,19 @@
   /** GALLERY ***************/
   /**************************/
   /* Gallery Thumbnails */
-  #k2Container.itemView .itemFullText .sigplus-gallery ul li {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .sigplus-gallery ul li {
     width: 46% !important;
   }
 
   /* Inline controls */
-  #boxplus .boxplus-viewer .boxplus-resizer {
+  .WowchakraEnhacer #boxplus .boxplus-viewer .boxplus-resizer {
     display: none;
   }
 
   /* This is only gonna be applied on landscape mode */
   @media screen and (orientation: landscape) {
     /* Gallery Thumbnails */
-    #k2Container.itemView .itemFullText .sigplus-gallery ul li {
+    .WowchakraEnhacer #k2Container.itemView .itemFullText .sigplus-gallery ul li {
       width: 29.33% !important;
     }
   }

@@ -3,14 +3,14 @@
   /**************************/
   /** HEADER ****************/
   /**************************/
-  .s5_wrap {
+  .WowchakraEnhacer .s5_wrap {
     width: auto;
     max-width: 100%;
 
     overflow: hidden;
   }
 
-  #s5_header_wrap {
+  .WowchakraEnhacer #s5_header_wrap {
     position: relative;
     display: block;
 
@@ -24,7 +24,10 @@
   #pypHeader_wow: Table with network links
   #s5_search_wrap: Search box
   */
-  #s5_logo, .pypHeader_wow_text, #pypHeader_wow, #s5_search_wrap {
+  .WowchakraEnhacer #s5_logo, 
+  .WowchakraEnhacer .pypHeader_wow_text, 
+  .WowchakraEnhacer #pypHeader_wow, 
+  .WowchakraEnhacer #s5_search_wrap {
     position: relative;
     display: block;
     float: none;
@@ -38,30 +41,30 @@
     text-align: center;
   }
 
-  #s5_logo {
+  .WowchakraEnhacer #s5_logo {
     margin-bottom: 0;
   }
 
   /* Social links table (this aligns center the table) */
-  #pypHeader_wow .menupyp {
+  .WowchakraEnhacer #pypHeader_wow .menupyp {
     margin: auto;
   }
 
   /* Search field */
-  #s5_search_wrap #mod-search-searchword[name='searchword'].inputbox{
+  .WowchakraEnhacer #s5_search_wrap #mod-search-searchword[name='searchword'].inputbox{
     width: calc(100% - 80px);
     margin: 0;
     margin-bottom: 15px;
   }
 
   /* Legion countdown */
-  #s5_search_wrap {
+  .WowchakraEnhacer #s5_search_wrap {
     height: auto;
   }
-  #s5_search_wrap .moduletable_bannerMop {
+  .WowchakraEnhacer #s5_search_wrap .moduletable_bannerMop {
     text-align: center;
   }
-  #s5_search_wrap .moduletable_bannerMop .cdub_main_bannerMop {
+  .WowchakraEnhacer #s5_search_wrap .moduletable_bannerMop .cdub_main_bannerMop {
     position: relative;
     float: none;
 
@@ -69,9 +72,17 @@
     margin: 0 auto;
   }
 
+  /* Custom toggle enhacements link */
+  .WowchakraEnhacer .WowchakraEnhacer-toggleEnhacements {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40px;
+  }
+
   /* Cookies notification */
-  .cc_banner-wrapper,
-  .cc_banner-wrapper .cc_banner.cc_container.cc_container--open {
+  .WowchakraEnhacer .cc_banner-wrapper,
+  .WowchakraEnhacer .cc_banner-wrapper .cc_banner.cc_container.cc_container--open {
     position: relative;
     display: block;
 
@@ -80,7 +91,7 @@
 
     clear: both;
   }
-  .cc_banner-wrapper {
+  .WowchakraEnhacer .cc_banner-wrapper {
     margin: 0;
     padding: 0;
   }
@@ -88,7 +99,8 @@
   /**************************/
   /** NAVIGATION ************/
   /**************************/
-  #s5_menu_wrap, #s5_menu_wrap_inner2 {
+  .WowchakraEnhacer #s5_menu_wrap,
+  .WowchakraEnhacer #s5_menu_wrap_inner2 {
     position: relative;
     display: block;
 
@@ -99,10 +111,11 @@
     background: rgba(0, 0, 0, 0.4);
     z-index: 500;
   }
-  #s5_menu_wrap {
+  .WowchakraEnhacer #s5_menu_wrap {
     margin-top: -10px;
   }
-  #s5_menu_wrap::before, #s5_menu_wrap::after {
+  .WowchakraEnhacer #s5_menu_wrap::before,
+  .WowchakraEnhacer #s5_menu_wrap::after {
     position: relative;
     display: block;
 
@@ -114,15 +127,15 @@
     border-bottom: 2px solid black;
     content: ' ';
   }
-  #s5_menu_wrap::before {
+  .WowchakraEnhacer #s5_menu_wrap::before {
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 1);
   }
-  #s5_menu_wrap::after {
+  .WowchakraEnhacer #s5_menu_wrap::after {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
   }
 
   /* Sections nav */
-  #s5_nav.menu {
+  .WowchakraEnhacer #s5_nav.menu {
     position: relative;
     display: block;
 
@@ -133,7 +146,7 @@
 
     text-align: center;
   }
-  #s5_nav.menu li {
+  .WowchakraEnhacer #s5_nav.menu li {
     position: relative;
     display: inline-block;
     float: none;
@@ -142,7 +155,7 @@
   }
 
   /* User login button */
-  #s5_loginreg {
+  .WowchakraEnhacer #s5_loginreg {
     position: fixed;
     display: block;
     float: right;
@@ -163,20 +176,22 @@
     border-radius: 0 0 0 10px;
   }
 
-  #s5_loginreg #s5_register.s5box_register, #s5_loginreg #s5_login.s5box_login {
+  .WowchakraEnhacer #s5_loginreg #s5_register.s5box_register,
+  .WowchakraEnhacer #s5_loginreg #s5_login.s5box_login {
     float: none;
 
     height: auto;
   }
 
   /* This allow us to display the 'account icon' next to 'Register' */
-  #s5_loginreg #s5_register .s5boxmenu, #s5_loginreg #s5_login .s5boxmenu {
+  .WowchakraEnhacer #s5_loginreg #s5_register .s5boxmenu,
+  .WowchakraEnhacer #s5_loginreg #s5_login .s5boxmenu {
     margin: 5px auto;
     margin-left: 20px;
   }
 
   /* Navigation menu */
-  #subMenusContainer {
+  .WowchakraEnhacer #subMenusContainer {
     position: initial !important;
     display: initial !important;
 
@@ -188,12 +203,12 @@
     overflow: initial !important;
     z-index: initial !important;
   }
-  #subMenusContainer .s5_sub_wrap_rtl,
-  #subMenusContainer .s5_sub_wrap_rtl ul,
-  #subMenusContainer .s5_sub_wrap_lower,
-  #subMenusContainer .s5_sub_wrap_lower ul,
-  #subMenusContainer .s5_sub_wrap_lower_rt1,
-  #subMenusContainer .s5_sub_wrap_lower_rt1 ul {
+  .WowchakraEnhacer #subMenusContainer .s5_sub_wrap_rtl,
+  .WowchakraEnhacer #subMenusContainer .s5_sub_wrap_rtl ul,
+  .WowchakraEnhacer #subMenusContainer .s5_sub_wrap_lower,
+  .WowchakraEnhacer #subMenusContainer .s5_sub_wrap_lower ul,
+  .WowchakraEnhacer #subMenusContainer .s5_sub_wrap_lower_rt1,
+  .WowchakraEnhacer #subMenusContainer .s5_sub_wrap_lower_rt1 ul {
     width: 100% !important;
     height: auto !important;
     left: 0 !important;
@@ -202,25 +217,26 @@
     z-index: 1000000 !important;
   }
 
-  #subMenusContainer .s5_sub_wrap_rtl.is-hidden,
-  #subMenusContainer .s5_sub_wrap_lower.is-hidden,
-  #subMenusContainer .s5_sub_wrap_lower_rt1.is-hidden {
+  .WowchakraEnhacer #subMenusContainer .s5_sub_wrap_rtl.is-hidden,
+  .WowchakraEnhacer #subMenusContainer .s5_sub_wrap_lower.is-hidden,
+  .WowchakraEnhacer #subMenusContainer .s5_sub_wrap_lower_rt1.is-hidden {
     transform: translateX(-100%);
   }
 
   /**************************/
   /** SOCIAL LINKS **********/
   /**************************/
-  #s5_top_row1_area1, #s5_top_row1_area2 {
+  .WowchakraEnhacer #s5_top_row1_area1,
+  .WowchakraEnhacer #s5_top_row1_area2 {
     margin: 0 auto;
     padding: 0;
     background: none;
   }
-  #s5_top_row1_area1 {
+  .WowchakraEnhacer #s5_top_row1_area1 {
     margin-bottom: 10px;
   }
 
-  #bloque_redes_sociales {
+  .WowchakraEnhacer #bloque_redes_sociales {
     position: relative;
     display: block;
     float: none;
@@ -234,12 +250,12 @@
     text-align: center;
   }
 
-  #bloque_redes_sociales #s5_facebook,
-  #bloque_redes_sociales #s5_twitter,
-  #bloque_redes_sociales #s5_google,
-  #bloque_redes_sociales #s5_youtube,
-  #bloque_redes_sociales #s5_rss,
-  #bloque_redes_sociales #s5_gravatar {
+  .WowchakraEnhacer #bloque_redes_sociales #s5_facebook,
+  .WowchakraEnhacer #bloque_redes_sociales #s5_twitter,
+  .WowchakraEnhacer #bloque_redes_sociales #s5_google,
+  .WowchakraEnhacer #bloque_redes_sociales #s5_youtube,
+  .WowchakraEnhacer #bloque_redes_sociales #s5_rss,
+  .WowchakraEnhacer #bloque_redes_sociales #s5_gravatar {
     position: relative;
     display: inline-block;
 
@@ -250,7 +266,8 @@
   /** TOP ROW (HERO BANNER) */
   /**************************/
   /* Slider/gallery */
-  #s5_pos_top_row1_1, #s5_pos_top_row1_2 {
+  .WowchakraEnhacer #s5_pos_top_row1_1,
+  .WowchakraEnhacer #s5_pos_top_row1_2 {
     position: relative;
     display: block;
     float: none;
@@ -259,25 +276,23 @@
 
     text-align: center;
   }
-  .module_round_box_outer, .module_round_boxslider {
+  .WowchakraEnhacer .module_round_box_outer,
+  .WowchakraEnhacer .module_round_boxslider {
     margin: 0;
   }
-  #s5_pos_top_row1_1 #myGallery{
+  .WowchakraEnhacer #s5_pos_top_row1_1 #myGallery{
     width: 100% !important;
     margin-bottom: 20px;
   }
-  #s5_pos_top_row1_1 #myGallery .slideElement {
+  .WowchakraEnhacer #s5_pos_top_row1_1 #myGallery .slideElement {
     background-size: 100% auto;
   }
-  #s5_pos_top_row1_1 #myGallery .left {
-
-  }
-  #s5_pos_top_row1_1 #myGallery .right {
+  .WowchakraEnhacer #s5_pos_top_row1_1 #myGallery .right {
     left: initial;
   }
 
   /* Ads next to the Gallery */
-  .custombanner300top {
+  .WowchakraEnhacer .custombanner300top {
     height: auto;
     margin: 0 auto;
     padding: 0;
@@ -286,22 +301,20 @@
   /**************************/
   /** CONTENT PREVIEW *******/
   /**************************/
-  #s5_bottom_area_wrap1 {
+  .WowchakraEnhacer #s5_bottom_area_wrap1 {
     margin: 0;
 
     text-align: center;
   }
-  #s5_bottom_area_wrap1 #s5_center_area_inner {
 
-  }
   /* Ads before content */
-  #s5_bottom_area_wrap1 #s5_center_area_inner #s5_above_columns_wrap1 {
+  .WowchakraEnhacer #s5_bottom_area_wrap1 #s5_center_area_inner #s5_above_columns_wrap1 {
     position: relative;
   }
-  #s5_bottom_area_wrap1 #s5_above_columns_1 {
+  .WowchakraEnhacer #s5_bottom_area_wrap1 #s5_above_columns_1 {
     float: none;
   }
-  #s5_bottom_area_wrap1 .customabovecolumns {
+  .WowchakraEnhacer #s5_bottom_area_wrap1 .customabovecolumns {
     position: relative;
     display: block;
 
@@ -311,7 +324,7 @@
 
     text-align: center;
   }
-  #s5_bottom_area_wrap1 .customabovecolumns iframe {
+  .WowchakraEnhacer #s5_bottom_area_wrap1 .customabovecolumns iframe {
     position: relative;
     display: block;
     float: left;
@@ -323,10 +336,10 @@
   }
 
   /* Common styles (left/right columns) */
-  #s5_bottom_area_wrap1 #s5_center_column_wrap,
-  #s5_bottom_area_wrap1 #s5_columns_wrap_inner,
-  #s5_bottom_area_wrap1 #s5_center_column_wrap_inner,
-  #s5_bottom_area_wrap1 #s5_right_column_wrap {
+  .WowchakraEnhacer #s5_bottom_area_wrap1 #s5_center_column_wrap,
+  .WowchakraEnhacer #s5_bottom_area_wrap1 #s5_columns_wrap_inner,
+  .WowchakraEnhacer #s5_bottom_area_wrap1 #s5_center_column_wrap_inner,
+  .WowchakraEnhacer #s5_bottom_area_wrap1 #s5_right_column_wrap {
     float: none;
     top: 0;
     left: 0;
@@ -336,19 +349,19 @@
   }
 
   /* Left column */
-  #s5_center_column_wrap #s5_component_wrap {
+  .WowchakraEnhacer #s5_center_column_wrap #s5_component_wrap {
     margin: 0 auto;
   }
-  #s5_center_column_wrap .itemListView, #s5_center_column_wrap .itemListView .itemContainer {
+  .WowchakraEnhacer #s5_center_column_wrap .itemListView, #s5_center_column_wrap .itemListView .itemContainer {
     padding: 0;
     padding-top: 10px;
   }
 
   /* Like button */
-  #k2Container .catItemView {
+  .WowchakraEnhacer #k2Container .catItemView {
     position: relative;
   }
-  #k2Container .likebtn_container {
+  .WowchakraEnhacer #k2Container .likebtn_container {
     position: absolute;
     display: block;
 
@@ -359,7 +372,7 @@
     margin: 0 !important;
     padding: 0 !important;
   }
-  #k2Container .likebtn-wrapper {
+  .WowchakraEnhacer #k2Container .likebtn-wrapper {
     position: relative !important;
     display: block !important;
     float: none !important;
@@ -371,12 +384,12 @@
   }
 
   /* Pagination */
-  .k2Pagination {
+  .WowchakraEnhacer .k2Pagination {
     position: relative;
     display: block;
   }
 
-  .k2Pagination ul {
+  .WowchakraEnhacer .k2Pagination ul {
     position: relative;
     display: block;
 
@@ -387,11 +400,11 @@
 
     text-align: center;
   }
-  .k2Pagination ul > li,
-  .k2Pagination .pagination-first,
-  .k2Pagination .pagination-prev,
-  .k2Pagination .pagination-next,
-  .k2Pagination .pagination-last {
+  .WowchakraEnhacer .k2Pagination ul > li,
+  .WowchakraEnhacer .k2Pagination .pagination-first,
+  .WowchakraEnhacer .k2Pagination .pagination-prev,
+  .WowchakraEnhacer .k2Pagination .pagination-next,
+  .WowchakraEnhacer .k2Pagination .pagination-last {
     position: relative;
     display: inline-block !important;
     float: none;
@@ -403,7 +416,7 @@
   /** ARTICLE DETAIL ********/
   /**************************/
   /* Item Container */
-  #k2Container.itemView {
+  .WowchakraEnhacer #k2Container.itemView {
     position: relative;
     display: block;
     float: none;
@@ -418,7 +431,7 @@
     border-radius: 15px;
     overflow: hidden;
   }
-  #k2Container.itemView > div {
+  .WowchakraEnhacer #k2Container.itemView > div {
     position: relative;
     display: block;
     float: left;
@@ -426,11 +439,11 @@
     width: 100%;
   }
   /* Item Header */
-  #k2Container.itemView .itemHeader {
+  .WowchakraEnhacer #k2Container.itemView .itemHeader {
     margin-bottom: 10px;
   }
   /* Comments Link */
-  #k2Container.itemView .itemCommentsLink{
+  .WowchakraEnhacer #k2Container.itemView .itemCommentsLink{
     position: relative;
     display: block;
     float: right;
@@ -441,13 +454,13 @@
 
     clear: both;
   }
-  #k2Container.itemView .itemCommentsLink .commentsbadge{
+  .WowchakraEnhacer #k2Container.itemView .itemCommentsLink .commentsbadge{
     position: relative;
 
     margin: 0;
   }
   /* Item body */
-  #k2Container.itemView .itemBody {
+  .WowchakraEnhacer #k2Container.itemView .itemBody {
     position: relative;
     display: block;
     float: left;
@@ -459,42 +472,42 @@
 
     text-align: center;
   }
-  #k2Container.itemView .itemFullText {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText {
     width: 100%;
   }
   /* Images */
-  #k2Container.itemView .itemFullText .cabecera,
-  #k2Container.itemView .itemFullText .cabecera img,
-  #k2Container.itemView .itemFullText img {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .cabecera,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .cabecera img,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText img {
     max-width: 100% !important;
     height: auto !important;
     margin-bottom: 10px;
   }
-  #k2Container.itemView .itemFullText ul li:not(.tabber_tab) img {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText ul li:not(.tabber_tab) img {
     width: 20px;
     height: 20px;
     margin: 0;
   }
-  #k2Container.itemView .itemFullText a.qc4 img,
-  #k2Container.itemView .itemFullText img.vertical {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText a.qc4 img,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText img.vertical {
     width: 20px;
     height: 20px;
     margin: 0;
   }
 
-  #k2Container.itemView .itemFullText p {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText p {
     position: relative;
     display: inline-block;
 
     width: 100%;
     margin: 0 !important;
   }
-  #k2Container.itemView .itemFullText iframe {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText iframe {
     width: 100%;
   }
 
   /* Article section separator */
-  #k2Container.itemView .itemFullText .panelchakratitularlegion {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .panelchakratitularlegion {
     position: relative;
     display: inline-block;
     float: none;
@@ -516,21 +529,21 @@
     clear: both;
   }
 
-  #k2Container.itemView .itemFullText .panelchakratitular,
-  #k2Container.itemView .itemFullText h4.fondo,
-  #k2Container.itemView .itemFullText h4.fondowodlock,
-  #k2Container.itemView .itemFullText h4.fondowodshaman,
-  #k2Container.itemView .itemFullText h4.fondowod2,
-  #k2Container.itemView .itemFullText h4.fondowoddk,
-  #k2Container.itemView .itemFullText h4.fondowoddruid,
-  #k2Container.itemView .itemFullText h4.fondowodhunter,
-  #k2Container.itemView .itemFullText h4.fondowodmage,
-  #k2Container.itemView .itemFullText h4.fondowodmonk,
-  #k2Container.itemView .itemFullText h4.fondowodpaladin,
-  #k2Container.itemView .itemFullText h4.fondowodpriest,
-  #k2Container.itemView .itemFullText h4.fondowodrogue,
-  #k2Container.itemView .itemFullText h4.fondowodwarrior,
-  #k2Container.itemView .itemFullText h4.fondowoddh {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .panelchakratitular,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondo,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodlock,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodshaman,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowod2,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowoddk,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowoddruid,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodhunter,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodmage,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodmonk,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodpaladin,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodpriest,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodrogue,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodwarrior,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowoddh {
     position: relative;
     display: inline-block;
 
@@ -545,40 +558,40 @@
     background-size: auto 100%;
   }
 
-  #k2Container.itemView .itemFullText h4.fondowodlock img,
-  #k2Container.itemView .itemFullText h4.fondowodshaman img,
-  #k2Container.itemView .itemFullText h4.fondowod2 img,
-  #k2Container.itemView .itemFullText h4.fondowoddk img,
-  #k2Container.itemView .itemFullText h4.fondowoddruid img,
-  #k2Container.itemView .itemFullText h4.fondowodhunter img,
-  #k2Container.itemView .itemFullText h4.fondowodmage img,
-  #k2Container.itemView .itemFullText h4.fondowodmonk img,
-  #k2Container.itemView .itemFullText h4.fondowodpaladin img,
-  #k2Container.itemView .itemFullText h4.fondowodpriest img,
-  #k2Container.itemView .itemFullText h4.fondowodrogue img,
-  #k2Container.itemView .itemFullText h4.fondowodwarrior img,
-  #k2Container.itemView .itemFullText h4.fondowoddh img {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodlock img,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodshaman img,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowod2 img,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowoddk img,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowoddruid img,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodhunter img,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodmage img,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodmonk img,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodpaladin img,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodpriest img,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodrogue img,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodwarrior img,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowoddh img {
     float: left;
   }
 
-  #k2Container.itemView .itemFullText .panelchakratitular {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .panelchakratitular {
     font-size: 24px;
 
     background-size: 100% 100%;
   }
 
-  #k2Container.itemView .itemFullText .panelchakra,
-  #k2Container.itemView .itemFullText .seccionlock,
-  #k2Container.itemView .itemFullText .seccionschaman,
-  #k2Container.itemView .itemFullText .secciondk,
-  #k2Container.itemView .itemFullText .secciondruid,
-  #k2Container.itemView .itemFullText .seccionhunter,
-  #k2Container.itemView .itemFullText .seccionmage,
-  #k2Container.itemView .itemFullText .seccionmonk,
-  #k2Container.itemView .itemFullText .seccionpaladin,
-  #k2Container.itemView .itemFullText .seccionpriest,
-  #k2Container.itemView .itemFullText .seccionrogue,
-  #k2Container.itemView .itemFullText .secciondh {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .panelchakra,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .seccionlock,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .seccionschaman,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .secciondk,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .secciondruid,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .seccionhunter,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .seccionmage,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .seccionmonk,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .seccionpaladin,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .seccionpriest,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .seccionrogue,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .secciondh {
     position: relative;
     display: block;
     float: left;
@@ -591,7 +604,7 @@
 
   /* Some lists styles */
   /* Simple list into the article */
-  #k2Container.itemView .itemFullText ul:not(.tabber_tabs) {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText ul:not(.tabber_tabs) {
     position: relative;
     display: inline-block;
     float: left;
@@ -600,7 +613,7 @@
 
     clear: both;
   }
-  #k2Container.itemView .itemFullText ul:not(.tabber_tabs) li:not(.tabber_tab) {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText ul:not(.tabber_tabs) li:not(.tabber_tab) {
     position: relative;
     display: inline-block;
 
@@ -608,7 +621,7 @@
   }
 
   /* Tab styled list */
-  #k2Container.itemView .itemFullText ul.tabber_tabs li.tabber_tab {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText ul.tabber_tabs li.tabber_tab {
     height: auto;
     margin: 0 !important;
     margin-right: 2px !important;
@@ -618,7 +631,7 @@
     border-radius: 5px 5px 0 0;
     overflow: hidden;
   }
-  #k2Container.itemView .itemFullText ul.tabber_tabs a {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText ul.tabber_tabs a {
     height: auto;
     padding: 10px 20px;
 
@@ -626,15 +639,15 @@
   }
 
   /* About us modifications */
-  #k2Container.itemView .itemFullText ul.tabber_tabs li.tabber_tab.aboutus {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText ul.tabber_tabs li.tabber_tab.aboutus {
     border: none;
   }
-  #k2Container.itemView .itemFullText ul.tabber_tabs li.tabber_tab.aboutus a {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText ul.tabber_tabs li.tabber_tab.aboutus a {
     padding: 5px;
 
     border-radius: 5px 5px 0px 0px;
   }
-  #k2Container.itemView .itemFullText ul.tabber_tabs li.tabber_tab.aboutus img {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText ul.tabber_tabs li.tabber_tab.aboutus img {
     position: relative;
     display: block;
 
@@ -643,14 +656,14 @@
   }
 
   /* Some table styles */
-  #k2Container.itemView .itemFullText table {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText table {
     width: 100%;
     margin-bottom: 10px;
     padding: 0;
   }
 
   /* Item like button */
-  #k2Container.itemView .likebtn_container{
+  .WowchakraEnhacer #k2Container.itemView .likebtn_container{
     position: absolute;
     display: block;
     float: none;
@@ -661,17 +674,17 @@
   }
 
   /* Item body spacer */
-  #k2Container.itemView .linea1,
-  #k2Container.itemView .linea2,
-  #k2Container.itemView .linea3 {
+  .WowchakraEnhacer #k2Container.itemView .linea1,
+  .WowchakraEnhacer #k2Container.itemView .linea2,
+  .WowchakraEnhacer #k2Container.itemView .linea3 {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
   }
 
   /* Item Links */
-  #k2Container.itemView .itemLinks .addthis_toolbox2,
-  #k2Container.itemView .itemLinks .itemTagsBlock {
+  .WowchakraEnhacer #k2Container.itemView .itemLinks .addthis_toolbox2,
+  .WowchakraEnhacer #k2Container.itemView .itemLinks .itemTagsBlock {
     position: relative;
     display: block;
 
@@ -681,32 +694,32 @@
     padding: 0;
   }
   /* Social links */
-  #k2Container.itemView .itemLinks .addthis_toolbox2 {
+  .WowchakraEnhacer #k2Container.itemView .itemLinks .addthis_toolbox2 {
     float: none;
   }
   /* Tags */
-  #k2Container.itemView .itemLinks .spanEtiquetas {
+  .WowchakraEnhacer #k2Container.itemView .itemLinks .spanEtiquetas {
     position: relative;
     display: block;
 
     margin: 0;
     padding: 10px;
   }
-  #k2Container.itemView .itemLinks .spanEtiquetas .itemTagsImagen {
+  .WowchakraEnhacer #k2Container.itemView .itemLinks .spanEtiquetas .itemTagsImagen {
     position: relative;
     display: inline;
 
     margin: 0;
     margin-right: 10px;
   }
-  #k2Container.itemView .itemLinks .itemTags {
+  .WowchakraEnhacer #k2Container.itemView .itemLinks .itemTags {
     width: 100%;
     margin: 0;
     padding: 0 10px;
   }
 
   /* Adds before related items */
-  #k2Container.itemView .custom_banner728_article {
+  .WowchakraEnhacer #k2Container.itemView .custom_banner728_article {
     margin: 0 auto;
     margin-bottom: 10px;
     padding: 0;
@@ -714,14 +727,14 @@
 
   /* User comments */
   /* Paginator */
-  #k2Container.itemView #comments div#nav-top,
-  #k2Container.itemView #comments div#nav-bottom {
+  .WowchakraEnhacer #k2Container.itemView #comments div#nav-top,
+  .WowchakraEnhacer #k2Container.itemView #comments div#nav-bottom {
     position: relative;
     display: block;
     margin: 10px auto;
   }
-  #k2Container.itemView #comments div#nav-top > *,
-  #k2Container.itemView #comments div#nav-bottom > *{
+  .WowchakraEnhacer #k2Container.itemView #comments div#nav-top > *,
+  .WowchakraEnhacer #k2Container.itemView #comments div#nav-bottom > *{
     position: relative;
     display: inline-block;
 
@@ -736,7 +749,7 @@
   }
 
   /* Avatar */
-  #k2Container.itemView #comments-list .comment-avatar {
+  .WowchakraEnhacer #k2Container.itemView #comments-list .comment-avatar {
     position: relative;
     display: inline-block;
     float: left;
@@ -746,13 +759,13 @@
     margin: 10px;
     padding: 0;
   }
-  #k2Container.itemView #comments-list .comment-avatar img {
+  .WowchakraEnhacer #k2Container.itemView #comments-list .comment-avatar img {
     margin: 0;
     padding: 0;
   }
 
   /* Comment itself */
-  #k2Container.itemView #comments-list .comment-box {
+  .WowchakraEnhacer #k2Container.itemView #comments-list .comment-box {
     position: relative;
     display: inline-block;
     float: left;
@@ -762,20 +775,20 @@
     margin: 10px 0;
     padding: 0;
   }
-  #k2Container.itemView #comments-list .comment-box .comments-vote {
+  .WowchakraEnhacer #k2Container.itemView #comments-list .comment-box .comments-vote {
     min-width: 95px;
     height: auto;
   }
-  #k2Container.itemView #comments-list .comment-box .vote-good,
-  #k2Container.itemView #comments-list .comment-box .vote-poor {
+  .WowchakraEnhacer #k2Container.itemView #comments-list .comment-box .vote-good,
+  .WowchakraEnhacer #k2Container.itemView #comments-list .comment-box .vote-poor {
     margin: 0 10px;
   }
-  #k2Container.itemView #comments-list .comment-box .comment-author {
+  .WowchakraEnhacer #k2Container.itemView #comments-list .comment-box .comment-author {
     margin: 0;
     margin-top: 50px;
     margin-left: -73px;
   }
-  #k2Container.itemView #comments-list .comment-box .comment-body {
+  .WowchakraEnhacer #k2Container.itemView #comments-list .comment-box .comment-body {
     margin: 0;
     margin-top: 10px;
     padding: 0;
@@ -783,7 +796,7 @@
 
     line-height: 1.5;
   }
-  #k2Container.itemView #comments-list .comment-box .comments-buttons {
+  .WowchakraEnhacer #k2Container.itemView #comments-list .comment-box .comments-buttons {
     width: auto;
     height: auto;
     padding: 5px 10px;
@@ -793,7 +806,7 @@
   /**************************/
   /** ABOUT US **************/
   /**************************/
-  #k2Container.itemView.marketing h1 {
+  .WowchakraEnhacer #k2Container.itemView.marketing h1 {
     position: relative;
     display: block;
     float: left;
@@ -808,7 +821,7 @@
     text-align: left;
     text-indent: 0px;
   }
-  #k2Container.itemView.marketing h1 img.logoPyPmarketing{
+  .WowchakraEnhacer #k2Container.itemView.marketing h1 img.logoPyPmarketing{
     position: absolute;
     display: block;
     float: right;
@@ -820,7 +833,7 @@
     margin: 0;
     margin-top: -25px;
   }
-  #k2Container.itemView.marketing table img {
+  .WowchakraEnhacer #k2Container.itemView.marketing table img {
     width: 128px;
     max-width: none !important;
     margin-right: 10px;
@@ -831,7 +844,7 @@
   /** SIDEBAR ***************/
   /**************************/
   /* Right column  */
-  #s5_bottom_area_wrap1 #s5_right_column_wrap {
+  .WowchakraEnhacer #s5_bottom_area_wrap1 #s5_right_column_wrap {
     position: fixed;
     display: block;
     float: right;
@@ -850,7 +863,7 @@
     z-index: 500;
   }
   /* Small hack to open when 'click' on menu icon */
-  #s5_bottom_area_wrap1 #s5_right_column_wrap.sidebar-open {
+  .WowchakraEnhacer #s5_bottom_area_wrap1 #s5_right_column_wrap.sidebar-open {
     top: 50px;
     right: 0;
     width: 80% !important;
@@ -860,7 +873,7 @@
 
   /* Toggle for Right column */
   /*
-  #s5_bottom_area_wrap1 #s5_right_column_wrap::before {
+  .WowchakraEnhacer #s5_bottom_area_wrap1 #s5_right_column_wrap::before {
     position: absolute;
     display: block;
     float: none;
@@ -881,12 +894,12 @@
     opacity: 1;
     transition: opacity 0.3s;
   }
-  #s5_bottom_area_wrap1 #s5_right_column_wrap:hover::before {
+  .WowchakraEnhacer #s5_bottom_area_wrap1 #s5_right_column_wrap:hover::before {
     opacity: 0;
   }
   */
   /* Right bar toggle */
-  #s5_bottom_area_wrap1 #s5_columns_wrap_inner .sidebar-toggle {
+  .WowchakraEnhacer #s5_bottom_area_wrap1 #s5_columns_wrap_inner .sidebar-toggle {
     position: fixed;
     display: block;
     float: right;
@@ -907,12 +920,12 @@
     transition: top 0.3s, right 0.3s;
     z-index: 500;
   }
-  #s5_bottom_area_wrap1 #s5_columns_wrap_inner .sidebar-toggle.sidebar-open {
+  .WowchakraEnhacer #s5_bottom_area_wrap1 #s5_columns_wrap_inner .sidebar-toggle.sidebar-open {
     top: 60px;
   }
 
   /* Right column content */
-  #s5_right_column_wrap_inner {
+  .WowchakraEnhacer #s5_right_column_wrap_inner {
     position: relative;
     display: block;
     float: left;
@@ -922,7 +935,7 @@
     overflow: hidden;
     overflow-y: auto;
   }
-  #s5_right_column_wrap #s5_right_wrap {
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap {
     position: relative;
     display: block;
     float: left;
@@ -933,14 +946,14 @@
 
     text-align: center;
   }
-  #s5_right_column_wrap #s5_right_wrap .module_round_box_outer {
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .module_round_box_outer {
     padding-bottom: 10px;
     margin-bottom: 20px;
 
     border-bottom: 1px solid rgba(112, 91, 17, 1);
   }
-  #s5_right_column_wrap #s5_right_wrap .bannergroupbanner300_250_UP,
-  #s5_right_column_wrap #s5_right_wrap .custombanner300_250_UP {
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .bannergroupbanner300_250_UP,
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .custombanner300_250_UP {
     width: auto;
     height: auto;
     padding: 0;
@@ -948,22 +961,22 @@
   }
 
   /* Sliders */
-  #s5_right_column_wrap #s5_right_wrap .slides_control, #s5_right_column_wrap #s5_right_wrap .slides_control .slide {
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .slides_control, #s5_right_column_wrap #s5_right_wrap .slides_control .slide {
     width: 100% !important;
   }
-  #s5_right_column_wrap #s5_right_wrap .slides_control {
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .slides_control {
     margin-left: 100%;
   }
-  #s5_right_column_wrap #s5_right_wrap .slides_control .slide {
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .slides_control .slide {
     left: 0 !important;
   }
 
   /* Comments fixes */
-  #s5_right_column_wrap #s5_right_wrap .jcomments-latest img,
-  #s5_right_column_wrap #s5_right_wrap .jcomments-latest .author {
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .jcomments-latest img,
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .jcomments-latest .author {
     position: relative !important;
   }
-  #s5_right_column_wrap #s5_right_wrap .jcomments-latest .author {
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .jcomments-latest .author {
     float: left;
 
     margin: 0 auto;
@@ -973,18 +986,18 @@
   /** FOOTER ****************/
   /**************************/
   /* Recent items and Related Items */
-  #s5_below_columns_1 {
+  .WowchakraEnhacer #s5_below_columns_1 {
     float: none;
 
     margin-bottom: 10px;
   }
-  #s5_below_columns_1 .module_round_boxcontenido {
+  .WowchakraEnhacer #s5_below_columns_1 .module_round_boxcontenido {
     margin: 0;
   }
-  #s5_below_columns_1 .k2ItemsBlock.contenido,
-  #s5_below_columns_1 .k2ItemsBlock.contenido ul,
-  #k2Container.itemView .itemRelated,
-  #k2Container.itemView .itemRelated ul {
+  .WowchakraEnhacer #s5_below_columns_1 .k2ItemsBlock.contenido,
+  .WowchakraEnhacer #s5_below_columns_1 .k2ItemsBlock.contenido ul,
+  .WowchakraEnhacer #k2Container.itemView .itemRelated,
+  .WowchakraEnhacer #k2Container.itemView .itemRelated ul {
     position: relative;
     display: block;
     float: left;
@@ -994,17 +1007,17 @@
     margin: 0 auto;
     padding: 0;
   }
-  #s5_below_columns_1 .k2ItemsBlock.contenido {
+  .WowchakraEnhacer #s5_below_columns_1 .k2ItemsBlock.contenido {
     padding: 15px;
   }
-  #k2Container.itemView .itemRelated h3 {
+  .WowchakraEnhacer #k2Container.itemView .itemRelated h3 {
     margin: 0;
     margin-bottom: 10px;
   }
 
   /* Recent item list */
-  #s5_below_columns_1 .k2ItemsBlock.contenido ul > li,
-  #k2Container.itemView .itemRelated ul > li {
+  .WowchakraEnhacer #s5_below_columns_1 .k2ItemsBlock.contenido ul > li,
+  .WowchakraEnhacer #k2Container.itemView .itemRelated ul > li {
     position: relative;
     display: block;
     float: left;
@@ -1018,14 +1031,14 @@
 
     border-bottom: 1px solid rgba(112, 91, 17, 1)
   }
-  #s5_below_columns_1 .k2ItemsBlock.contenido ul > li.clearList,
-  #k2Container.itemView .itemRelated ul > li.clearList {
+  .WowchakraEnhacer #s5_below_columns_1 .k2ItemsBlock.contenido ul > li.clearList,
+  .WowchakraEnhacer #k2Container.itemView .itemRelated ul > li.clearList {
     display: none;
   }
 
   /* List Item content */
-  #s5_below_columns_1 .k2ItemsBlock.contenido ul > li .moduleItemIntrotext,
-  #k2Container.itemView .itemRelated ul > li {
+  .WowchakraEnhacer #s5_below_columns_1 .k2ItemsBlock.contenido ul > li .moduleItemIntrotext,
+  .WowchakraEnhacer #k2Container.itemView .itemRelated ul > li {
     position: relative;
     display: block;
     float: left;
@@ -1035,14 +1048,14 @@
     text-align: left;
     clear: both;
   }
-  #k2Container.itemView .itemRelated ul > li > * {
+  .WowchakraEnhacer #k2Container.itemView .itemRelated ul > li > * {
     display: inline;
 
     max-width: calc(65% - 15px);
   }
   /* Image preview */
-  #s5_below_columns_1 .k2ItemsBlock.contenido ul > li .moduleItemImage,
-  #k2Container.itemView .itemRelated ul > li .itemRelImg {
+  .WowchakraEnhacer #s5_below_columns_1 .k2ItemsBlock.contenido ul > li .moduleItemImage,
+  .WowchakraEnhacer #k2Container.itemView .itemRelated ul > li .itemRelImg {
     position: relative;
     display: inline-block;
     float: left;
@@ -1050,15 +1063,15 @@
     width: 35%;
     margin-right: 10px;
   }
-  #s5_below_columns_1 .k2ItemsBlock.contenido ul > li img {
+  .WowchakraEnhacer #s5_below_columns_1 .k2ItemsBlock.contenido ul > li img {
     position: relative;
     display: block;
 
     width: 100%;
   }
   /* Comments links */
-  #k2Container.itemView .itemRelated ul > li .itemCommentsLinkRelated,
-  #k2Container.itemView .itemRelated ul > li .commentsbadge {
+  .WowchakraEnhacer #k2Container.itemView .itemRelated ul > li .itemCommentsLinkRelated,
+  .WowchakraEnhacer #k2Container.itemView .itemRelated ul > li .commentsbadge {
     position: absolute;
     display: block;
     float: left;
@@ -1069,18 +1082,18 @@
     margin: 0;
     padding: 0;
   }
-  #k2Container.itemView .itemRelated ul > li .itemCommentsLinkRelated{
+  .WowchakraEnhacer #k2Container.itemView .itemRelated ul > li .itemCommentsLinkRelated{
     left: calc(35% - 15px);
     bottom: 10px;
   }
-  #k2Container.itemView .itemRelated ul > li .commentsbadge {
+  .WowchakraEnhacer #k2Container.itemView .itemRelated ul > li .commentsbadge {
     position: relative;
 
     padding-top: 4px;
   }
 
   /* Adds before footer */
-  #s5_bottom_row1_area1 {
+  .WowchakraEnhacer #s5_bottom_row1_area1 {
     position: relative;
     display: block;
 
@@ -1092,7 +1105,7 @@
 
     border: none;
   }
-  #s5_bottom_row1_area1 .custombanner728bottom {
+  .WowchakraEnhacer #s5_bottom_row1_area1 .custombanner728bottom {
     position: relative;
     display: block;
     float: none;
@@ -1103,24 +1116,24 @@
     margin: 0 auto;
     padding: 0;
   }
-  #s5_bottom_row1_area1 .custombanner728bottom iframe,
-  #s5_bottom_row1_area1 .custombanner728bottom img {
+  .WowchakraEnhacer #s5_bottom_row1_area1 .custombanner728bottom iframe,
+  .WowchakraEnhacer #s5_bottom_row1_area1 .custombanner728bottom img {
     position: relative;
     display: block;
     float: left;
   }
-  #s5_bottom_row1_area1 .custombanner728bottom iframe {
+  .WowchakraEnhacer #s5_bottom_row1_area1 .custombanner728bottom iframe {
     left: 0;
     width: 728px;
 
     transform: scale(0.40) translateX(-70%);
   }
-  #s5_bottom_row1_area1 .custombanner728bottom img {
+  .WowchakraEnhacer #s5_bottom_row1_area1 .custombanner728bottom img {
      width: 100%;
   }
 
   /* Footer links*/
-  #s5_bottom_row2_area1 {
+  .WowchakraEnhacer #s5_bottom_row2_area1 {
     position: relative;
     display: block;
 
@@ -1131,10 +1144,10 @@
 
     text-align: center;
   }
-  #s5_bottom_row2_area1 #s5_pos_bottom_row2_1,
-  #s5_bottom_row2_area1 #s5_pos_bottom_row2_2,
-  #s5_bottom_row2_area1 #s5_pos_bottom_row2_3,
-  #s5_bottom_row2_area1 #s5_pos_bottom_row2_4 {
+  .WowchakraEnhacer #s5_bottom_row2_area1 #s5_pos_bottom_row2_1,
+  .WowchakraEnhacer #s5_bottom_row2_area1 #s5_pos_bottom_row2_2,
+  .WowchakraEnhacer #s5_bottom_row2_area1 #s5_pos_bottom_row2_3,
+  .WowchakraEnhacer #s5_bottom_row2_area1 #s5_pos_bottom_row2_4 {
     position: relative;
     display: block;
     float: none;
@@ -1147,25 +1160,25 @@
     text-align: left;
   }
   /* Website logo */
-  #s5_bottom_row2_area1 #s5_pos_bottom_row2_1 {
+  .WowchakraEnhacer #s5_bottom_row2_area1 #s5_pos_bottom_row2_1 {
     margin: 0;
     padding: 0;
 
     text-align: center;
   }
   /* Website sections */
-  #s5_bottom_row2_area1 #s5_pos_bottom_row2_2,
-  #s5_bottom_row2_area1 #s5_pos_bottom_row2_3 {
+  .WowchakraEnhacer #s5_bottom_row2_area1 #s5_pos_bottom_row2_2,
+  .WowchakraEnhacer #s5_bottom_row2_area1 #s5_pos_bottom_row2_3 {
     margin-bottom: 20px;
 
     border-bottom: 1px solid rgba(112, 91, 17, 1);
   }
-  #s5_bottom_row2_area1 .menu li {
+  .WowchakraEnhacer #s5_bottom_row2_area1 .menu li {
     margin: 10px auto;
   }
 
   /* Footer text */
-  #s5_footer_area1 {
+  .WowchakraEnhacer #s5_footer_area1 {
     position: relative;
     display: block;
     float: none;
@@ -1174,12 +1187,12 @@
     margin: 0;
     padding: 15px;
   }
-  #s5_footer_area1 #s5_footer_area_inner2 {
+  .WowchakraEnhacer #s5_footer_area1 #s5_footer_area_inner2 {
     padding: 0;
   }
 
   /* Scroll top */
-  .s5_scrolltotop {
+  .WowchakraEnhacer .s5_scrolltotop {
     position: fixed;
     display: block;
     float: right;
@@ -1202,7 +1215,7 @@
   /**************************/
   /** BG ADDS ***************/
   /**************************/
-  #siteSkin {
+  .WowchakraEnhacer #siteSkin {
     background-position: top left;
   }
 
@@ -1210,7 +1223,7 @@
   /** POPUPS ****************/
   /**************************/
   /* Account popup */
-  #colorbox {
+  .WowchakraEnhacer #colorbox {
     position: fixed;
 
     top: 50% !important;
@@ -1222,9 +1235,9 @@
 
     transform: translateX(-50%) translateY(-50%);
   }
-  #colorbox #cboxWrapper,
-  #colorbox #cboxWrapper #cboxContent,
-  #colorbox #cboxWrapper #cboxContent #cboxLoadedContent {
+  .WowchakraEnhacer #colorbox #cboxWrapper,
+  .WowchakraEnhacer #colorbox #cboxWrapper #cboxContent,
+  .WowchakraEnhacer #colorbox #cboxWrapper #cboxContent #cboxLoadedContent {
     float: none !important;
 
     width: 100% !important;
@@ -1232,7 +1245,7 @@
 
     border: none !important;
   }
-  #colorbox #cboxWrapper #cboxMiddleLeft{
+  .WowchakraEnhacer #colorbox #cboxWrapper #cboxMiddleLeft{
     float: none !important;
 
     height: auto !important;
@@ -1242,7 +1255,7 @@
   /** GALLERY ***************/
   /**************************/
   /* Gallery Thumbnails */
-  #k2Container.itemView .itemFullText .sigplus-gallery ul li {
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .sigplus-gallery ul li {
     position: relative;
     display: inline-block;
     float: left;
@@ -1250,7 +1263,7 @@
     width: 29.33% !important;
     margin: 5px 2% !important;
   }
-  #k2Container.itemView .itemFullText .sigplus-gallery ul li a img{
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .sigplus-gallery ul li a img{
     position: relative;
     display: inline-block;
 
@@ -1258,7 +1271,7 @@
   }
 
   /* Picture detail popup */
-  #boxplus .boxplus-dialog {
+  .WowchakraEnhacer #boxplus .boxplus-dialog {
     position: fixed;
 
     top: 50% !important;
@@ -1268,22 +1281,22 @@
   }
 
   /* Inline controls */
-  #boxplus .boxplus-viewer .boxplus-enlarge {
+  .WowchakraEnhacer #boxplus .boxplus-viewer .boxplus-enlarge {
     top: 10px;
     left: initial;
     right: 10px;
 
     z-index: 200;
   }
-  #boxplus .boxplus-viewer .boxplus-thumbs {
+  .WowchakraEnhacer #boxplus .boxplus-viewer .boxplus-thumbs {
     display: none;
   }
 
   /* Footer controls (next, prev) */
-  #boxplus .boxplus-bottom .boxplus-controls {
+  .WowchakraEnhacer #boxplus .boxplus-bottom .boxplus-controls {
     text-align: center;
   }
-  #boxplus .boxplus-bottom .boxplus-controls * {
+  .WowchakraEnhacer #boxplus .boxplus-bottom .boxplus-controls * {
     position: relative;
 
     margin: 10px;

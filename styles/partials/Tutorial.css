@@ -1,11 +1,11 @@
-.Tutorial-backdrop,
-.Tutorial {
+.WowchakraEnhacer .Tutorial-backdrop,
+.WowchakraEnhacer .Tutorial {
   display: none;
 }
 
 /* This is only gonna be applied on tablet and mobiles */
 @media screen and (max-width: 1280px) {
-  .Tutorial-backdrop {
+  .WowchakraEnhacer .Tutorial-backdrop {
     position: fixed;
     display: block;
 
@@ -23,7 +23,7 @@
     z-index: 9600;
   }
 
-  .Tutorial {
+  .WowchakraEnhacer .Tutorial {
     position: fixed;
     display: block;
     float: none;
@@ -45,9 +45,9 @@
     z-index: 9650;
   }
 
-  .Tutorial-title,
-  .Tutorial-legend,
-  .Tutorial-okBtn {
+  .WowchakraEnhacer .Tutorial-title,
+  .WowchakraEnhacer .Tutorial-legend,
+  .WowchakraEnhacer .Tutorial-okBtn {
     position: relative;
     display: inline-block;
     float: right;
@@ -55,14 +55,14 @@
     clear: both;
   }
 
-  .Tutorial-title,
-  .Tutorial-legend {
+  .WowchakraEnhacer .Tutorial-title,
+  .WowchakraEnhacer .Tutorial-legend {
     margin-right: 10px;
 
     color: rgba(255, 255, 255, 1);
   }
 
-  .Tutorial-okBtn {
+  .WowchakraEnhacer .Tutorial-okBtn {
     width: 100px;
     height: 40px;
     padding: 10px;
@@ -82,7 +82,7 @@
     cursor: pointer;
     outline: none;
   }
-  .Tutorial-okBtn:hover {
+  .WowchakraEnhacer .Tutorial-okBtn:hover {
     background-image: url('http://www.wowchakra.com/templates/hexicon_gamer/images/botonLeerMasHover.png');
   }
 }

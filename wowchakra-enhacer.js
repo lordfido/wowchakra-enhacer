@@ -72,7 +72,7 @@
   var toggleEnhacements = function() {
     var classes = document.body.classList;
 
-    if (classes.indexOf(ENHACER_CLASSNAME) >= 0) {
+    if (classes.contains(ENHACER_CLASSNAME)) {
       classes.remove(ENHACER_CLASSNAME);
     } else {
       classes.add(ENHACER_CLASSNAME);
@@ -214,9 +214,12 @@
     // Add a link to disable enhacements
     this.setEnhacementLink = function() {
       var enhacementLink = document.createElement('a');
-      a.href = 'javascript:toggleEnhacements();';
-      a.innerText = 'Versión de escritorio';
-      a.className = 'WowchakraEnhacer-toggleEnhacements';
+      enhacementLink.innerText = 'Versión de escritorio';
+      enhacementLink.className = 'WowchakraEnhacer-toggleEnhacements';
+      enhacementLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        toggleEnhacements();
+      });
 
       var header = document.querySelector('#s5_header_wrap');
       header.appendChild(enhacementLink);
@@ -367,6 +370,7 @@
 
       // Set sidebarToggle
       wowchakraEnhacer.loadSidebarToggle();
+      wowchakraEnhacer.setEnhacementLink();
 
       // If the user has NOT read the tutorial, mount it
       if (isMobileDevice() && !hasReadTheTutorial()) {

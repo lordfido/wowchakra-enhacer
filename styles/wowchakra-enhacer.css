@@ -1,5 +1,5 @@
 /******************************************************/
-/** WowChakra mobile **********************************/
+/** WowChakra enhacer **********************************/
 /** Author: ImperdibleSoft ****************************/
 /** Website: http://www.imperdiblesoft.com ************/
 /******************************************************/
@@ -20,9 +20,14 @@
 @import url('./partials/Tutorial.css');
 
 /* This fix the text color on comment-form buttons */
-#comments-inline-edit #comments-form .btn a,
-#comments-inline-edit #comments-report-form .btn a,
-#comments-inline-edit #comments-form .btn a:hover,
-#comments-inline-edit #comments-report-form .btn a:hover {
+.WowchakraEnhacer #comments-inline-edit #comments-form .btn a,
+.WowchakraEnhacer #comments-inline-edit #comments-report-form .btn a,
+.WowchakraEnhacer #comments-inline-edit #comments-form .btn a:hover,
+.WowchakraEnhacer #comments-inline-edit #comments-report-form .btn a:hover {
   color: rgba(0, 0, 0, 1) !important;
+}
+
+.WowchakraEnhacer-toggleEnhacements {
+  display: none;
+  cursor: pointer;
 }
