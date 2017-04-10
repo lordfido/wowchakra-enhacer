@@ -28,6 +28,7 @@
 
   var cookieName = 'hasReadTheTutorial';
   var galleryAspectRatio = 0.43;
+  var ENHACER_CLASSNAME = 'WowchakraEnhacer';
 
   // Return true|false depending on Tutorial's cookie
   var hasReadTheTutorial = function() {
@@ -65,6 +66,17 @@
 
     log('No mobile device detected');
     return false;
+  }
+
+  // Enable/disabled enhaced version
+  var toggleEnhacements = function() {
+    var classes = document.body.classList;
+
+    if (classes.indexOf(ENHACER_CLASSNAME) >= 0) {
+      classes.remove(ENHACER_CLASSNAME);
+    } else {
+      classes.add(ENHACER_CLASSNAME);
+    }
   }
 
   // Tutorial constructor
@@ -199,6 +211,17 @@
       }
     }
 
+    // Add a link to disable enhacements
+    this.setEnhacementLink = function() {
+      var enhacementLink = document.createElement('a');
+      a.href = 'javascript:toggleEnhacements();';
+      a.innerText = 'Versión de escritorio';
+      a.className = 'WowchakraEnhacer-toggleEnhacements';
+
+      var header = document.querySelector('#s5_header_wrap');
+      header.appendChild(enhacementLink);
+    }
+
     // Set viewport meta, needed for mobile devices
     this.setViewPort = function() {
       var viewPort = document.createElement('meta');
@@ -219,6 +242,7 @@
       enhacedStyles.id = 'mvg-css';
 
       document.head.appendChild(enhacedStyles);
+      document.body.classList.add(ENHACER_CLASSNAME);
       log('enhacedStyles has been loaded.');
     }
 
