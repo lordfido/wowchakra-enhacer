@@ -4,10 +4,10 @@
 at the end of the <code>&lt;head&gt;</code> tag is enough for Wowchakra Enhacer to start working.</p>
 
 <p>You also can try injecting dynamically:</p>
-<code>var wowchakraEnhacer = document.createElement("script");</code>
-<code>wowchakraEnhacer.id = 'wowchakra-enhacer';</code>
-<code>wowchakraEnhacer.src = "http://lordfido.github.io/wowchakra-enhacer/wowchakra-enhacer.js";</code>
-<code>document.head.appendChild(wowchakraEnhacer);</code>
+<p><code>var wowchakraEnhacer = document.createElement("script");</code></p>
+<p><code>wowchakraEnhacer.id = 'wowchakra-enhacer';</code></p>
+<p><code>wowchakraEnhacer.src = "http://lordfido.github.io/wowchakra-enhacer/wowchakra-enhacer.js";</code></p>
+<p><code>document.head.appendChild(wowchakraEnhacer);</code></p>
 
 # Init
 <p>To initiate Wowchakra Enhacer simply create a new MVG object:</p>
