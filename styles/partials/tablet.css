@@ -1,6 +1,28 @@
 /* This is only gonna be applied on tablets */
 @media screen and (min-width: 721px) and (max-width: 1280px) {
 
+  /* Item Preview */
+  /* Image preview */
+  .WowchakraEnhacer #k2Container .catItemImageBlock {
+    position: relative;
+    float: left;
+    width: 40%;
+    overflow: hidden;
+  }
+
+  .WowchakraEnhacer #k2Container .catItemHeader,
+  .WowchakraEnhacer #k2Container .catItemBody,
+  .WowchakraEnhacer #k2Container .catItemLinks {
+    float: right;
+    width: calc(60% - 10px) !important;
+    margin-left: 10px;
+  }
+
+  .WowchakraEnhacer #k2Container .catItemReadMore {
+    float: right;
+    margin-top: -10px;
+  }
+
   .WowchakraEnhacer #s5_bottom_area_wrap1 .customabovecolumns iframe,
   .WowchakraEnhacer #s5_bottom_row1_area1 .custombanner728bottom iframe {
     left: 0;

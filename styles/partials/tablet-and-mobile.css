@@ -154,6 +154,9 @@
     background-position: center center;
   }
 
+  /**************************/
+  /** LOGIN *****************/
+  /**************************/
   /* User login button */
   .WowchakraEnhacer #s5_loginreg {
     position: fixed;
@@ -221,6 +224,11 @@
   .WowchakraEnhacer #subMenusContainer .s5_sub_wrap_lower.is-hidden,
   .WowchakraEnhacer #subMenusContainer .s5_sub_wrap_lower_rt1.is-hidden {
     transform: translateX(-100%);
+  }
+
+  .WowchakraEnhacer #subMenusContainer .subParentBtn,
+  .WowchakraEnhacer #subMenusContainer .subMenuBtn {
+    padding: 8px;
   }
 
   /**************************/
@@ -355,12 +363,30 @@
   .WowchakraEnhacer #s5_center_column_wrap .itemListView, #s5_center_column_wrap .itemListView .itemContainer {
     padding: 0;
     padding-top: 10px;
+    margin-bottom: 10px;
   }
 
-  /* Like button */
+  /* Preview */
+  /* Header */
+  .WowchakraEnhacer #k2Container {
+    position: relative;
+  }
+
+  .WowchakraEnhacer #k2Container .catItemHeader {
+    display: block !important;
+    position: relative;
+  }
+
+  .WowchakraEnhacer #k2Container .catItemHeader .catItemTitle {
+    margin-bottom: 10px;
+  }
+
+  /* Item preview */
   .WowchakraEnhacer #k2Container .catItemView {
     position: relative;
   }
+
+  /* Like button */
   .WowchakraEnhacer #k2Container .likebtn_container {
     position: absolute;
     display: block;
@@ -381,6 +407,53 @@
     right: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
+  }
+
+  /* Comments button */
+  .WowchakraEnhacer #k2Container .catItemCommentsLink,
+  .WowchakraEnhacer #k2Container.itemView .itemCommentsLink {
+    position: absolute;
+    top: initial;
+    left: initial;
+    bottom: -5px;
+    right: 0;
+    padding: 0;
+  }
+  .WowchakraEnhacer #k2Container .catItemCommentsLink .commentsbadge,
+  .WowchakraEnhacer #k2Container.itemView .itemCommentsLink .commentsbadge,
+  .WowchakraEnhacer #k2Container.itemView .itemRelated ul > li .commentsbadge {
+    float: none;
+    display: inline-block;
+    min-width: 40px;
+    padding: 3px 10px;
+    text-align: center;
+    text-indent: 0;
+  }
+
+  /* Item preview */
+  .WowchakraEnhacer #k2Container .catItemBody {
+    position: relative;
+    display: block !important;
+
+    width: 100% !important;
+    height: 160px !important;
+    max-height: none !important;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 15px;
+    z-index: -1;
+  }
+
+  /* Text preview */
+  .WowchakraEnhacer #k2Container .catItemIntroText {
+    padding: 5px;
+  }
+  
+  /* Read more */
+  .WowchakraEnhacer #k2Container .k2ReadMore {
+    width: 98px;
+    height: 40px;
+    padding: 12px 28px;
   }
 
   /* Pagination */
@@ -443,22 +516,15 @@
     margin-bottom: 10px;
   }
   /* Comments Link */
-  .WowchakraEnhacer #k2Container.itemView .itemCommentsLink{
+  .WowchakraEnhacer #k2Container.itemView .itemCommentsLink {
     position: relative;
-    display: block;
     float: right;
-
-    width: 100%;
     margin: 0;
     margin-bottom: 10px;
-
     clear: both;
+    width: auto;
   }
-  .WowchakraEnhacer #k2Container.itemView .itemCommentsLink .commentsbadge{
-    position: relative;
 
-    margin: 0;
-  }
   /* Item body */
   .WowchakraEnhacer #k2Container.itemView .itemBody {
     position: relative;
@@ -802,6 +868,12 @@
     padding: 5px 10px;
   }
 
+  /**************************/
+  /** category list *********/
+  /**************************/
+  .WowchakraEnhacer #k2Container .itemListSubCategories {
+    width: 100%;
+  }
 
   /**************************/
   /** ABOUT US **************/
@@ -970,16 +1042,32 @@
   .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .slides_control .slide {
     left: 0 !important;
   }
+  
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .bt-cs {
+    position: relative !important;
+    display: inline-block;
+    margin: 5px auto !important;
+    text-align: center;
+    width: 100% !important;
+  }
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .bt_handles {
+    position: relative !important;
+    display: inline-block;
+    margin: 5px auto !important;
+  }
+
+  /* Token price fixes */
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .dataregion {
+    padding: 6px 0;
+    padding-right: 45px;
+  }
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .dataoro {
+    padding-right: 20px;
+  }
 
   /* Comments fixes */
-  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .jcomments-latest img,
-  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .jcomments-latest .author {
-    position: relative !important;
-  }
-  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .jcomments-latest .author {
-    float: left;
-
-    margin: 0 auto;
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .jcomments-latest li {
+    position: relative;
   }
 
   /**************************/
@@ -1053,6 +1141,7 @@
 
     max-width: calc(65% - 15px);
   }
+
   /* Image preview */
   .WowchakraEnhacer #s5_below_columns_1 .k2ItemsBlock.contenido ul > li .moduleItemImage,
   .WowchakraEnhacer #k2Container.itemView .itemRelated ul > li .itemRelImg {
@@ -1069,27 +1158,18 @@
 
     width: 100%;
   }
+
   /* Comments links */
-  .WowchakraEnhacer #k2Container.itemView .itemRelated ul > li .itemCommentsLinkRelated,
-  .WowchakraEnhacer #k2Container.itemView .itemRelated ul > li .commentsbadge {
+  .WowchakraEnhacer #k2Container.itemView .itemRelated ul > li .itemCommentsLinkRelated {
     position: absolute;
     display: block;
     float: left;
 
-    top: initial;
-    left: 0;
-    bottom: 0;
+    top: 0;
+    right: -22px;
+    left: initial;
     margin: 0;
     padding: 0;
-  }
-  .WowchakraEnhacer #k2Container.itemView .itemRelated ul > li .itemCommentsLinkRelated{
-    left: calc(35% - 15px);
-    bottom: 10px;
-  }
-  .WowchakraEnhacer #k2Container.itemView .itemRelated ul > li .commentsbadge {
-    position: relative;
-
-    padding-top: 4px;
   }
 
   /* Adds before footer */
@@ -1228,16 +1308,19 @@
 
     top: 50% !important;
     left: 50% !important;
-    width: 50% !important;
-    height: 50% !important;
+    width: 75% !important;
+    height: 75% !important;
     margin: 0 auto !important;
     padding: 0 !important;
 
     transform: translateX(-50%) translateY(-50%);
   }
+
   .WowchakraEnhacer #colorbox #cboxWrapper,
+  .WowchakraEnhacer #colorbox #cboxWrapper > div:nth-child(2),
   .WowchakraEnhacer #colorbox #cboxWrapper #cboxContent,
-  .WowchakraEnhacer #colorbox #cboxWrapper #cboxContent #cboxLoadedContent {
+  .WowchakraEnhacer #colorbox #cboxWrapper #cboxContent #cboxLoadedContent,
+  .WowchakraEnhacer #colorbox #cboxWrapper #cboxContent #s5box_login {
     float: none !important;
 
     width: 100% !important;
@@ -1250,6 +1333,79 @@
 
     height: auto !important;
   }
+  
+
+  /* Login popup */
+  .WowchakraEnhacer #colorbox #cboxWrapper #cboxContent #s5box_login noindex > *,
+  .WowchakraEnhacer #colorbox #cboxWrapper #cboxContent #s5box_login form p,
+  .WowchakraEnhacer #colorbox #cboxWrapper #cboxContent #s5box_login form li,
+  .WowchakraEnhacer #colorbox #cboxWrapper #cboxContent #s5box_login form .button {
+    margin-bottom: 10px;
+  }
+
+  .WowchakraEnhacer .button,
+  .WowchakraEnhacer .validate {
+    border-radius: 4px !important;
+    color: black !important;
+    height: auto !important;
+    line-height: 1.3em !important;
+    margin: 10px auto;
+    padding: 6px 12px !important;
+  }
+
+  /**************************/
+  /** ACCOUNT PAGE **********/
+  /**************************/
+  .WowchakraEnhacer .profile,
+  .WowchakraEnhacer .profile-edit > form {
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .WowchakraEnhacer .profile fieldset,
+  .WowchakraEnhacer .profile-edit > form fieldset,
+  .WowchakraEnhacer .profile legend,
+    .WowchakraEnhacer .profile-edit > form legend {
+    margin-bottom: 10px;
+  }
+  
+  .WowchakraEnhacer .profile dd,
+  .WowchakraEnhacer .profile-edit > form dd {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  /* My posts */
+  .WowchakraEnhacer #k2Container.userView .k2FeedIcon {
+    margin: 0;
+    top: 5px;
+    left: 10px;
+  }
+
+  .WowchakraEnhacer #k2Container.userView .userBlock {
+    position: relative;
+    text-align: left;
+  }
+
+  .WowchakraEnhacer #k2Container.userView img {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .WowchakraEnhacer #k2Container.userView h2 {
+    margin: 0;
+    top: 40px;
+    left: 220px;
+  }
+  
+  .WowchakraEnhacer #k2Container.userView .userEmail {
+    margin: 0;
+    top: 80px;
+    left: 220px;
+  }
+
 
   /**************************/
   /** GALLERY ***************/

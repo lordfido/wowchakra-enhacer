@@ -43,14 +43,9 @@
 
   /* Item title */
   .WowchakraEnhacer #k2Container .catItemHeader {
-    display: block !important;
-
     text-align: left;
   }
   .WowchakraEnhacer #k2Container .catItemHeader .catItemTitle {
-    margin: 0;
-    margin-bottom: 10px;
-
     text-align: center;
   }
   .WowchakraEnhacer #k2Container .catItemHeader .catItemAuthor {

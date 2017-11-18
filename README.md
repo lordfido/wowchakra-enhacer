@@ -1,7 +1,13 @@
 # Wowchakra Enhacer
 <p>Wowchakra Enhacer is a tool created to quickly adapt wowchakra.com to mobile devices.</p>
-<p>Injecting <code>&lt;script src="https://lordfido.github.io/wowchakra-enhacer/wowchakra-enhacer.js"&gt;&lt;/script&gt;</code>
+<p>Injecting <code>&lt;script id="wowchakra-enhacer" src="https://lordfido.github.io/wowchakra-enhacer/wowchakra-enhacer.js"&gt;&lt;/script&gt;</code>
 at the end of the <code>&lt;head&gt;</code> tag is enough for Wowchakra Enhacer to start working.</p>
+
+<p>You also can try injecting dynamically:</p>
+<p><code>var wowchakraEnhacer = document.createElement("script");</code></p>
+<p><code>wowchakraEnhacer.id = 'wowchakra-enhacer';</code></p>
+<p><code>wowchakraEnhacer.src = "http://lordfido.github.io/wowchakra-enhacer/wowchakra-enhacer.js";</code></p>
+<p><code>document.head.appendChild(wowchakraEnhacer);</code></p>
 
 # Init
 <p>To initiate Wowchakra Enhacer simply create a new MVG object:</p>
