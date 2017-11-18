@@ -673,7 +673,6 @@
   .WowchakraEnhacer #k2Container.itemView .itemFullText ul:not(.tabber_tabs) {
     position: relative;
     display: inline-block;
-    float: left;
 
     padding: 0;
 
@@ -1456,5 +1455,11 @@
     position: relative;
 
     margin: 10px;
+  }
+
+  /* Blizzard */
+  .WowchakraEnhacer #k2Container .blizzazul {
+    border-radius: 10px;
+    padding: 10px;
   }
 }
