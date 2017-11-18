@@ -26,9 +26,9 @@
     }
   }
 
-  var cookieName = 'hasReadTheTutorial';
   var galleryAspectRatio = 0.43;
-  var ENHACER_BLOCKED = 'WowchakraEnhacer-blocked';
+  var ENHACER_TUTORIAL = 'wce-hasReadTheTutorial';
+  var ENHACER_BLOCKED = 'wce-blocked';
   var ENHACER_CLASSNAME = 'WowchakraEnhacer';
 
   // Return true|false depending on Tutorial's cookie
@@ -40,7 +40,7 @@
       if (cookies[x] && cookies[x].split) {
         var _cookie = cookies[x].split('=');
         if (
-          _cookie[0].trim().toLowerCase() === cookieName.trim().toLowerCase() &&
+          _cookie[0].trim().toLowerCase() === ENHACER_TUTORIAL.trim().toLowerCase() &&
           (_cookie[1].trim() === 'true' || _cookie[1].trim() === true)
         ) {
           log('User has already read the tutorial.');
@@ -108,7 +108,7 @@
 
     // Do this when okBtn has been clicked
     var handleOkBtnClick = function(e) {
-      setCookie(cookieName);
+      setCookie(ENHACER_TUTORIAL);
 
       // Remove tutorial from screen
       var mobileTutorialLayout = document.querySelector('.Tutorial');
