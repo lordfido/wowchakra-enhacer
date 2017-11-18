@@ -355,12 +355,26 @@
   .WowchakraEnhacer #s5_center_column_wrap .itemListView, #s5_center_column_wrap .itemListView .itemContainer {
     padding: 0;
     padding-top: 10px;
+    margin-bottom: 10px;
   }
 
-  /* Like button */
+  /* Preview */
+  /* Header */
+  .WowchakraEnhacer #k2Container .catItemHeader {
+    display: block !important;
+    position: relative;
+  }
+
+  .WowchakraEnhacer #k2Container .catItemHeader .catItemTitle {
+    margin-bottom: 10px;
+  }
+
+  /* Item preview */
   .WowchakraEnhacer #k2Container .catItemView {
     position: relative;
   }
+
+  /* Like button */
   .WowchakraEnhacer #k2Container .likebtn_container {
     position: absolute;
     display: block;
@@ -381,6 +395,50 @@
     right: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
+  }
+
+  /* Comments button */
+  .WowchakraEnhacer #k2Container .catItemCommentsLink {
+    position: absolute;
+    top: initial;
+    left: initial;
+    bottom: -5px;
+    right: 0;
+    padding: 0;
+  }
+  .WowchakraEnhacer #k2Container .catItemCommentsLink .commentsbadge {
+    float: none;
+    display: inline-block;
+    min-width: 40px;
+    padding: 3px 10px;
+    text-align: center;
+    text-indent: 0;
+  }
+
+  /* Item preview */
+  .WowchakraEnhacer #k2Container .catItemBody {
+    position: relative;
+    display: block !important;
+
+    width: 100% !important;
+    height: 160px !important;
+    max-height: none !important;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 15px;
+    z-index: -1;
+  }
+
+  /* Text preview */
+  .WowchakraEnhacer #k2Container .catItemIntroText {
+    padding: 5px;
+  }
+  
+  /* Read more */
+  .WowchakraEnhacer #k2Container .k2ReadMore {
+    width: 98px;
+    height: 40px;
+    padding: 12px 28px;
   }
 
   /* Pagination */
@@ -970,16 +1028,32 @@
   .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .slides_control .slide {
     left: 0 !important;
   }
+  
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .bt-cs {
+    position: relative !important;
+    display: inline-block;
+    margin: 5px auto !important;
+    text-align: center;
+    width: 100% !important;
+  }
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .bt_handles {
+    position: relative !important;
+    display: inline-block;
+    margin: 5px auto !important;
+  }
+
+  /* Token price fixes */
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .dataregion {
+    padding: 6px 0;
+    padding-right: 45px;
+  }
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .dataoro {
+    padding-right: 20px;
+  }
 
   /* Comments fixes */
-  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .jcomments-latest img,
-  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .jcomments-latest .author {
-    position: relative !important;
-  }
-  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .jcomments-latest .author {
-    float: left;
-
-    margin: 0 auto;
+  .WowchakraEnhacer #s5_right_column_wrap #s5_right_wrap .jcomments-latest li {
+    position: relative;
   }
 
   /**************************/
