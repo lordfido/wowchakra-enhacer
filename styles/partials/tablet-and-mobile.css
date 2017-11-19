@@ -51,16 +51,34 @@
   }
 
   /* Search field */
-  .WowchakraEnhacer #s5_search_wrap #mod-search-searchword[name='searchword'].inputbox{
-    width: calc(100% - 80px);
+  .WowchakraEnhacer #searchSocial {
+    width: 100%;
     margin: 0;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+  .WowchakraEnhacer #s5_search_wrap .search input {
+    width: 100%;
+    margin: 0;
   }
 
-  /* Legion countdown */
+  /* Loading icon */
+  .WowchakraEnhacer #s5_search_wrap .search > span > img {
+    left: initial !important;
+    right: 10px !important;
+    top: 7px !important;
+    margin: 0 !important;
+  }
+
+  /* Results */
   .WowchakraEnhacer #s5_search_wrap {
     height: auto;
   }
+  .WowchakraEnhacer #s5_search_wrap #s5_ls_outer_wrap {
+    margin: 5px 0 !important;
+    width: 100% !important;
+  }
+
   .WowchakraEnhacer #s5_search_wrap .moduletable_bannerMop {
     text-align: center;
   }
@@ -70,6 +88,21 @@
 
     width: 200px;
     margin: 0 auto;
+  }
+
+  /* Social links */
+  .WowchakraEnhacer #pypsocial {
+    display: block;
+    float: none;
+    height: auto;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .WowchakraEnhacer #pypsocial > div {
+    display: inline-block;
+    float: none;
   }
 
   /* Custom toggle enhacements link */
@@ -300,10 +333,26 @@
   }
 
   /* Ads next to the Gallery */
+  .WowchakraEnhacer #s5_top_row2_area1,
+  .WowchakraEnhacer #s5_top_row2_area1 .holaquetalh {
+    max-width: 100%;
+  }
+
+  .WowchakraEnhacer #s5_top_row2_area1 .holaquetalh {
+    padding: 10px;
+    font-size: 16px;
+  }
+
   .WowchakraEnhacer .custombanner300top {
     height: auto;
     margin: 0 auto;
     padding: 0;
+  }
+
+  .WowchakraEnhacer .customtop2_1 {
+    display: block;
+    margin: 0;
+    max-width: 100%;
   }
 
   /**************************/
