@@ -1,26 +1,56 @@
 /* This is only gonna be applied on tablets */
 @media screen and (min-width: 721px) and (max-width: 1280px) {
+  .WowchakraEnhacer #k2Container .catItemHeader {
+    display: inline !important;
+    position: static;
+    float: none;
+    text-align: left;
+  }
+
+  .WowchakraEnhacer #k2Container .catItemAuthor,
+  .WowchakraEnhacer #k2Container .catItemDateCreated,
+  .WowchakraEnhacer #k2Container .catItemCategory {
+    float: left;
+  }
+
+  .WowchakraEnhacer #k2Container .catItemAuthor {
+    margin-left: 20px;
+  }
 
   /* Item Preview */
   /* Image preview */
   .WowchakraEnhacer #k2Container .catItemImageBlock {
-    position: relative;
+    /* display: inline-block; */
+    clear: both;
     float: left;
+    margin-top: 10px;
     width: 40%;
-    overflow: hidden;
   }
 
-  .WowchakraEnhacer #k2Container .catItemHeader,
-  .WowchakraEnhacer #k2Container .catItemBody,
-  .WowchakraEnhacer #k2Container .catItemLinks {
-    float: right;
+  .WowchakraEnhacer #k2Container .catItemImage,
+  .WowchakraEnhacer #k2Container .catItemImage img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .WowchakraEnhacer #k2Container .catItemCommentsLink {
+    bottom: 188px;
+  }
+
+  .WowchakraEnhacer #k2Container .catItemBody {
+    float: left;
     width: calc(60% - 10px) !important;
     margin-left: 10px;
+  }  
+
+  .WowchakraEnhacer #k2Container .likebtn_container {
+    top: -33px;
+    right: 40px;
   }
 
   .WowchakraEnhacer #k2Container .catItemReadMore {
+    position: relative;
     float: right;
-    margin-top: -10px;
   }
 
   .WowchakraEnhacer #s5_bottom_area_wrap1 .customabovecolumns iframe,
@@ -29,6 +59,13 @@
     width: 100%;
 
     transform: scale(1) translateX(0);
+  }
+
+  .WowchakraEnhacer #s5_bottom_row2_area1 #s5_pos_bottom_row2_2,
+  .WowchakraEnhacer #s5_bottom_row2_area1 #s5_pos_bottom_row2_3 {
+    display: inline-block;
+    width: 50% !important;
+    padding: 10px;
   }
 
   /* This is only gonna be applied on landscape mode */
