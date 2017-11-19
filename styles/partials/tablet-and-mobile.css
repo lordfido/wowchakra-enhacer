@@ -691,6 +691,8 @@
     background-size: auto 100%;
   }
 
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .panelchakratitular img,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondo img,
   .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodlock img,
   .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodshaman img,
   .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowod2 img,
@@ -705,6 +707,24 @@
   .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodwarrior img,
   .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowoddh img {
     float: left;
+  }
+
+  .WowchakraEnhacer #k2Container.itemView .itemFullText .panelchakratitular br,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondo br,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodlock br,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodshaman br,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowod2 br,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowoddk br,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowoddruid br,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodhunter br,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodmage br,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodmonk br,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodpaladin br,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodpriest br,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodrogue br,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowodwarrior br,
+  .WowchakraEnhacer #k2Container.itemView .itemFullText h4.fondowoddh br {
+    display: none;
   }
 
   .WowchakraEnhacer #k2Container.itemView .itemFullText .panelchakratitular {
@@ -770,6 +790,46 @@
     box-sizing: border-box;
   }
 
+  /* Maps */
+  .WowchakraEnhacer #k2Container.itemView .map_container {
+    position: relative;
+  }
+  .WowchakraEnhacer #k2Container.itemView .map_container .map {
+    width: 100%;
+    background-size: 100% 100%;
+  }
+
+  .WowchakraEnhacer #k2Container.itemView .map_container .map_switcher {
+    width: 200px;
+  }
+  
+  .WowchakraEnhacer #k2Container.itemView .map_container .icon_switcher {
+    width: auto;
+    left: initial;
+    bottom: initial;
+    left: -90px;
+    top: 20px;
+  }
+  
+  .WowchakraEnhacer #k2Container.itemView .map_container .vendor_icon,
+  .WowchakraEnhacer #k2Container.itemView .map_container .pet_master2,
+  .WowchakraEnhacer #k2Container.itemView .map_container .arakkoa_chest,
+  .WowchakraEnhacer #k2Container.itemView .map_container .dungeon,
+  .WowchakraEnhacer #k2Container.itemView .map_container .inn2_switcher,
+  .WowchakraEnhacer #k2Container.itemView .map_container .inn2,
+  .WowchakraEnhacer #k2Container.itemView .map_container .repair_switcher,
+  .WowchakraEnhacer #k2Container.itemView .map_container .repair,
+  .WowchakraEnhacer #k2Container.itemView .map_container .fly_switcher,
+  .WowchakraEnhacer #k2Container.itemView .map_container .fly_point {
+    width: 20px;
+  }
+  
+  .WowchakraEnhacer #k2Container.itemView .map_container .inn2_switcher,
+  .WowchakraEnhacer #k2Container.itemView .map_container .repair_switcher,
+  .WowchakraEnhacer #k2Container.itemView .map_container .fly_switcher {
+    margin: 5px;
+  }
+
   /* About us modifications */
   .WowchakraEnhacer #k2Container.itemView .itemFullText ul.tabber_tabs li.tabber_tab.aboutus {
     border: none;
@@ -789,7 +849,7 @@
 
   /* Some table styles */
   .WowchakraEnhacer #k2Container.itemView .itemFullText table {
-    width: 100%;
+    width: 100% !important;
     margin-bottom: 10px;
     padding: 0;
   }
