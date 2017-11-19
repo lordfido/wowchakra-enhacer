@@ -478,8 +478,7 @@
   }
 
   /* Comments button */
-  .WowchakraEnhacer #k2Container .catItemCommentsLink,
-  .WowchakraEnhacer #k2Container.itemView .itemCommentsLink {
+  .WowchakraEnhacer #k2Container .catItemCommentsLink {
     position: absolute;
     top: initial;
     left: initial;
@@ -860,9 +859,9 @@
     display: block;
     float: none;
 
-    top: -33px;
+    top: -30px;
     left: initial;
-    right: 25px;
+    right: 40px;
   }
 
   /* Item body spacer */
