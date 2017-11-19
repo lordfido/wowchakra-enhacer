@@ -51,16 +51,34 @@
   }
 
   /* Search field */
-  .WowchakraEnhacer #s5_search_wrap #mod-search-searchword[name='searchword'].inputbox{
-    width: calc(100% - 80px);
+  .WowchakraEnhacer #searchSocial {
+    width: 100%;
     margin: 0;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+  .WowchakraEnhacer #s5_search_wrap .search input {
+    width: 100%;
+    margin: 0;
   }
 
-  /* Legion countdown */
+  /* Loading icon */
+  .WowchakraEnhacer #s5_search_wrap .search > span > img {
+    left: initial !important;
+    right: 10px !important;
+    top: 7px !important;
+    margin: 0 !important;
+  }
+
+  /* Results */
   .WowchakraEnhacer #s5_search_wrap {
     height: auto;
   }
+  .WowchakraEnhacer #s5_search_wrap #s5_ls_outer_wrap {
+    margin: 5px 0 !important;
+    width: 100% !important;
+  }
+
   .WowchakraEnhacer #s5_search_wrap .moduletable_bannerMop {
     text-align: center;
   }
@@ -70,6 +88,23 @@
 
     width: 200px;
     margin: 0 auto;
+  }
+
+  /* Social links */
+  .WowchakraEnhacer #pypsocial {
+    display: block;
+    float: none;
+    height: auto;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .WowchakraEnhacer #pypsocial > div {
+    display: inline-block;
+    float: none;
+    width: 64px;
+    height: 48px;
   }
 
   /* Custom toggle enhacements link */
@@ -300,10 +335,29 @@
   }
 
   /* Ads next to the Gallery */
+  .WowchakraEnhacer #s5_top_row2_area1,
+  .WowchakraEnhacer .holaquetalh,
+  .WowchakraEnhacer .holaquetal {
+    width: 100% !important;
+  }
+
+  .WowchakraEnhacer .holaquetalh,
+  .WowchakraEnhacer .holaquetal {
+    padding: 10px;
+    font-size: 16px;
+  }
+
   .WowchakraEnhacer .custombanner300top {
+    position: relative;
     height: auto;
     margin: 0 auto;
     padding: 0;
+  }
+
+  .WowchakraEnhacer .customtop2_1 {
+    display: block;
+    margin: 0;
+    max-width: 100%;
   }
 
   /**************************/
@@ -311,8 +365,9 @@
   /**************************/
   .WowchakraEnhacer #s5_bottom_area_wrap1 {
     margin: 0;
-
+    max-width: 100%;
     text-align: center;
+    border-radius: 0;
   }
 
   /* Ads before content */
@@ -360,10 +415,22 @@
   .WowchakraEnhacer #s5_center_column_wrap #s5_component_wrap {
     margin: 0 auto;
   }
-  .WowchakraEnhacer #s5_center_column_wrap .itemListView, #s5_center_column_wrap .itemListView .itemContainer {
-    padding: 0;
-    padding-top: 10px;
+  
+  .WowchakraEnhacer #s5_center_column_wrap .itemListView,
+  #s5_center_column_wrap .itemListView .itemContainer {
+    clear: both;
+    float: left;
+    height: auto;
+    padding: 10px 0;
     margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .WowchakraEnhacer #s5_center_column_wrap .catItemView {
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 100%;
   }
 
   /* Preview */
@@ -393,6 +460,7 @@
 
     top: 30px;
     right: 35px;
+    left: initial;
     width: auto;
     height: auto;
     margin: 0 !important;
@@ -415,7 +483,7 @@
     position: absolute;
     top: initial;
     left: initial;
-    bottom: -5px;
+    bottom: 180px;
     right: 0;
     padding: 0;
   }
@@ -441,7 +509,6 @@
     margin: 0 auto;
     margin-top: 10px;
     padding: 15px;
-    z-index: -1;
   }
 
   /* Text preview */
@@ -1229,7 +1296,6 @@
   .WowchakraEnhacer #s5_bottom_row2_area1 #s5_pos_bottom_row2_4 {
     position: relative;
     display: block;
-    float: none;
 
     width: 100% !important;
     margin: 0;
@@ -1376,9 +1442,9 @@
   }
 
   /* My posts */
-  .WowchakraEnhacer #k2Container.userView .k2FeedIcon {
+  .WowchakraEnhacer #k2Container .k2FeedIcon {
     margin: 0;
-    top: 5px;
+    top: 11px;
     left: 10px;
   }
 

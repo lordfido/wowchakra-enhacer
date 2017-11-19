@@ -33,7 +33,7 @@
     box-shadow: none;
   }
   .WowchakraEnhacer #k2Container .catItemImageBlock {
-    margin-bottom: 10px;
+    margin: 10px auto;
   }
   .WowchakraEnhacer #k2Container .catItemImageBlock img {
     max-width: 100%;
@@ -65,6 +65,7 @@
 
     background: none;
     border-radius: 0;
+    border-color: transparent;
     box-shadow: none;
   }
   .WowchakraEnhacer #k2Container .catItemBody .catItemIntroText {
@@ -76,6 +77,7 @@
   /* Item links */
   .WowchakraEnhacer #k2Container .catItemReadMore {
     display: block !important;
+    position: relative;
   }
 
   /* Like button */
@@ -83,10 +85,9 @@
      1 line, this position is wrong placed
   */
   .WowchakraEnhacer #k2Container .likebtn_container {
-    top: 0px;
-    right: 35px;
-
-    margin-top: -25px !important;
+    top: -213px;
+    right: 40px;
+    left: initial;
   }
 
   /**************************/
