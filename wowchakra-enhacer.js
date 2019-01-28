@@ -355,7 +355,7 @@
   }
 
   // Create new enhacer
-  if (!document.cookie.contains(ENHACER_BLOCKED)) {
+  if (document.cookie && !document.cookie.contains(ENHACER_BLOCKED)) {
     var wowchakraEnhacer = new Enhacer();
 
     // Instantly set the viewport, and CSS files on <head></head>
